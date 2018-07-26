@@ -45,8 +45,58 @@ const bottomSqrLeftData = [
       
       {
         startValue: 0,
-        endValue: 75,
+        endValue: 80,
         property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  
+];
+
+const bottomSqrRightData = [
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 80,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  
+];
+
+const rightSqrTopData = [
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -66.35,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  
+];
+
+const rightSqrBottomData = [
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: -66.35,
+        property: "translateY",
         unit: '%'
       }
     ]
@@ -93,6 +143,9 @@ class App extends Component {
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
             <Plx className="left-moving-square-bottom" parallaxData={leftSqrBottomData} />
             <Plx className="bottom-moving-square-left" parallaxData={bottomSqrLeftData} />
+            <Plx className="bottom-moving-square-right" parallaxData={bottomSqrRightData} />
+            <Plx className="right-moving-square-top" parallaxData={rightSqrTopData} />
+            <Plx className="right-moving-square-bottom" parallaxData={rightSqrBottomData} />
             <div className="second-background-top"></div>
             <div className="second-background-bottom"></div>
           </div> 
