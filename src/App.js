@@ -17,6 +17,18 @@ const leftSqrTopData = [
       }
     ]
   },
+  {
+    start: '70%',
+    end: '75%',
+    properties: [
+      {
+        startValue: 66.35,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  }
   
 ];
 
@@ -34,6 +46,18 @@ const leftSqrBottomData = [
       }
     ]
   },
+  {
+    start: '65%',
+    end: '70%',
+    properties: [
+      {
+        startValue: 66.35,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  }
   
 ];
 
@@ -104,6 +128,98 @@ const rightSqrBottomData = [
   
 ];
 
+const topSqrLeftData = [
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: -133.3,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  
+];
+
+const topSqrRightData = [
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: -80,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  
+];
+
+const movingSqrData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 358.5,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 400,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: 358.5,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: 400,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  
+];
+
+
+
 const styles = {
   width: 120,
   height: 120,
@@ -128,28 +244,55 @@ class App extends Component {
 
     }
   }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, { passive: true })
+    // document.documentElement.scrollTop = 4;
+    // document.body.scrollTop = 4;
+  }
+
+  handleScroll(e){
+    if (document.body.scrollTop > 13000 || document.documentElement.scrollTop > 13000) {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0;
+    }
+    
+    // else if (document.body.scrollTop < 1 || document.documentElement.scrollTop < 1) {
+    //   document.body.scrollTop = 13000; // For Safari
+    //   document.documentElement.scrollTop = 13000;
+    // }
+
+  }
   
   render() {
     
     return (
       <div className="App">
-        <div className="fixed-background-base">
-          <div className='fixed-back-base-halfway-line'></div>
-          <div className="first-background-top"></div>
-          <div className="first-background-bottom"></div>
-          <div className="first-background-left"></div>
-          <div className="first-background-right"></div>
-          <div className="fixed-background-second">
+        <Plx className="real-background" />
+        <Plx className="fixed-background-base">
+          <Plx className='fixed-back-base-halfway-line'></Plx>
+          <Plx className="first-background-top"></Plx>
+          <Plx className="first-background-bottom"></Plx>
+          <Plx className="first-background-left"></Plx>
+          <Plx className="first-background-right"></Plx>
+          <Plx className="fixed-background-second">
+            <Plx className="moving-square" parallaxData={movingSqrData}/>
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
             <Plx className="left-moving-square-bottom" parallaxData={leftSqrBottomData} />
             <Plx className="bottom-moving-square-left" parallaxData={bottomSqrLeftData} />
             <Plx className="bottom-moving-square-right" parallaxData={bottomSqrRightData} />
             <Plx className="right-moving-square-top" parallaxData={rightSqrTopData} />
             <Plx className="right-moving-square-bottom" parallaxData={rightSqrBottomData} />
-            <div className="second-background-top"></div>
-            <div className="second-background-bottom"></div>
-          </div> 
-        </div>
+            <Plx className="top-moving-square-left" parallaxData={topSqrLeftData} />
+            <Plx className="top-moving-square-right" parallaxData={topSqrRightData} />
+            <Plx className="second-background-top"></Plx>
+            <Plx className="second-background-bottom"></Plx>
+            <Plx className="second-background-inner-box-top"></Plx>
+            <Plx className="second-background-inner-box-bottom"></Plx>
+            <Plx className="second-background-inner-box-left"></Plx>
+            <Plx className="second-background-inner-box-right"></Plx>
+          </Plx> 
+        </Plx>
       
       </div>
     );
