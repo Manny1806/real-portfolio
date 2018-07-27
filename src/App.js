@@ -14,6 +14,48 @@ const leftSqrTopData = [
         endValue: 66.35,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
       }
     ]
   },
@@ -43,6 +85,48 @@ const leftSqrBottomData = [
         endValue: 66.35,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
       }
     ]
   },
@@ -63,10 +147,27 @@ const leftSqrBottomData = [
 
 const bottomSqrLeftData = [
   {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
     start: '21%',
     end: '41%',
     properties: [
       
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      },
       {
         startValue: 0,
         endValue: 80,
@@ -75,15 +176,57 @@ const bottomSqrLeftData = [
       }
     ]
   },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+  
   
 ];
 
 const bottomSqrRightData = [
   {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
     start: '21%',
     end: '41%',
     properties: [
-      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      },
       {
         startValue: 0,
         endValue: 80,
@@ -92,10 +235,58 @@ const bottomSqrRightData = [
       }
     ]
   },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  }
   
 ];
 
 const rightSqrTopData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
   {
     start: '42%',
     end: '62%',
@@ -105,13 +296,54 @@ const rightSqrTopData = [
         endValue: -66.35,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
       }
     ]
   },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  }
   
 ];
 
 const rightSqrBottomData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
   {
     start: '42%',
     end: '62%',
@@ -122,13 +354,65 @@ const rightSqrBottomData = [
         endValue: -66.35,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
       }
     ]
   },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  }
   
 ];
 
 const topSqrLeftData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
   {
     start: '63%',
     end: '83%',
@@ -139,6 +423,11 @@ const topSqrLeftData = [
         endValue: -133.3,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
       }
     ]
   },
@@ -147,15 +436,54 @@ const topSqrLeftData = [
 
 const topSqrRightData = [
   {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
     start: '63%',
     end: '83%',
     properties: [
-      
       {
         startValue: 0,
         endValue: -80,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
       }
     ]
   },
