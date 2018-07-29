@@ -490,6 +490,358 @@ const topSqrRightData = [
   
 ];
 
+const firstBackgroundTopData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+const firstBackgroundBottomData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+const firstBackgroundLeftData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+const firstBackgroundRightData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+const realBackgroundData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+const secondBackgroundTop = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+const colorChangeOnlyData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
+
+
 const movingSqrData = [
   {
     start: 0,
@@ -575,8 +927,6 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, { passive: true })
-    // document.documentElement.scrollTop = 4;
-    // document.body.scrollTop = 4;
   }
 
   handleScroll(e){
@@ -585,24 +935,19 @@ class App extends Component {
       document.documentElement.scrollTop = 0;
     }
     
-    // else if (document.body.scrollTop < 1 || document.documentElement.scrollTop < 1) {
-    //   document.body.scrollTop = 13000; // For Safari
-    //   document.documentElement.scrollTop = 13000;
-    // }
-
   }
   
   render() {
     
     return (
       <div className="App">
-        <Plx className="real-background" />
+        <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
         <Plx className="fixed-background-base">
           <Plx className='fixed-back-base-halfway-line'></Plx>
-          <Plx className="first-background-top"></Plx>
-          <Plx className="first-background-bottom"></Plx>
-          <Plx className="first-background-left"></Plx>
-          <Plx className="first-background-right"></Plx>
+          <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
+          <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
+          <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
+          <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="fixed-background-second">
             <Plx className="moving-square" parallaxData={movingSqrData}/>
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
@@ -613,13 +958,19 @@ class App extends Component {
             <Plx className="right-moving-square-bottom" parallaxData={rightSqrBottomData} />
             <Plx className="top-moving-square-left" parallaxData={topSqrLeftData} />
             <Plx className="top-moving-square-right" parallaxData={topSqrRightData} />
-            <Plx className="second-background-top"></Plx>
-            <Plx className="second-background-bottom"></Plx>
-            <Plx className="second-background-inner-box-top"></Plx>
-            <Plx className="second-background-inner-box-bottom"></Plx>
-            <Plx className="second-background-inner-box-left"></Plx>
-            <Plx className="second-background-inner-box-right"></Plx>
-          </Plx> 
+            <Plx className="second-background-top" parallaxData={colorChangeOnlyData}></Plx>
+            <Plx className="second-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
+            <Plx className="second-background-inner-box-top" parallaxData={colorChangeOnlyData}></Plx>
+            <Plx className="second-background-inner-box-bottom" parallaxData={colorChangeOnlyData}></Plx>
+            <Plx className="second-background-inner-box-left" parallaxData={colorChangeOnlyData}></Plx>
+            <Plx className="second-background-inner-box-right" parallaxData={colorChangeOnlyData}></Plx>
+          </Plx>
+
+          <Plx className="bio-title">bio</ Plx>
+          <Plx className="skills-title">skills</ Plx>
+          <Plx className="projects-title">projects</ Plx>
+          <Plx className="connect-title">connect</ Plx>
+
         </Plx>
       
       </div>

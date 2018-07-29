@@ -45,14 +45,14 @@
   width: 1200px;
   top: 10px;
   border: none;
-  background-color: wheat;
+  background-color: white;
   z-index: -1;
 }
 
 .fixed-background-second {
   position: absolute;
   width: 50%;
-  background-color: wheat;
+  background-color: white;
   height: 100%;
   z-index: 1;
 }
@@ -63,6 +63,7 @@
   border-right: dotted black 1px;
   position: absolute;
   z-index: 5;
+  display: none;
   }
 
 .first-background-top {
