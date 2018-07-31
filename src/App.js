@@ -964,13 +964,15 @@ class App extends Component {
             <Plx className="second-background-inner-box-bottom" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-left" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-right" parallaxData={colorChangeOnlyData}></Plx>
+            <Plx className="bio-title">bio</ Plx>
+            <Plx className="skills-title">skills</ Plx>
+            <Plx className="projects-title">projects</ Plx>
+            <Plx className="connect-title">connect</ Plx>
+
           </Plx>
 
-          <Plx className="bio-title">bio</ Plx>
-          <Plx className="skills-title">skills</ Plx>
-          <Plx className="projects-title">projects</ Plx>
-          <Plx className="connect-title">connect</ Plx>
-
+          
+          
         </Plx>
       
       </div>

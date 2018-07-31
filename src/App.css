@@ -45,16 +45,16 @@
   width: 1200px;
   top: 10px;
   border: none;
-  background-color: white;
+  background-color: black;
   z-index: -1;
 }
 
 .fixed-background-second {
   position: absolute;
   width: 50%;
-  background-color: white;
+  background-color: black;
   height: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .fixed-back-base-halfway-line {
@@ -120,7 +120,7 @@
   z-index: 4;
 }
 
-.moving-square {
+/* .moving-square {
   position: absolute;
   background: transparent;
   border: solid black 2px;
@@ -129,7 +129,8 @@
   width: 20%;
   height: 18.46%;
   box-sizing: border-box;
-}
+  z-index: -4;
+} */
 
 .left-moving-square-top {
   position: absolute;
@@ -261,6 +262,62 @@
   right: 20%;
   top: 26.16%;
   z-index: 4;
+}
+
+.bio-title {
+  position: absolute;
+  border: solid white 2px;
+  left: 0;
+  top: 7.7%;
+  width: 20%;
+  height: 18.46%;
+  box-sizing: border-box;
+  z-index: 0;
+  padding-top: 7%;
+  font-size: 30px;
+  color: white;
+}
+
+.skills-title {
+  position: absolute;
+  border: solid white 2px;
+  left: 0;
+  bottom: 7.7%;
+  width: 20%;
+  height: 18.46%;
+  box-sizing: border-box;
+  z-index: 0;
+  padding-top: 7%;
+  font-size: 30px;
+  color: white;
+}
+
+.projects-title {
+  position: absolute;
+  border: solid white 2px;
+  right: 0;
+  bottom: 7.7%;
+  width: 20%;
+  height: 18.46%;
+  box-sizing: border-box;
+  z-index: 0;
+  padding-top: 7%;
+  font-size: 30px;
+  color: white;
+}
+
+.connect-title {
+  position: absolute;
+  border: solid white 2px;
+  right: 0;
+  top: 7.7%;
+  width: 20%;
+  height: 18.46%;
+  box-sizing: border-box;
+  z-index: 0;
+  padding-top: 7%;
+  font-size: 30px;
+  color: white;
 }
 
 ::-webkit-scrollbar {
