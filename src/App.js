@@ -16,8 +16,8 @@ const leftSqrTopData = [
         unit: '%'
       },
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -29,7 +29,7 @@ const leftSqrTopData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       }
@@ -54,7 +54,7 @@ const leftSqrTopData = [
       
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -87,8 +87,8 @@ const leftSqrBottomData = [
         unit: '%'
       },
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -100,7 +100,7 @@ const leftSqrBottomData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       }
@@ -125,7 +125,7 @@ const leftSqrBottomData = [
       
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -151,8 +151,8 @@ const bottomSqrLeftData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -164,7 +164,7 @@ const bottomSqrLeftData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       },
@@ -195,7 +195,7 @@ const bottomSqrLeftData = [
       
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -211,8 +211,8 @@ const bottomSqrRightData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -223,7 +223,7 @@ const bottomSqrRightData = [
     end: '41%',
     properties: [
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       },
@@ -254,7 +254,7 @@ const bottomSqrRightData = [
       
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -268,8 +268,8 @@ const rightSqrTopData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -281,7 +281,7 @@ const rightSqrTopData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       }
@@ -311,7 +311,7 @@ const rightSqrTopData = [
       
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -325,8 +325,8 @@ const rightSqrBottomData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -338,7 +338,7 @@ const rightSqrBottomData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       }
@@ -369,7 +369,7 @@ const rightSqrBottomData = [
       
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -383,8 +383,8 @@ const topSqrLeftData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -396,7 +396,7 @@ const topSqrLeftData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       }
@@ -426,7 +426,7 @@ const topSqrLeftData = [
       },
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -440,8 +440,8 @@ const topSqrRightData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -482,7 +482,7 @@ const topSqrRightData = [
       },
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -796,8 +796,8 @@ const colorChangeOnlyData = [
     end: '20%',
     properties: [
       {
-        startValue: "#191970",
-        endValue: "#228b22",
+        startValue: "#000000",
+        endValue: "#191970",
         property: "backgroundColor",
         
       }
@@ -809,7 +809,7 @@ const colorChangeOnlyData = [
     properties: [
       
       {
-        startValue: "#228b22",
+        startValue: "#191970",
         endValue: "#87cefa",
         property: "backgroundColor",
       }
@@ -832,7 +832,7 @@ const colorChangeOnlyData = [
     properties: [
       {
         startValue: "#fd5e53",
-        endValue: "#191970",
+        endValue: "#000000",
         property: "backgroundColor",
       }
     ]
@@ -894,10 +894,196 @@ const movingSqrData = [
         unit: '%'
       }
     ]
-  },
+  }, ]
+
+  const backgroundData = [
+    {
+      start: 0,
+      end: '41%',
+      properties: [
+        {
+          startValue: "#000000",
+          endValue: "#ffffff",
+          property: "backgroundColor",
+        }
+      ]
+    },
+    
+    {
+      start: '42%',
+      end: '83%',
+      properties: [
+        {
+          startValue: "#ffffff",
+          endValue: "#000000",
+          property: "backgroundColor",
+        }
+      ]
+    },
   
 ];
 
+const bulbData = [
+  
+  {
+    start: '2%',
+    end: '6.5%',
+    properties: [
+      {
+        startValue: -50,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+  {
+    start: '6.5%',
+    end: '8%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacityFilter",
+        unit: '%'
+      },
+      
+    ]
+  },
+  
+
+];
+
+const bulbOnData = [
+  {
+    start: '0%',
+    end: '6.5%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '6.5%',
+    end: '12%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 50,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  
+
+];
+
+const bulbOnLightData = [
+  {
+    start: '0%',
+    end: '6.5%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '6.5%',
+    end: '12%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 50,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0.75,
+        endValue: 0.75,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  
+
+];
+
+const bioTitleData = [
+  {
+    start: '0',
+    end: '12%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -80,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '71%',
+    end: '83%',
+    properties: [
+      {
+        startValue: -80,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+];
+
+const skillsTitleData = [
+  {
+    start: '8%',
+    end: '20%',
+    properties: [
+      {
+        startValue: 80,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '33%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -80,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+];
 
 
 const styles = {
@@ -942,13 +1128,14 @@ class App extends Component {
     return (
       <div className="App">
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
-        <Plx className="fixed-background-base">
+        <Plx className="fixed-background-base" parallaxData={backgroundData}>
           <Plx className='fixed-back-base-halfway-line'></Plx>
           <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="fixed-background-second">
+          <Plx className="fixed-background-second" parallaxData={backgroundData}>
+            <Plx className="left-column" parallaxData={colorChangeOnlyData}/>
             <Plx className="moving-square" parallaxData={movingSqrData}/>
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
             <Plx className="left-moving-square-bottom" parallaxData={leftSqrBottomData} />
@@ -964,10 +1151,14 @@ class App extends Component {
             <Plx className="second-background-inner-box-bottom" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-left" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-right" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="bio-title">bio</ Plx>
-            <Plx className="skills-title">skills</ Plx>
+            <Plx className="bio-title" parallaxData={bioTitleData}>bio</ Plx>
+            <Plx className="light-bulb" parallaxData={bulbData}><img src="idea.png"/></ Plx>
+            <Plx className="light-bulb-on" parallaxData={bulbOnData}><img src="ideaOn.png"/></ Plx>
+            <Plx className="light-bulb-on-light" parallaxData={bulbOnLightData}><img src="ideaOnLight.png"/></ Plx>
+            <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
             <Plx className="projects-title">projects</ Plx>
             <Plx className="connect-title">connect</ Plx>
+            <Plx className="bio-name">ALEX WIDNER</Plx>
 
           </Plx>
 
