@@ -866,6 +866,11 @@ const movingSqrData = [
         endValue: 400,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#000000",
+        property: "borderColor",
       }
     ]
   },
@@ -879,6 +884,11 @@ const movingSqrData = [
         endValue: 0,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#000000",
+        endValue: "#ffffff",
+        property: "borderColor",
       }
     ]
   },
@@ -1085,21 +1095,109 @@ const skillsTitleData = [
   },
 ];
 
+const coffee1Data = [
+  
+  {
+    start: '7.5%',
+    end: '12.5%',
+    properties: [
+      {
+        startValue: 200,
+        endValue: -100,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+]
 
-const styles = {
-  width: 120,
-  height: 120,
-  lineHeight: "100px",
-  textAlign: "center",
-  borderRadius: 0,
-  backgroundColor: "#34ba9c",
-  color: "#fff",
-  left: 0,
-  top: '7.69%',
-  position: "absolute",
-  fontFamily: "Helvetica, Arial, sans-serif",
-  fontSize: 8
-};
+const coffee2Data = [
+  
+  {
+    start: '9%',
+    end: '17%',
+    properties: [
+      {
+        startValue: 400,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+]
+
+const coffee3Data = [
+  
+  {
+    start: '8%',
+    end: '25%',
+    properties: [
+      {
+        startValue: 55,
+        endValue: -100,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+]
+
+const coffee4Data = [
+  
+  {
+    start: '13%',
+    end: '18%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -400,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+]
+
+const bioNameData = [
+  
+  {
+    start: '0%',
+    end: '20%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -84,
+        property: "translateY",
+        unit: '%'
+      },
+      
+    ]
+  },
+]
+
+
+
+
+
+// const styles = {
+//   width: 120,
+//   height: 120,
+//   lineHeight: "100px",
+//   textAlign: "center",
+//   borderRadius: 0,
+//   backgroundColor: "#34ba9c",
+//   color: "#fff",
+//   left: 0,
+//   top: '7.69%',
+//   position: "absolute",
+//   fontFamily: "Helvetica, Arial, sans-serif",
+//   fontSize: 8
+// };
 
 
 
@@ -1158,7 +1256,17 @@ class App extends Component {
             <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
             <Plx className="projects-title">projects</ Plx>
             <Plx className="connect-title">connect</ Plx>
-            <Plx className="bio-name">ALEX WIDNER</Plx>
+
+            <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
+            <Plx className="bio-box"></Plx>
+            <Plx className="skills-image" parallaxData={bioNameData}><img src="https://res.cloudinary.com/disoi1bmd/image/upload/v1535002529/full-stack6.png"/></Plx>
+
+            <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
+            <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
+            <Plx className="coffee-4" parallaxData={coffee4Data}><img src="coffee.png"/></ Plx>
+            <Plx className="coffee-3" parallaxData={coffee3Data}><img src="coffee.png"/></ Plx>
+            
+            
 
           </Plx>
 
