@@ -1178,6 +1178,47 @@ const bioNameData = [
       
     ]
   },
+  {
+    start: '21%',
+    end: '33%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -85,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+]
+
+const projectsTitleData = [
+  
+  {
+    start: '34%',
+    end: '41%',
+    properties: [
+      {
+        startValue: 84,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+  {
+    start: '42%',
+    end: '57%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 85,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
 ]
 
 
@@ -1254,12 +1295,12 @@ class App extends Component {
             <Plx className="light-bulb-on" parallaxData={bulbOnData}><img src="ideaOn.png"/></ Plx>
             <Plx className="light-bulb-on-light" parallaxData={bulbOnLightData}><img src="ideaOnLight.png"/></ Plx>
             <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
-            <Plx className="projects-title">projects</ Plx>
+            <Plx className="projects-title" parallaxData={projectsTitleData}>projects</ Plx>
             <Plx className="connect-title">connect</ Plx>
 
             <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
             <Plx className="bio-box"></Plx>
-            <Plx className="skills-image" parallaxData={bioNameData}><img src="https://res.cloudinary.com/disoi1bmd/image/upload/v1535002529/full-stack6.png"/></Plx>
+            <Plx className="skills-image" parallaxData={bioNameData}>FULL STACK</Plx>
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
