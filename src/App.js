@@ -1095,6 +1095,33 @@ const skillsTitleData = [
   },
 ];
 
+const connectTitleData = [
+  {
+    start: '50%',
+    end: '62%',
+    properties: [
+      {
+        startValue: -80,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '75%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 80,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+];
+
 const coffee1Data = [
   
   {
@@ -1154,7 +1181,7 @@ const coffee4Data = [
     properties: [
       {
         startValue: 0,
-        endValue: -400,
+        endValue: -290,
         property: "translateX",
         unit: '%'
       },
@@ -1164,6 +1191,53 @@ const coffee4Data = [
 ]
 
 const bioNameData = [
+  
+  {
+    start: '0%',
+    end: '20%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -84,
+        property: "translateY",
+        unit: '%'
+      },
+      
+    ]
+  },
+  {
+    start: '21%',
+    end: '22%',
+    properties: [
+      {
+        startValue: -90,
+        endValue: -90,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '78%',
+    end: '83%',
+    properties: [
+      {
+        startValue: -85,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  },
+]
+
+const skillsNameData = [
   
   {
     start: '0%',
@@ -1190,6 +1264,7 @@ const bioNameData = [
       }
     ]
   },
+  
 ]
 
 const projectsTitleData = [
@@ -1221,32 +1296,35 @@ const projectsTitleData = [
   },
 ]
 
-
-
-
-
-// const styles = {
-//   width: 120,
-//   height: 120,
-//   lineHeight: "100px",
-//   textAlign: "center",
-//   borderRadius: 0,
-//   backgroundColor: "#34ba9c",
-//   color: "#fff",
-//   left: 0,
-//   top: '7.69%',
-//   position: "absolute",
-//   fontFamily: "Helvetica, Arial, sans-serif",
-//   fontSize: 8
-// };
-
-
+const bioBoxNameData = [
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      {
+        startValue: "#ffffff",
+        endValue: "#000000",
+        property: "borderColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#ffffff",
+        property: "borderColor",
+      }
+    ]
+  },
+   ]
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-
     }
   }
 
@@ -1296,11 +1374,13 @@ class App extends Component {
             <Plx className="light-bulb-on-light" parallaxData={bulbOnLightData}><img src="ideaOnLight.png"/></ Plx>
             <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
             <Plx className="projects-title" parallaxData={projectsTitleData}>projects</ Plx>
-            <Plx className="connect-title">connect</ Plx>
+            <Plx className="connect-title"parallaxData={connectTitleData}>connect</ Plx>
 
             <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
-            <Plx className="bio-box"></Plx>
-            <Plx className="skills-image" parallaxData={bioNameData}>FULL STACK</Plx>
+            <Plx className="bio-box" parallaxData={bioBoxNameData}></Plx>
+            <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
+
+            <Plx className="content-box" parallaxData={bioBoxNameData}></Plx> 
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>

@@ -497,6 +497,16 @@
   z-index: 1;
 }
 
+.content-box {
+  position: absolute;
+  right: -90%;
+  top: 26.2%;
+  width: 79.4%;
+  height: 47%;
+  z-index: 1;
+  border: solid white 2px;
+}
+
 ::-webkit-scrollbar {
   width: 0px;  /* remove scrollbar space */
   background: transparent;  /* optional: just make scrollbar invisible */
