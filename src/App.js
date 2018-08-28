@@ -1296,6 +1296,47 @@ const projectsTitleData = [
   },
 ]
 
+const projectsBoxData = [
+  
+  {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: 100,
+        endValue: 100,
+        property: "translateX",
+        unit: '%'
+      },
+      
+    ]
+  },
+  {
+    start: '33%',
+    end: '41%',
+    properties: [
+      {
+        startValue: 100,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '60%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 120,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+]
+
 const bioBoxNameData = [
   {
     start: '21%',
@@ -1380,7 +1421,14 @@ class App extends Component {
             <Plx className="bio-box" parallaxData={bioBoxNameData}></Plx>
             <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
 
-            <Plx className="content-box" parallaxData={bioBoxNameData}></Plx> 
+            <Plx className="content-box" parallaxData={bioBoxNameData}></Plx>
+
+            <Plx className="projects-box" parallaxData={projectsBoxData}>
+              <div><div className="project-button-1">1.</div>
+              <div className="project-button-2">2.</div></div>
+              <div><div className="project-button-3">3.</div>
+              <div className="project-button-4">4.</div></div>
+            </Plx>
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
