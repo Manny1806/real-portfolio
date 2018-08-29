@@ -69,19 +69,20 @@
 .first-background-top {
   position: absolute;
   background-color: lightgray;
+  top: -3%;
   left: 50%;
   width: 50%;
-  height: 26.16%;
+  height: 29.16%;
   z-index: 4;
 }
 
 .first-background-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: -20%;
   background-color: lightgray;
   left: 50%;
   width: 50%;
-  height: 26.16%;
+  height: 46.16%;
   z-index: 4;
 }
 
@@ -291,6 +292,20 @@
   color: white;
 }
 
+.bio-content {
+  position: absolute;
+  /* border: solid white 2px; */
+  left: 110.5%;
+  top: 25%;
+  width: 79.4%;
+  height: 47%;
+  box-sizing: border-box;
+  z-index: 0;
+  padding: 4% 2%;
+  font-size: 26px;
+  color: white;
+}
+
 .bio-box {
   position: absolute;
   border: solid white 2px;
@@ -303,6 +318,20 @@
   padding: 7% 0;
   font-size: 50px;
   background: transparent;
+}
+
+.second-background-box {
+  position: absolute;
+  /* border: solid white 2px; */
+  left: 30%;
+  top: 35.4%;
+  width: 40%;
+  height: 29.2%;
+  box-sizing: border-box;
+  z-index: 0;
+  padding: 7% 0;
+  font-size: 50px;
+  background-color: black;
 }
 
 .skills-title {
@@ -333,6 +362,20 @@
   color: white;
 }
 
+.skills-content {
+  position: absolute;
+  /* border: solid white 2px; */
+  left: 110.5%;
+  top: 25.5%;
+  width: 79.4%;
+  height: 47%;
+  box-sizing: border-box;
+  z-index: -7;
+  padding: 4% 2%;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
 
 .projects-title {
   position: absolute;

@@ -1267,6 +1267,113 @@ const skillsNameData = [
   
 ]
 
+const skillsBoxContentData = [
+  {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: 100,
+        endValue: 100,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '2.5%',
+    end: '20%',
+    properties: [
+      {
+        startValue: 100,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '34%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -100,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '35%',
+    end: '36%',
+    properties: [
+      {
+        startValue: 100,
+        endValue: 100,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+]
+
+const skillsBoxData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#228b22",
+        property: "backgroundColor",
+        
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: "#fd5e53",
+        endValue: "#191970",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  
+];
+
 const projectsTitleData = [
   
   {
@@ -1360,7 +1467,22 @@ const bioBoxNameData = [
       }
     ]
   },
-   ]
+]
+
+const bioBoxContentData = [
+  {
+    start: '0%',
+    end: '18%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -100,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+]
 
 class App extends Component {
   constructor() {
@@ -1403,6 +1525,8 @@ class App extends Component {
             <Plx className="right-moving-square-bottom" parallaxData={rightSqrBottomData} />
             <Plx className="top-moving-square-left" parallaxData={topSqrLeftData} />
             <Plx className="top-moving-square-right" parallaxData={topSqrRightData} />
+
+            <Plx className="second-background-box" parallaxData={backgroundData}></Plx>
             <Plx className="second-background-top" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-top" parallaxData={colorChangeOnlyData}></Plx>
@@ -1419,7 +1543,14 @@ class App extends Component {
 
             <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
             <Plx className="bio-box" parallaxData={bioBoxNameData}></Plx>
+            <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
+            More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
+            I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
+
             <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
+            <Plx className="skills-content" parallaxData={skillsBoxContentData}>Front End Skills: HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+            Back End Skills: Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
+            Soft Skills: Quick Learner, Adaptive, Strong communication, Organized, Dependable</Plx>
 
             <Plx className="content-box" parallaxData={bioBoxNameData}></Plx>
 
