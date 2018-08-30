@@ -4,6 +4,8 @@ import './App.css';
 import { render } from "react-dom";
 import Plx from "react-plx";
 
+
+
 const leftSqrTopData = [
   {
     start: 0,
@@ -1045,6 +1047,11 @@ const bioTitleData = [
         endValue: -80,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#000000",
+        property: "color",
       }
     ]
   },
@@ -1063,6 +1070,11 @@ const bioTitleData = [
         endValue: 0,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#000000",
+        endValue: "#ffffff",
+        property: "color",
       }
     ]
   },
@@ -1078,6 +1090,11 @@ const skillsTitleData = [
         endValue: 0,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: '#000000',
+        endValue: '#ffffff',
+        property: "color",
       }
     ]
   },
@@ -1090,6 +1107,11 @@ const skillsTitleData = [
         endValue: -80,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: '#ffffff',
+        endValue: '#000000',
+        property: "color",
       }
     ]
   },
@@ -1202,6 +1224,11 @@ const bioNameData = [
         property: "translateY",
         unit: '%'
       },
+      {
+        startValue: "#ffffff",
+        endValue: "#7c7c7c",
+        property: "color",
+      }
       
     ]
   },
@@ -1228,13 +1255,14 @@ const bioNameData = [
     end: '83%',
     properties: [
       {
-        startValue: -85,
+        startValue: -92,
         endValue: 0,
         property: "translateX",
         unit: '%'
       },
     ]
   },
+  
 ]
 
 const skillsNameData = [
@@ -1249,6 +1277,11 @@ const skillsNameData = [
         property: "translateY",
         unit: '%'
       },
+      {
+        startValue: "#000000",
+        endValue: "#ffffff",
+        property: "color",
+      }
       
     ]
   },
@@ -1261,6 +1294,11 @@ const skillsNameData = [
         endValue: -85,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#bebebe",
+        property: "color",
       }
     ]
   },
@@ -1289,6 +1327,11 @@ const skillsBoxContentData = [
         endValue: 0,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#000000",
+        endValue: "#ffffff",
+        property: "color",
       }
     ]
   },
@@ -1301,6 +1344,11 @@ const skillsBoxContentData = [
         endValue: -100,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#bebebe",
+        property: "color",
       }
     ]
   },
@@ -1386,6 +1434,11 @@ const projectsTitleData = [
         property: "translateX",
         unit: '%'
       },
+      {
+        startValue: '#ffffff',
+        endValue: '#000000',
+        property: "color",
+      }
       
     ]
   },
@@ -1398,6 +1451,11 @@ const projectsTitleData = [
         endValue: 85,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: '#000000',
+        endValue: '#ffffff',
+        property: "color",
       }
     ]
   },
@@ -1427,6 +1485,11 @@ const projectsBoxData = [
         endValue: 0,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity",
       }
     ]
   },
@@ -1439,6 +1502,11 @@ const projectsBoxData = [
         endValue: 120,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity",
       }
     ]
   },
@@ -1479,10 +1547,36 @@ const bioBoxContentData = [
         endValue: -100,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#7c7c7c",
+        property: "color",
       }
     ]
   },
+  {
+    start: '78%',
+    end: '83%',
+    properties: [
+      {
+        startValue: -100,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      },
+    ]
+  },
 ]
+
+let triggered = true;
+let lastScrollTop = 0;
 
 class App extends Component {
   constructor() {
@@ -1493,20 +1587,31 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, { passive: true })
+
+  
   }
 
   handleScroll(e){
+    // console.log(document.documentElement.scrollTop)
+    // let st = document.documentElement.scrollTop
+    // if(st - lastScrollTop < 10){
+    //   document.documentElement.scrollTop += 50
+      
+    // }
+    // lastScrollTop = st
     if (document.body.scrollTop > 13000 || document.documentElement.scrollTop > 13000) {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0;
     }
+
+
     
   }
   
   render() {
     
     return (
-      <div className="App">
+      <div className="App" id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
         <Plx className="fixed-background-base" parallaxData={backgroundData}>
           <Plx className='fixed-back-base-halfway-line'></Plx>
@@ -1560,6 +1665,7 @@ class App extends Component {
               <div><div className="project-button-3">3.</div>
               <div className="project-button-4">4.</div></div>
             </Plx>
+            <Plx className="projects-content" parallaxData={projectsBoxData}><img src="siouxCityMusic.jpg"/></ Plx>
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
