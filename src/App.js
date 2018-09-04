@@ -1479,6 +1479,7 @@ const projectsBoxData = [
   {
     start: '33%',
     end: '41%',
+    easing: "easeInOut",
     properties: [
       {
         startValue: 100,
@@ -1575,8 +1576,349 @@ const bioBoxContentData = [
   },
 ]
 
+// const moonData = [
+//   {
+//     start: '0%',
+//     end: '42%',
+//     properties: [
+//       {
+//         startValue: 900,
+//         endValue: 0,
+//         property: "translateX",
+//         unit: '%'
+//       },
+
+//       {
+//         startValue: 60,
+//         endValue: 0,
+//         property: "translateY",
+//         unit: '%'
+//       },
+
+//       {
+//         startValue: 1,
+//         endValue: 0,
+//         property: "opacity"
+//       }
+      
+//     ]
+//   },
+
+//   {
+//     start: '42%',
+//     end: '83%',
+//     properties: [
+//       {
+//         startValue: 0,
+//         endValue: -800,
+//         property: "translateX",
+//         unit: '%'
+//       },
+
+//       {
+//         startValue: 0,
+//         endValue: 50,
+//         property: "translateY",
+//         unit: '%'
+//       },
+
+//       {
+//         startValue: 0,
+//         endValue: 1,
+//         property: "opacity"
+//       }
+      
+//     ]
+//   },
+  
+// ]
+
+// const sunData = [
+//   {
+//     start: '0%',
+//     end: '42%',
+//     properties: [
+//       {
+//         startValue: 500,
+//         endValue: 0,
+//         property: "translateX",
+//         unit: '%'
+//       },
+
+//       {
+//         startValue: 33,
+//         endValue: 0,
+//         property: "translateY",
+//         unit: '%'
+//       },
+
+      
+//     ]
+//   },
+
+//   {
+//     start: '42%',
+//     end: '83%',
+//     properties: [
+//       {
+//         startValue: 0,
+//         endValue: -445,
+//         property: "translateX",
+//         unit: '%'
+//       },
+
+//       {
+//         startValue: 0,
+//         endValue: 27,
+//         property: "translateY",
+//         unit: '%'
+//       },
+      
+//     ]
+//   },
+  
+// ]
+
+// const sunOpData = [
+//   {
+//     start: '0%',
+//     end: '12%',
+//     properties: [
+      
+//       {
+//         startValue: 0,
+//         endValue: 0,
+//         property: "opacity",
+//       },
+      
+//     ]
+//   },
+
+//   {
+//     start: '12%',
+//     end: '38%',
+//     properties: [
+      
+//       {
+//         startValue: 0,
+//         endValue: 1,
+//         property: "opacity",
+//       },
+      
+//     ]
+//   },
+
+//   {
+//     start: '48%',
+//     end: '75%',
+//     properties: [
+      
+
+//       {
+//         startValue: 1,
+//         endValue: 0,
+//         property: "opacity",
+//       },
+      
+//     ]
+//   },
+  
+// ]
+
+const cloudOneData = [
+    {
+      start: '21%',
+      end: '33%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -120,
+          property: "translateX",
+          unit: '%'
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 1,
+          endValue: 1.5,
+          property: "scale",
+          unit: '%'
+        }
+        
+      ]
+    },
+  ]
+
+  const cloudTwoData = [
+    {
+      start: '21%',
+      end: '33%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -120,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: -40,
+          property: "translateY",
+          unit:"%"
+        }
+        
+      ]
+    },
+  ]
+
+  const cloudThreeData = [
+    {
+      start: '25%',
+      end: '40%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -300,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 10,
+          endValue: -30,
+          property: "translateY",
+          unit: "%"
+        },
+        {
+          startValue: 0.5,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 1,
+          endValue: 2.5,
+          property: "scale",
+          unit: '%'
+        }
+      ]
+    },
+  ]
+
+  const cloudFourData = [
+    {
+      start: '25%',
+      end: '40%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -300,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 10,
+          endValue: -30,
+          property: "translateY",
+          unit: "%"
+        },
+        {
+          startValue: 0.5,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 1,
+          endValue: 3,
+          property: "scale",
+          unit: '%'
+        }
+      ]
+    },
+  ]
+
+  const code1Data = [
+    {
+      start: '20%',
+      end: '40%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -300,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: '#ffffff',
+          endValue: '#7c7c7c',
+          property: "color",
+        },
+      ]
+    },
+  ]
+
+  const code2Data = [
+    {
+      start: '20%',
+      end: '40%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -300,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 0.8,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+  ]
+
+  const code3Data = [
+    {
+      start: '25%',
+      end: '40%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: -100,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 0.9,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+  ]
+
 let triggered = true;
 let lastScrollTop = 0;
+
+const code2 = 'var y = {start:"0%", end:"21%", translateY:"40%"};'
+const code3 = 'onClick={() => this.handleClick(i)}'
 
 class App extends Component {
   constructor() {
@@ -1614,6 +1956,8 @@ class App extends Component {
       <div className="App" id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
         <Plx className="fixed-background-base" parallaxData={backgroundData}>
+          {/* <Plx className="moon" parallaxData={moonData}><Plx><img src="moon.png"/></Plx></Plx>
+          <Plx className="sun" parallaxData={sunData}><Plx parallaxData={sunOpData}><img src="status-weather-clear-icon.png"/></Plx></Plx> */}
           <Plx className='fixed-back-base-halfway-line'></Plx>
           <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
@@ -1653,9 +1997,9 @@ class App extends Component {
             I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
 
             <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
-            <Plx className="skills-content" parallaxData={skillsBoxContentData}>Front End Skills: HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
-            Back End Skills: Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
-            Soft Skills: Quick Learner, Adaptive, Strong communication, Organized, Dependable</Plx>
+            <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+            <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
+            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable</Plx>
 
             <Plx className="content-box" parallaxData={bioBoxNameData}></Plx>
 
@@ -1671,7 +2015,15 @@ class App extends Component {
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-4" parallaxData={coffee4Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-3" parallaxData={coffee3Data}><img src="coffee.png"/></ Plx>
-            
+
+            <Plx className="code-line-1" parallaxData={code1Data}>var x = false;</ Plx>
+            <Plx className="code-line-2" parallaxData={code2Data}>{code2}</ Plx>
+            <Plx className="code-line-3" parallaxData={code3Data}>{code3}</ Plx>
+
+            <Plx className="cloud-1" parallaxData={cloudOneData}><img src="cloud-first.png"/></ Plx>
+            <Plx className="cloud-2" parallaxData={cloudTwoData}><img src="cloud_second.png"/></ Plx>
+            <Plx className="cloud-3" parallaxData={cloudThreeData}><img src="cloud_third.png"/></ Plx>
+            <Plx className="cloud-4" parallaxData={cloudFourData}><img src="cloud-first.png"/></ Plx>
             
 
           </Plx>
