@@ -5,6 +5,14 @@ import { render } from "react-dom";
 import Plx from "react-plx";
 
 
+const projectArray = [
+  ["karpul1.jpg","karpul2.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
+  ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
+  ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
+  ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"]
+]
+
+
 
 const leftSqrTopData = [
   {
@@ -1144,6 +1152,114 @@ const connectTitleData = [
   },
 ];
 
+const connectBoxData = [
+  
+  {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: -120,
+        endValue: -120,
+        property: "translateY",
+        unit: '%'
+      },
+      
+      
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue:-120,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '78%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 120,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity",
+      }
+    ]
+  },
+]
+
+const connectImgData = [
+  
+  {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: -100,
+        endValue: -100,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
+      }
+      
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: -70,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '78%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 120,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity",
+      }
+    ]
+  },
+]
+
 const coffee1Data = [
   
   {
@@ -1251,7 +1367,7 @@ const bioNameData = [
     ]
   },
   {
-    start: '78%',
+    start: '74%',
     end: '83%',
     properties: [
       {
@@ -1260,6 +1376,12 @@ const bioNameData = [
         property: "translateX",
         unit: '%'
       },
+      {
+        startValue: "#7c7c7c",
+        endValue: "#ffffff",
+        property: "color",
+      }
+      
     ]
   },
   
@@ -1557,7 +1679,7 @@ const bioBoxContentData = [
     ]
   },
   {
-    start: '78%',
+    start: '73%',
     end: '83%',
     properties: [
       {
@@ -1572,6 +1694,11 @@ const bioBoxContentData = [
         property: "translateY",
         unit: '%'
       },
+      {
+        startValue: "#7c7c7c",
+        endValue: "#ffffff",
+        property: "color",
+      }
     ]
   },
 ]
@@ -1924,46 +2051,187 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
+      currentProject: 0,
+      currentProjectSlide:0 
     }
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, { passive: true })
+  }
 
-  
+  incPojectSlide() {
+    if (this.state.currentProjectSlide === 3){
+      this.setState({
+        currentProjectSlide:0
+      })
+    } else {
+      this.setState({
+        currentProjectSlide: this.state.currentProjectSlide + 1
+      })
+    }
+  }
+
+  decPojectSlide() {
+    if (this.state.currentProjectSlide === 0){
+      this.setState({
+        currentProjectSlide:3
+      })
+    } else {
+      this.setState({
+        currentProjectSlide: this.state.currentProjectSlide--
+      })
+    }
+  }
+
+  getCurrentProjectClass(x){
+    if (this.state.currentProject === x){
+      return "project-button-1"
+    } 
+    else {
+      return "project-button-2"
+    }
+  }
+
+  getCurrentProjectUrl() {
+    if (this.state.currentProject === 0){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul2.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul3.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul4.jpg"
+      }
+    }
+    else if(this.state.currentProject === 1){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul1.jpg"
+      }
+    }
+    else if (this.state.currentProject === 2){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul1.jpg"
+      }
+    }
+    else if (this.state.currentProject === 3){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul1.jpg"
+      }
+    }
+  }
+
+  getCurrentProjectText(){
+    if (this.state.currentProject === 0){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul2.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul3.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul4.jpg"
+      }
+    }
+    else if(this.state.currentProject === 1){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul1.jpg"
+      }
+    }
+    else if (this.state.currentProject === 2){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul1.jpg"
+      }
+    }
+    else if (this.state.currentProject === 3){
+      if(this.state.currentProjectSlide === 0){
+        return "karpul1.jpg"
+      }
+      else if(this.state.currentProjectSlide === 1){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 2){
+        return "karpul1.jpg"
+      }
+      else if (this.state.currentProjectSlide === 3){
+        return "karpul1.jpg"
+      }
+    }
   }
 
   handleScroll(e){
-    // console.log(document.documentElement.scrollTop)
-    // let st = document.documentElement.scrollTop
-    // if(st - lastScrollTop < 10){
-    //   document.documentElement.scrollTop += 50
-      
-    // }
-    // lastScrollTop = st
+   
     if (document.body.scrollTop > 13000 || document.documentElement.scrollTop > 13000) {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0;
     }
 
 
-    
   }
   
   render() {
-    
     return (
-      <div className="App" id='app'>
+      <div className="App"  id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
         <Plx className="fixed-background-base" parallaxData={backgroundData}>
-          {/* <Plx className="moon" parallaxData={moonData}><Plx><img src="moon.png"/></Plx></Plx>
-          <Plx className="sun" parallaxData={sunData}><Plx parallaxData={sunOpData}><img src="status-weather-clear-icon.png"/></Plx></Plx> */}
           <Plx className='fixed-back-base-halfway-line'></Plx>
           <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="fixed-background-second" parallaxData={backgroundData}>
+          <Plx className="fixed-background-second"  parallaxData={backgroundData}>
             <Plx className="left-column" parallaxData={colorChangeOnlyData}/>
             <Plx className="moving-square" parallaxData={movingSqrData}/>
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
@@ -1974,7 +2242,6 @@ class App extends Component {
             <Plx className="right-moving-square-bottom" parallaxData={rightSqrBottomData} />
             <Plx className="top-moving-square-left" parallaxData={topSqrLeftData} />
             <Plx className="top-moving-square-right" parallaxData={topSqrRightData} />
-
             <Plx className="second-background-box" parallaxData={backgroundData}></Plx>
             <Plx className="second-background-top" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
@@ -2001,15 +2268,26 @@ class App extends Component {
             <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
             <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable</Plx>
 
-            <Plx className="content-box" parallaxData={bioBoxNameData}></Plx>
-
+            <Plx className="content-box"  parallaxData={bioBoxNameData}></Plx>
             <Plx className="projects-box" parallaxData={projectsBoxData}>
-              <div><div className="project-button-1">1.</div>
-              <div className="project-button-2">2.</div></div>
-              <div><div className="project-button-3">3.</div>
-              <div className="project-button-4">4.</div></div>
+              <div><div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>1.</div>
+              <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
+              <div><div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>3.</div>
+              <div className={this.getCurrentProjectClass(3)} onClick={()=>{this.setState({currentProject: 3, currentProjectSlide: 0})}}>4.</div></div>
             </Plx>
-            <Plx className="projects-content" parallaxData={projectsBoxData}><img src="siouxCityMusic.jpg"/></ Plx>
+            <Plx className="projects-content" parallaxData={projectsBoxData}>
+              <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+              <section className="projects-slide-back" onClick={()=>{this.incPojectSlide()} } >{'<'}</section>
+              <img src={this.getCurrentProjectUrl()}/>
+              <div className="projects-content-text"></div>
+            </ Plx>
+
+            <Plx className="connect-content" parallaxData={connectBoxData}>
+              <span style={{fontWeight: "bold"}}>Email:</span> alex.dean.widner@gmail.com<br/><br/>
+              <span style={{fontWeight: "bold"}}>LinkedIn:</span> www.linkedin.com/in/alex-widner<br/><br/>
+              <span style={{fontWeight: "bold"}}>GitHub:</span> www.github.com/Manny1806<br/><br/>
+            </Plx>
+            <Plx className="connect-box-image" parallaxData={connectImgData}><img src="ME.jpg"/></Plx>
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
@@ -2024,14 +2302,8 @@ class App extends Component {
             <Plx className="cloud-2" parallaxData={cloudTwoData}><img src="cloud_second.png"/></ Plx>
             <Plx className="cloud-3" parallaxData={cloudThreeData}><img src="cloud_third.png"/></ Plx>
             <Plx className="cloud-4" parallaxData={cloudFourData}><img src="cloud-first.png"/></ Plx>
-            
-
           </Plx>
-
-          
-          
         </Plx>
-      
       </div>
     );
   }
