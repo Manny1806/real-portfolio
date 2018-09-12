@@ -2079,7 +2079,7 @@ class App extends Component {
       })
     } else {
       this.setState({
-        currentProjectSlide: this.state.currentProjectSlide--
+        currentProjectSlide: this.state.currentProjectSlide - 1
       })
     }
   }
@@ -2110,30 +2110,30 @@ class App extends Component {
     }
     else if(this.state.currentProject === 1){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return "siouxCityMusic1.png"
       }
       else if(this.state.currentProjectSlide === 1){
-        return "karpul1.jpg"
+        return "siouxCityMusic2.png"
       }
       else if (this.state.currentProjectSlide === 2){
-        return "karpul1.jpg"
+        return "siouxCityMusic3.png"
       }
       else if (this.state.currentProjectSlide === 3){
-        return "karpul1.jpg"
+        return "siouxCityMusic4.png"
       }
     }
     else if (this.state.currentProject === 2){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return "pokemon1.png"
       }
       else if(this.state.currentProjectSlide === 1){
-        return "karpul1.jpg"
+        return "pokemon2.png"
       }
       else if (this.state.currentProjectSlide === 2){
-        return "karpul1.jpg"
+        return "pokemon3.png"
       }
       else if (this.state.currentProjectSlide === 3){
-        return "karpul1.jpg"
+        return "pokemon4.png"
       }
     }
     else if (this.state.currentProject === 3){
@@ -2155,44 +2155,103 @@ class App extends Component {
   getCurrentProjectText(){
     if (this.state.currentProject === 0){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return (<div className="projects-content-text"><h2>Karpul is an app that allows users to find and create carpools.</h2>
+        <ul>
+          <li>Customize carpools by time and days of the week</li>
+          <li>Search for nearby carpools by destination address</li>
+          <li>Upload custom profile picture</li>
+          <li>Customize carpools by time and days of the week</li>
+          <li>Request to join carpools or accept new members to your own.</li>
+        </ul>
+        </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return "karpul2.jpg"
+        return (<div className="projects-content-text"><h2>Libraries and Tools:</h2>
+        <ul>
+          <li>Node.js, Express.js</li>
+          <li>React.js, Redux.js</li>
+          <li>bcrypt.js, passport.js, JWT Auth</li>
+          <li>mongoose, MongoDB</li>
+          <li>Heroku for server</li>
+          <li>Surge for client</li>
+        </ul>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return "karpul3.jpg"
+        return (<div className="projects-content-text"><h2>APIs:</h2>
+        <ul>
+          <li>Mapbox - mapping coordinates and location pin rendering</li>
+          <li>Here - takes location address and converts to latitude and longitude</li>
+          <li>Algolia  - implements auto complete for address input</li>
+          <li>Cloudinary - image uploading and hosting</li>
+        </ul>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return "karpul4.jpg"
+        return (<div className="projects-content-text"><h2>Try it out!</h2>
+        <ul>
+          <li>Karpul Live App</li>
+          <li>Client GitHub Repo</li>
+          <li>Server GitHub Repo</li>
+        </ul>
+        </div>)
       }
     }
     else if(this.state.currentProject === 1){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return (<div className="projects-content-text"><h2>Sioux City Music allows local bands to create posts and events that are easily accessible to fans.</h2>
+        <ul>
+          <li>Create posts and events with linkable media</li>
+          <li>Delete and edit existing posts and events</li>
+          <li>Register new bands and new band members</li>
+          <li>Intuitive and responsive mobile design</li>
+        </ul>
+        </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return "karpul1.jpg"
+        return (<div className="projects-content-text"><h2>Libraries and Tools:</h2>
+        <ul>
+          <li>Node.js, Express.js</li>
+          <li>React.js, Redux.js</li>
+          <li>bcrypt.js, passport.js, JWT Auth</li>
+          <li>mongoose, MongoDB</li>
+          <li>Heroku for client and server</li>
+        </ul>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return "karpul1.jpg"
+        return (<div className="projects-content-text"><h2>Future development plans:</h2>
+        <ul>
+          <li>Allow users to create locations with individual web pages</li>
+          <li>Show and filter all bands posts and events on home page</li>
+          <li>Connect page to band Facebook and Google Image accounts</li>
+          <li>Top nav bar functionality on band pages</li>
+          <li>Multiple Cities!!</li>
+        </ul>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return "karpul1.jpg"
+        return (<div className="projects-content-text"><h2>Try it out!</h2>
+        <ul>
+          <li>Sioux City Music Live App</li>
+          <li>Client GitHub Repo</li>
+          <li>Server GitHub Repo</li>
+        </ul>
+        </div>)
       }
     }
     else if (this.state.currentProject === 2){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return "pokemon1.jpg"
       }
       else if(this.state.currentProjectSlide === 1){
-        return "karpul1.jpg"
+        return "pokemon2.jpg"
       }
       else if (this.state.currentProjectSlide === 2){
-        return "karpul1.jpg"
+        return "pokemon3.jpg"
       }
       else if (this.state.currentProjectSlide === 3){
-        return "karpul1.jpg"
+        return "pokemon4.jpg"
       }
     }
     else if (this.state.currentProject === 3){
@@ -2277,17 +2336,17 @@ class App extends Component {
             </Plx>
             <Plx className="projects-content" parallaxData={projectsBoxData}>
               <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
-              <section className="projects-slide-back" onClick={()=>{this.incPojectSlide()} } >{'<'}</section>
+              <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
               <img src={this.getCurrentProjectUrl()}/>
-              <div className="projects-content-text"></div>
+              <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
             </ Plx>
 
             <Plx className="connect-content" parallaxData={connectBoxData}>
-              <span style={{fontWeight: "bold"}}>Email:</span> alex.dean.widner@gmail.com<br/><br/>
-              <span style={{fontWeight: "bold"}}>LinkedIn:</span> www.linkedin.com/in/alex-widner<br/><br/>
-              <span style={{fontWeight: "bold"}}>GitHub:</span> www.github.com/Manny1806<br/><br/>
+              <img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com<br/><br/>
+              <img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner<br/><br/>
+              <img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806<br/><br/>
             </Plx>
-            <Plx className="connect-box-image" parallaxData={connectImgData}><img src="ME.jpg"/></Plx>
+            <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="ME.jpg"/></Plx>
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
             <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
