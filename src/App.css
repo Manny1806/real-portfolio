@@ -25,6 +25,30 @@
   font-size: large;
 }
 
+.content-box-mobile{
+  display: none;
+}
+
+.content-box-mobile-border{
+  display: none;
+}
+
+.bio-content-mobile{
+  display: none;
+}
+
+.skills-content-mobile{
+  display: none;
+}
+
+.projects-content-mobile{
+  display: none;
+}
+
+.connect-content-mobile{
+  display: none;
+}
+
 .real-background {
   position: fixed;
   left:0;
@@ -41,8 +65,8 @@
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  height: 650px;
-  width: 1200px;
+  height: 845px;
+  width: 1560px;
   top: 10px;
   border: none;
   background-color: black;
@@ -147,9 +171,9 @@
   position: absolute;
   background-color: lightgray;
   width: 100%;
-  height: 18.46%;
+  height: 18.48%;
   left: -100%;
-  bottom: 7.7%;
+  bottom: 7.75%;
   z-index: 4;
   /* opacity: 0.7; */
   border: none;
@@ -274,7 +298,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 200%;
+  font-size: 230%;
   color: white;
 }
 
@@ -288,7 +312,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 300%;
+  font-size: 370%;
   color: white;
 }
 
@@ -302,7 +326,7 @@
   box-sizing: border-box;
   z-index: -3;
   padding: 4% 2%;
-  font-size: 160%;
+  font-size: 200%;
   color: white;
 }
 
@@ -316,7 +340,7 @@
   box-sizing: border-box;
   /* z-index: 1; */
   padding: 7% 0;
-  font-size: 300%;
+  font-size: 370%;
   background: transparent;
 }
 
@@ -329,7 +353,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 300%;
+  font-size: 370%;
   background: transparent;
 }
 
@@ -363,7 +387,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 300%;
+  font-size: 370%;
   background-color: black;
 }
 
@@ -377,7 +401,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 200%;
+  font-size: 230%;
   color: white;
 }
 
@@ -391,7 +415,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 300%;
+  font-size: 370%;
   color: white;
 }
 
@@ -405,7 +429,7 @@
   box-sizing: border-box;
   z-index: -7;
   padding: 4% 2%;
-  font-size: 160%;
+  font-size: 200%;
   color: white;
   text-align: center;
 }
@@ -420,7 +444,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 200%;
+  font-size: 230%;
   color: black;
 }
 
@@ -431,7 +455,7 @@
   z-index: 0;
   top: 41%;
   left: 31%;
-  font-size: 300%;
+  font-size: 370%;
 }
 
 .project-button-1{
@@ -479,7 +503,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 200%;
+  font-size: 230%;
   color: white;
 }
 
@@ -493,7 +517,7 @@
   box-sizing: border-box;
   z-index: -3;
   padding: 4% 2%;
-  font-size: 160%;
+  font-size: 200%;
   color: white;
   text-align: left;
   
@@ -723,7 +747,7 @@
 
 .projects-content-text-tools h2{
   margin-top: 5px;
-  font-size: 160%;
+  font-size: 200%;
   padding-left:5px;
 }
 
@@ -946,4 +970,238 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1560px){
+  .fixed-background-base {
+    height: 650px;
+    width: 1200px;
+  }
+
+  .bio-title {
+    font-size: 200%;
+  }
+
+  .bio-name {
+    font-size: 300%;
+  }
+
+  .bio-content {
+    font-size: 160%;
+  }
+
+  .skills-title {
+    font-size: 200%;
+  }
+
+  .skills-image {
+    font-size: 300%;
+  }
+
+  .skills-content {
+    font-size: 160%;
+  }
+
+  .projects-title {
+    font-size: 200%;
+  }
+
+  .projects-box {
+    font-size: 300%;
+  }
+
+  .connect-title {
+    font-size: 200%;
+  }
+
+  .connect-box-image {
+    font-size: 300%;
+  }
+
+  .connect-content {
+    font-size: 160%;
+  }
+}
+
+@media (max-width: 500px){
+  .fixed-background-base {
+    height: 348px;
+    width: 642px;
+  }
+
+  .content-box-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 320px;
+    height: 210px;
+    background-color: gray;
+    z-index: 10;
+  }
+
+  .bio-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 320px;
+    height: 210px;
+    padding-top: 20px;
+    /* background-color: gray; */
+    color: white;
+    z-index: 11;
+  }
+
+  .skills-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 320px;
+    height: 210px;
+    padding-top: 20px;
+    /* background-color: gray; */
+    color: white;
+    z-index: 11;
+  }
+
+  .projects-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 320px;
+    height: 210px;
+    /* padding-top: 20px; */
+    /* background-color: gray; */
+    color: black;
+    z-index: 11;
+  }
+
+  .projects-content-mobile:hover .projects-slide-back{
+    opacity: 0.3;
+    
+  }
+  
+  .projects-content-mobile:hover .projects-slide-back:hover{
+    opacity: 0.5;
+    
+  }
+  
+  .projects-content-mobile:hover .projects-slide-forward{
+    opacity: 0.3;
+    
+  }
+  
+  .projects-content-mobile:hover .projects-slide-forward:hover{
+    opacity: 0.5;
+    
+  }
+  
+  .projects-content-mobile img{
+    width: 35%;
+    height: 100%;
+    image-rendering: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .projects-content-mobile ul{
+    padding-left: 15px;
+    text-align: left;
+    padding-right: 5px;
+  }
+
+  .projects-content-text-container{
+    font-size:70%;
+  }
+
+  .projects-slide-back {
+    z-index: 11;
+  }
+
+  .projects-slide-forward {
+    z-index: 12;
+  }
+
+  .connect-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 320px;
+    height: 210px;
+    padding-left: 20px;
+    padding-top: 5px;
+    /* background-color: gray; */
+    text-align: left;
+    color: white;
+    z-index: 11;
+  }
+
+  .content-box-mobile-border{
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 100%;
+    width: 320px;
+    height: 210px;
+    background: transparent;
+    border: white solid 2px;
+    z-index: 11;
+  }
+
+  .bio-title {
+    font-size: 130%;
+  }
+
+  .bio-name {
+    font-size: 180%;
+  }
+
+  .bio-content {
+    font-size: 160%;
+  }
+
+  .skills-title {
+    font-size: 130%;
+  }
+
+  .skills-image {
+    font-size: 180%;
+  }
+
+  .skills-content {
+    font-size: 160%;
+  }
+
+  .projects-title {
+    font-size: 100%;
+  }
+
+  .projects-box {
+    font-size: 140%;
+  }
+
+  .connect-title {
+    font-size: 100%;
+  }
+
+  .connect-box-image {
+    font-size: 180%;
+  }
+
+  .connect-content {
+    font-size: 160%;
+  }
+
+  .right-moving-square-bottom{
+    width: 20.5%;
+  }
+
+  .bottom-moving-square-left{
+    height: 18.55%;
+  }
 }

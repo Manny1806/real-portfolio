@@ -1703,6 +1703,69 @@ const bioBoxContentData = [
   },
 ]
 
+const bioBoxContentMobileData = [
+  {
+    start: '0%',
+    end: '12%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity",
+      },
+      
+    ]
+  },
+  {
+    start: '73%',
+    end: '83%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity",
+      },
+    ]
+  },
+]
+
+const connectBoxContentMobileData = [
+  {
+    start: '0%',
+    end: '18%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
+      },
+      
+    ]
+  },
+  {
+    start: '54%',
+    end: '62%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity",
+      },
+    ]
+  },
+  {
+    start: '63%',
+    end: '75%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: "opacity",
+      },
+    ]
+  },
+]
+
 // const moonData = [
 //   {
 //     start: '0%',
@@ -2380,12 +2443,24 @@ class App extends Component {
             More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
             I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
 
+            <Plx className="bio-content-mobile" parallaxData={bioBoxContentMobileData} >I am a full stack developer.<br/><br/>
+            More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
+            I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
+
             <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
             <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
             <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
             <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable</Plx>
 
+            <Plx className="skills-content-mobile" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+            <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
+            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable</Plx>
+
             <Plx className="content-box"  parallaxData={bioBoxNameData}></Plx>
+            <Plx className="content-box-mobile-border"  parallaxData={bioBoxNameData}></Plx>
+            <Plx className="content-box-mobile"  parallaxData={backgroundData}></Plx>
+            
+
             <Plx className="projects-box" parallaxData={projectsBoxData}>
               <div><div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>1.</div>
               <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
@@ -2399,11 +2474,25 @@ class App extends Component {
               <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
             </ Plx>
 
+            <Plx className="projects-content-mobile" parallaxData={projectsBoxData}>
+              <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+              <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
+              <img src={this.getCurrentProjectUrl()}/>
+              <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
+            </ Plx>
+
             <Plx className="connect-content" parallaxData={connectBoxData}>
               <img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com<br/><br/>
               <img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner<br/><br/>
               <img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806<br/><br/>
             </Plx>
+
+            <Plx className="connect-content-mobile" parallaxData={connectBoxContentMobileData}>
+              <img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com<br/><br/>
+              <img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner<br/><br/>
+              <img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806<br/><br/>
+            </Plx>
+
             <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="ME.jpg"/></Plx>
 
             <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
