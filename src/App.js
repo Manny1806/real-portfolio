@@ -2138,7 +2138,7 @@ class App extends Component {
     }
     else if (this.state.currentProject === 3){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return 
       }
       else if(this.state.currentProjectSlide === 1){
         return "karpul1.jpg"
@@ -2166,7 +2166,7 @@ class App extends Component {
         </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return (<div className="projects-content-text"><h2>Libraries and Tools:</h2>
+        return (<div className="projects-content-text projects-content-text-tools"><h2>Libraries and Tools:</h2>
         <ul>
           <li>Node.js, Express.js</li>
           <li>React.js, Redux.js</li>
@@ -2188,11 +2188,11 @@ class App extends Component {
         </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return (<div className="projects-content-text"><h2>Try it out!</h2>
+        return (<div className="projects-content-text projects-content-text-last"><h2>Try it out!</h2>
         <ul>
-          <li>Karpul Live App</li>
-          <li>Client GitHub Repo</li>
-          <li>Server GitHub Repo</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="http://karpul-client.surge.sh/">Karpul Live App</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/client-karpul">Client GitHub Repo</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Karpul_server">Server GitHub Repo</a></li>
         </ul>
         </div>)
       }
@@ -2209,7 +2209,7 @@ class App extends Component {
         </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return (<div className="projects-content-text"><h2>Libraries and Tools:</h2>
+        return (<div className="projects-content-text projects-content-text-tools"><h2>Libraries and Tools:</h2>
         <ul>
           <li>Node.js, Express.js</li>
           <li>React.js, Redux.js</li>
@@ -2220,7 +2220,7 @@ class App extends Component {
         </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return (<div className="projects-content-text"><h2>Future development plans:</h2>
+        return (<div className="projects-content-text projects-content-text-future"><h2>Future development plans:</h2>
         <ul>
           <li>Allow users to create locations with individual web pages</li>
           <li>Show and filter all bands posts and events on home page</li>
@@ -2231,41 +2231,99 @@ class App extends Component {
         </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return (<div className="projects-content-text"><h2>Try it out!</h2>
+        return (<div className="projects-content-text projects-content-text-last"><h2>Try it out!</h2>
         <ul>
-          <li>Sioux City Music Live App</li>
-          <li>Client GitHub Repo</li>
-          <li>Server GitHub Repo</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://sioux-city-music.herokuapp.com/">Sioux City Music Live App</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Alex-BandApp-Client">Client GitHub Repo</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Alex-BandApp-Server">Server GitHub Repo</a></li>
         </ul>
         </div>)
       }
     }
     else if (this.state.currentProject === 2){
       if(this.state.currentProjectSlide === 0){
-        return "pokemon1.jpg"
+        return (<div className="projects-content-text"><h2> Pokémon Quiz is designed for users to learn the names of a few creatures from the popular video game series Pokémon.</h2>
+        <ul>
+          <li>Test the user's knowledge of gen 1 Pokemon</li>
+          <li>Keeps track of user's performace</li>
+          <li>Questions determined using spaced repetition algorithm</li>
+          <li>Intuitive and responsive mobile design</li>
+        </ul>
+        </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return "pokemon2.jpg"
+        return (<div className="projects-content-text projects-content-text-tools"><h2>Libraries and Tools:</h2>
+        <ul>
+          <li>Node.js, Express.js</li>
+          <li>React.js, Redux.js</li>
+          <li>bcrypt.js, passport.js, JWT Auth</li>
+          <li>mongoose, MongoDB</li>
+          <li>Heroku for client and server</li>
+        </ul>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return "pokemon3.jpg"
+        return (<div className="projects-content-text projects-content-text-future"><h2>Future development plans:</h2>
+        <ul>
+          <li>Add an additional page to review select Pokémons</li>
+          <li>Add a Hint system to jog user's memory</li>
+          <li>Add a Skip button to let user further shuffle the list</li>
+          <li>Add an easter egg character to the end of the array for a surprise</li>
+        </ul>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return "pokemon4.jpg"
+        return (<div className="projects-content-text projects-content-text-last"><h2>Try it out!</h2>
+        <ul>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://pokemon-learning-center-client.herokuapp.com/">Pokemon Quiz Live App</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/alex-albert-spaced-repitition-client">Client GitHub Repo</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/alex-albert-spaced-repitition-server">Server GitHub Repo</a></li>
+        </ul>
+        </div>)
       }
     }
     else if (this.state.currentProject === 3){
       if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
+        return <div className="pythonImgContainer"><img className="pythonImg" src="python1.png"/>
+          <section className="pythonText">
+          <h2>Desktop Invasion!</h2>
+          <ul>
+            <li>Space Invaders type game written in python</li>
+            <li>Protect your Windows 95 taskbar from old desktop shortcuts!</li>
+          </ul>
+          </section>
+        </div>
       }
       else if(this.state.currentProjectSlide === 1){
-        return "karpul1.jpg"
+        return <div className="pythonImgContainer"><img className="pythonImg" src="python2.png"/>
+        <section className="pythonText">
+        <h2>Tools and Libraries:</h2>
+        <ul>
+          <li>python3</li>
+          <li>pygame</li>
+        </ul>
+        </section>
+      </div>
       }
       else if (this.state.currentProjectSlide === 2){
-        return "karpul1.jpg"
+        return <div className="pythonImgContainer"><img className="pythonImg" src="python3.png"/>
+        <section className="pythonText">
+        <h2>Try it out!</h2>
+        <ul>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Desktop-Invasion-Alex">GitHub Repo</a></li>
+        </ul>
+        </section>
+      </div>
       }
       else if (this.state.currentProjectSlide === 3){
-        return "karpul1.jpg"
+        return <div className="pythonImgContainer"><img className="pythonImg" src="python4.png"/>
+        <section className="pythonText">
+        <h2>One last thing...</h2>
+        <ul>
+          <li>Watch out for Clippy!!</li>
+        </ul>
+        </section>
+      </div>
       }
     }
   }
