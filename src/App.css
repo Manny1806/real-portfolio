@@ -274,7 +274,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 30px;
+  font-size: 200%;
   color: white;
 }
 
@@ -288,7 +288,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 50px;
+  font-size: 300%;
   color: white;
 }
 
@@ -302,7 +302,7 @@
   box-sizing: border-box;
   z-index: -3;
   padding: 4% 2%;
-  font-size: 26px;
+  font-size: 160%;
   color: white;
 }
 
@@ -316,7 +316,7 @@
   box-sizing: border-box;
   /* z-index: 1; */
   padding: 7% 0;
-  font-size: 50px;
+  font-size: 300%;
   background: transparent;
 }
 
@@ -329,7 +329,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 50px;
+  font-size: 300%;
   background: transparent;
 }
 
@@ -363,7 +363,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 50px;
+  font-size: 300%;
   background-color: black;
 }
 
@@ -377,7 +377,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 30px;
+  font-size: 200%;
   color: white;
 }
 
@@ -391,7 +391,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 7% 0;
-  font-size: 50px;
+  font-size: 300%;
   color: white;
 }
 
@@ -405,7 +405,7 @@
   box-sizing: border-box;
   z-index: -7;
   padding: 4% 2%;
-  font-size: 25px;
+  font-size: 160%;
   color: white;
   text-align: center;
 }
@@ -420,7 +420,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 30px;
+  font-size: 200%;
   color: black;
 }
 
@@ -431,7 +431,7 @@
   z-index: 0;
   top: 41%;
   left: 31%;
-  font-size: 50px;
+  font-size: 300%;
 }
 
 .project-button-1{
@@ -479,7 +479,7 @@
   box-sizing: border-box;
   z-index: 0;
   padding-top: 7%;
-  font-size: 30px;
+  font-size: 200%;
   color: white;
 }
 
@@ -493,7 +493,7 @@
   box-sizing: border-box;
   z-index: -3;
   padding: 4% 2%;
-  font-size: 26px;
+  font-size: 160%;
   color: white;
   text-align: left;
   
