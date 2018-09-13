@@ -2347,7 +2347,7 @@ class App extends Component {
     }
     else if (this.state.currentProject === 3){
       if(this.state.currentProjectSlide === 0){
-        return <div className="pythonImgContainer"><img className="pythonImg" src="python1.png"/>
+        return (<div className="pythonImgContainer"><img className="pythonImg" src="python1.png"/>
           <section className="pythonText">
           <h2>Desktop Invasion!</h2>
           <ul>
@@ -2355,7 +2355,7 @@ class App extends Component {
             <li>Protect your Windows 95 taskbar from old desktop shortcuts!</li>
           </ul>
           </section>
-        </div>
+        </div>)
       }
       else if(this.state.currentProjectSlide === 1){
         return <div className="pythonImgContainer"><img className="pythonImg" src="python2.png"/>
@@ -2412,6 +2412,9 @@ class App extends Component {
           <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="fixed-background-second"  parallaxData={backgroundData}>
+
+            <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
+
             <Plx className="left-column" parallaxData={colorChangeOnlyData}/>
             <Plx className="moving-square" parallaxData={movingSqrData}/>
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
