@@ -1626,6 +1626,16 @@
     padding-right: 5px;
   }
 
+  .projects-content-mobile h2{
+    font-size: 130%;
+  }
+
+  .projects-content-mobile li{
+    font-size: 100%;
+  }
+
+  
+
   .projects-content-text-container{
     font-size:70%;
   }
@@ -1757,7 +1767,9 @@
   
 
   .right-moving-square-bottom{
-    width: 20.5%;
+    width: 20.5%;padding-left: 15px;
+    text-align: left;
+    padding-right: 5px;
   }
 
   .bottom-moving-square-left{
@@ -2016,6 +2028,7 @@
     text-align: left;
     color: white;
     z-index: 11;
+    font-size: 110%;
   }
 
   .content-box-mobile-border{
@@ -2305,6 +2318,7 @@
 
   .projects-content-mobile h2{
     margin-bottom: 5px;
+    font-size: 110%
   }
 
   .projects-content-mobile ul{
@@ -2316,7 +2330,9 @@
 
   .projects-content-mobile li{
     margin-bottom: 5px;
+    font-size: 90%;
   }
+
 
   .projects-content-text-container{
     font-size:70%;
