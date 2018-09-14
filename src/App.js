@@ -971,6 +971,30 @@ const bulbData = [
       
     ]
   },
+  {
+    start: '74%',
+    end: '82%',
+    properties: [
+      {
+        startValue: 60,
+        endValue: 150,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: -120,
+        endValue: -120,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
   
 
 ];
@@ -1006,6 +1030,43 @@ const bulbOnData = [
       }
     ]
   },
+  {
+    start: '74%',
+    end: '78%',
+    properties: [
+      {
+        startValue: 60,
+        endValue: 105,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: -120,
+        endValue: -120,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '78%',
+    end: '82%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
   
 
 ];
@@ -1036,6 +1097,43 @@ const bulbOnLightData = [
       {
         startValue: 0.75,
         endValue: 0.75,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '74%',
+    end: '78%',
+    properties: [
+      {
+        startValue: 60,
+        endValue: 105,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: -120,
+        endValue: -120,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacityFilter",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '78%',
+    end: '82%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 0,
         property: "opacityFilter",
         unit: '%'
       }
@@ -2104,6 +2202,287 @@ const cloudOneData = [
     },
   ]
 
+  const emailOneData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '43%',
+      end: '49%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: -230,
+          property: "translateX",
+          unit: "%"
+        },
+      ]
+    },
+  ]
+
+  const emailTwoData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '47%',
+      end: '51%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: 340,
+          property: "translateX",
+          unit: "%"
+        },
+      ]
+    },
+  ]
+
+  const emailThreeData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '50%',
+      end: '53%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: -360,
+          property: "translateX",
+          unit: "%"
+        },
+      ]
+    },
+  ]
+
+  const emailFourData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '50%',
+      end: '54%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: 240,
+          property: "translateX",
+          unit: "%"
+        },
+      ]
+    },
+  ]
+
+  const cheersData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '52%',
+      end: '60%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: 120,
+          property: "translateX",
+          unit: "%"
+        },
+      ]
+    },
+  ]
+
+  const sleepOneData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '62%',
+      end: '74%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 0.1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: -330,
+          property: "translateY",
+          unit: "%"
+        },
+        {
+          startValue: 0,
+          endValue: -50,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 0,
+          endValue: 30,
+          property: "skewX",
+        },
+        {
+          startValue: 0.3,
+          endValue: 1.2,
+          property: "scale",
+          unit: "%"
+
+        },
+      ]
+    },
+  ]
+
+  const sleepTwoData = [
+    {
+      start: '0%',
+      end: '1%',
+      properties: [
+        
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+        
+      ]
+    },
+    {
+      start: '64%',
+      end: '78%',
+      properties: [
+        
+        {
+          startValue: 1,
+          endValue: 0.1,
+          property: "opacity",
+        },
+        {
+          startValue: 0,
+          endValue: -370,
+          property: "translateY",
+          unit: "%"
+        },
+        {
+          startValue: 0,
+          endValue: 50,
+          property: "translateX",
+          unit: "%"
+        },
+        {
+          startValue: 0,
+          endValue: -40,
+          property: "skewX",
+        },
+        {
+          startValue: 0.1,
+          endValue: 1.4,
+          property: "scale",
+          unit: "%"
+
+        },
+      ]
+    },
+  ]
+
 let triggered = true;
 let lastScrollTop = 0;
 
@@ -2201,7 +2580,7 @@ class App extends Component {
     }
     else if (this.state.currentProject === 3){
       if(this.state.currentProjectSlide === 0){
-        return 
+        return "karpul1.jpg"
       }
       else if(this.state.currentProjectSlide === 1){
         return "karpul1.jpg"
@@ -2218,7 +2597,7 @@ class App extends Component {
   getCurrentProjectText(){
     if (this.state.currentProject === 0){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="projects-content-text"><h2>Karpul is an app that allows users to find and create carpools.</h2>
+        return (<div className="projects-content-text projects-content-text-first"><h2>Karpul is an app that allows users to find and create carpools.</h2>
         <ul>
           <li>Customize carpools by time and days of the week</li>
           <li>Search for nearby carpools by destination address</li>
@@ -2241,7 +2620,7 @@ class App extends Component {
         </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return (<div className="projects-content-text"><h2>APIs:</h2>
+        return (<div className="projects-content-text projects-content-text-api"><h2>APIs:</h2>
         <ul>
           <li>Mapbox - mapping coordinates and location pin rendering</li>
           <li>Here - takes location address and converts to latitude and longitude</li>
@@ -2262,7 +2641,7 @@ class App extends Component {
     }
     else if(this.state.currentProject === 1){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="projects-content-text"><h2>Sioux City Music allows local bands to create posts and events that are easily accessible to fans.</h2>
+        return (<div className="projects-content-text projects-content-text-first"><h2>Sioux City Music allows local bands to create posts and events that are easily accessible to fans.</h2>
         <ul>
           <li>Create posts and events with linkable media</li>
           <li>Delete and edit existing posts and events</li>
@@ -2305,7 +2684,7 @@ class App extends Component {
     }
     else if (this.state.currentProject === 2){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="projects-content-text"><h2> Pokémon Quiz is designed for users to learn the names of a few creatures from the popular video game series Pokémon.</h2>
+        return (<div className="projects-content-text projects-content-text-first"><h2> Pokémon Quiz is designed for users to learn the names of a few creatures from the popular video game series Pokémon.</h2>
         <ul>
           <li>Test the user's knowledge of gen 1 Pokemon</li>
           <li>Keeps track of user's performace</li>
@@ -2393,7 +2772,7 @@ class App extends Component {
 
   handleScroll(e){
    
-    if (document.body.scrollTop > 13000 || document.documentElement.scrollTop > 13000) {
+    if (document.body.scrollTop > 12700 || document.documentElement.scrollTop > 12700) {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0;
     }
@@ -2513,6 +2892,18 @@ class App extends Component {
             <Plx className="cloud-2" parallaxData={cloudTwoData}><img src="cloud_second.png"/></ Plx>
             <Plx className="cloud-3" parallaxData={cloudThreeData}><img src="cloud_third.png"/></ Plx>
             <Plx className="cloud-4" parallaxData={cloudFourData}><img src="cloud-first.png"/></ Plx>
+
+            <Plx className="email-1" parallaxData={emailOneData}><img src="email.png"/></ Plx>
+            <Plx className="email-2" parallaxData={emailTwoData}><img src="email.png"/></ Plx>
+            <Plx className="email-3" parallaxData={emailThreeData}><img src="email.png"/></ Plx>
+            <Plx className="email-4" parallaxData={emailFourData}><img src="email.png"/></ Plx>
+
+            <Plx className="cheers" parallaxData={cheersData}><img src="Cheers.gif"/></ Plx>
+
+            <Plx className="sleep-1" parallaxData={sleepOneData}><img src="sleep.png"/></ Plx>
+            <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx>
+
+
           </Plx>
         </Plx>
       </div>

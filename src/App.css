@@ -136,8 +136,9 @@
   position: absolute;
   background-color: lightgray;
   width: 100%;
-  height: 7.69%;
+  height: 9.69%;
   z-index: 4;
+  top: -2%;
 }
 
 .second-background-bottom {
@@ -210,7 +211,7 @@
   position: absolute;
   background-color: lightgray;
   width: 20%;
-  height: 100%;
+  height: 100.1%;
   right:0;
   bottom: -92.5%;
   z-index: 4;
@@ -233,9 +234,9 @@
   position: absolute;
   background-color: lightgray;
   width: 100%;
-  height: 18.46%;
+  height: 18.5%;
   right: -100%;
-  top: 7.7%;
+  top: 7.71%;
   z-index: 4;
   /* opacity: 0.7; */
   border: none;
@@ -246,7 +247,7 @@
   width: 20%;
   height: 18.46%;
   top: 7.7%;
-  z-index: 1;
+  z-index: 5;
   background: transparent;
   border: solid 2px white;
   box-sizing: border-box;
@@ -743,6 +744,17 @@
   padding-left:5px;
 }
 
+.projects-content-text-first h2{
+  margin-top: 5px;
+  font-size: 140%;
+  padding-left:5px;
+}
+
+.projects-content-text-first li{
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+
 .projects-content-text-future h2{
   margin-top: 5px;
   font-size: 140%;
@@ -750,6 +762,17 @@
 }
 
 .projects-content-text-future li{
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+
+.projects-content-text-api h2{
+  margin-top: 5px;
+  font-size: 200%;
+  padding-left:5px;
+}
+
+.projects-content-text-api li{
   font-size: 100%;
   margin-bottom: 10px;
 }
@@ -976,6 +999,104 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.email-1{
+  position: absolute;
+  bottom: 26%;
+  z-index: -1;
+  width: 15%;
+  left: 95%;
+}
+
+.email-1 img{
+  width: 100%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.email-2{
+  position: absolute;
+  bottom: 36%;
+  z-index: -1;
+  width: 9.5%;
+  left: 68%;
+}
+
+.email-2 img{
+  width: 100%;
+}
+
+.email-3{
+  position: absolute;
+  bottom: 46%;
+  z-index: -1;
+  width: 9.5%;
+  left: 100.5%;
+}
+
+.email-3 img{
+  width: 100%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.email-4{
+  position: absolute;
+  bottom: 37%;
+  z-index: -1;
+  width: 13.5%;
+  left: 64%;
+}
+
+.email-4 img{
+  width: 100%;
+}
+
+.cheers{
+  position: absolute;
+  bottom: 56%;
+  z-index: -1;
+  width: 18.5%;
+  left: 68%;
+}
+
+.cheers img{
+  width: 100%;
+}
+
+.sleep-1{
+  position: absolute;
+  bottom: 46%;
+  z-index: -1;
+  width: 13.5%;
+  left: 58%;
+}
+
+.sleep-1 img{
+  width: 100%;
+}
+
+.sleep-2{
+  position: absolute;
+  bottom: 46%;
+  z-index: -1;
+  width: 13.5%;
+  left: 38%;
+}
+
+.sleep-2 img{
+  width: 100%;
+}
+
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -1044,9 +1165,22 @@
   .connect-content-mobile  img{
     width: 35px;
   }
+
+  .projects-content-text-first h2{
+    margin-top: 5px;
+    font-size: 120%;
+    padding-left:5px;
+  }
+
+  .projects-content-text-tools h2{
+    margin-top: 5px;
+    font-size: 180%;
+    padding-left:5px;
+  }
+
 }
 
-@media (max-width: 375px){ /*iphone 6/7/8 */
+@media (max-width: 414px){ /*iphone 6/7/8 */
   .fixed-background-base {
     height: 406px;
     width: 749px;
@@ -1125,8 +1259,8 @@
   .projects-content-mobile{
     display: block;
     position: absolute;
-    left: 0;
-    top: 92%;
+    left: 0.5%;
+    top: 92.5%;
     width: 375px;
     height: 220px;
     /* padding-top: 20px; */
@@ -1157,7 +1291,7 @@
   
   .projects-content-mobile img{
     width: 35%;
-    height: 100%;
+    height: 98.5%;
     image-rendering: auto;
     display: inline-block;
     vertical-align: top;
@@ -1179,8 +1313,20 @@
     left:0;
     top:0;  }
 
+  .projects-slide-back {
+    height: 54%;
+    
+  }
+  
+  
+  .projects-slide-forward {
+    height: 54%;
+    
+    }
+
   .pythonImgContainer{
-    width: 100%;
+    width: 99%;
+    height: 98.5%
   }
 
   .pythonText{
@@ -1322,6 +1468,356 @@
 
 }
 
+@media (max-width: 375px){ /*iphone 6/7/8 */
+  .fixed-background-base {
+    height: 406px;
+    width: 749px;
+  }
+
+  .content-box{
+    display: none;
+  }
+
+  .bio-content{
+    display: none;
+  }
+
+  .skills-content{
+    display: none;
+  }
+
+  .projects-content{
+    display: none;
+  }
+
+  .connect-content{
+    display: none;
+  }
+
+  .content-box-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 92%;
+    width: 375px;
+    height: 220px;
+    background-color: gray;
+    z-index: 10;
+  }
+
+  .mobile-bottom-column{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 146.2%;
+    width: 375px;
+    height: 220px;
+    background-color: gray;
+    z-index: 13; 
+  }
+
+  .bio-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 92%;
+    width: 375px;
+    height: 220px;
+    padding-top: 8px;
+    /* background-color: gray; */
+    color: white;
+    z-index: 11;
+    font-size: 120%;
+  }
+
+  .skills-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 92%;
+    width: 375px;
+    height: 220px;
+    padding-top: 20px;
+    font-size: 120%;
+    /* background-color: gray; */
+    color: white;
+    z-index: 11;
+  }
+
+  .projects-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0.5%;
+    top: 92.5%;
+    width: 375px;
+    height: 220px;
+    /* padding-top: 20px; */
+    /* background-color: gray; */
+    color: black;
+    z-index: 12;
+  }
+
+  .projects-content-mobile:hover .projects-slide-back{
+    opacity: 0.3;
+    
+  }
+  
+  .projects-content-mobile:hover .projects-slide-back:hover{
+    opacity: 0.5;
+    
+  }
+  
+  .projects-content-mobile:hover .projects-slide-forward{
+    opacity: 0.3;
+    
+  }
+  
+  .projects-content-mobile:hover .projects-slide-forward:hover{
+    opacity: 0.5;
+    
+  }
+  
+  .projects-content-mobile img{
+    width: 35%;
+    height: 98.5%;
+    image-rendering: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .projects-content-mobile ul{
+    padding-left: 15px;
+    text-align: left;
+    padding-right: 5px;
+  }
+
+  .projects-content-text-container{
+    font-size:70%;
+  }
+
+  .projects-content-text-container img{
+    width: 100%;
+    height:100%;
+    left:0;
+    top:0;  }
+
+  .projects-slide-back {
+    height: 54%;
+    
+  }
+  
+  
+  .projects-slide-forward {
+    height: 54%;
+    
+    }
+
+  .pythonImgContainer{
+    width: 99%;
+    height: 98.5%
+  }
+
+  .pythonText{
+    width: 50%;
+    left: auto;
+    right: 0;
+    padding-left: 5px;
+  }
+
+  .pythonText li{
+    margin-bottom: 10px;
+    font-size: 130%;
+  }
+
+  
+
+  .projects-slide-back {
+    /* z-index: 12; */
+  }
+
+  .projects-slide-forward {
+    /* z-index: 12; */
+  }
+
+  .connect-content-mobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 92%;
+    width: 375px;
+    height: 220px;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* background-color: gray; */
+    text-align: left;
+    color: white;
+    z-index: 11;
+  }
+
+  .content-box-mobile-border{
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 92%;
+    width: 375px;
+    height: 220px;
+    background: transparent;
+    border: white solid 2px;
+    z-index: 11;
+  }
+
+  .bio-title {
+    font-size: 130%;
+  }
+
+  .bio-name {
+    font-size: 170%;
+  }
+
+  .bio-content {
+    font-size: 160%;
+  }
+
+  .skills-title {
+    font-size: 130%;
+  }
+
+  .skills-image {
+    font-size: 170%;
+  }
+
+  .skills-content {
+    font-size: 160%;
+  }
+
+  .projects-title {
+    font-size: 120%;
+  }
+
+  .projects-box {
+    font-size: 190%;
+    left:31%;
+    top:39%;
+  }
+
+  .connect-title {
+    font-size: 120%;
+  }
+
+  .connect-box-image {
+    font-size: 180%;
+  }
+
+  .connect-content {
+    font-size: 160%;
+  }
+
+  .connect-content  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  
+
+  .right-moving-square-bottom{
+    width: 20.5%;
+  }
+
+  .bottom-moving-square-left{
+    height: 18.55%;
+  }
+
+  .code-line-1{
+    
+    font-size: 70%;
+    
+  }
+  
+  .code-line-2{
+    font-size: 60%;
+  }
+  
+  .code-line-3{
+    
+    font-size: 90%;
+    
+  }
+
+  .top-moving-square-right{
+    height: 18.6%;
+    top: 7.6%;
+  }
+
+  .top-moving-square-left{
+    height: 18.6%;
+    top: 7.6%;
+  }
+
+}
+
+@media (max-width: 360px){ /*Galaxy S5 */
+  .fixed-background-base {
+    height: 390px;
+    width: 719px;
+  }
+
+  .content-box-mobile{
+    
+    width: 360px;
+    height: 220px;
+    
+  }
+
+  .mobile-bottom-column{
+    
+    width: 360px;
+    height: 220px;
+    top: 148.5%;
+    
+  }
+
+  .bio-content-mobile{
+    
+    width: 360px;
+    height: 220px;
+    
+  }
+
+  .skills-content-mobile{
+    
+    width: 360px;
+    height: 220px;
+    
+  }
+
+  .projects-content-mobile{
+    
+    width: 360px;
+    height: 220px;
+    
+  }
+
+  .connect-content-mobile{
+    
+    width: 360px;
+    height: 220px;
+    
+  }
+
+  .content-box-mobile-border{
+    
+    width: 360px;
+    height: 220px;
+    
+  }
+
+  .projects-content-text-container h2{
+    padding-right: 5px;
+  }
+
+}
+
 @media (max-width: 320px){/*iphone 5*/
   
   .fixed-background-base {
@@ -1389,19 +1885,24 @@
     position: absolute;
     left: 0;
     top: 100%;
-    width: 320px;
+    width: 318px;
     height: 210px;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-left: 5px;
+    /* padding-right: 19px; */
     /* background-color: gray; */
     color: white;
     z-index: 11;
+    font-size: 105%
   }
+
+  
 
   .projects-content-mobile{
     display: block;
     position: absolute;
-    left: 0;
-    top: 100%;
+    left: 0.5%;
+    top: 100.5%;
     width: 320px;
     height: 210px;
     /* padding-top: 20px; */
@@ -1432,16 +1933,25 @@
   
   .projects-content-mobile img{
     width: 35%;
-    height: 100%;
+    height: 98%;
     image-rendering: auto;
     display: inline-block;
     vertical-align: top;
+  }
+
+  .projects-content-mobile h2{
+    margin-bottom: 5px;
   }
 
   .projects-content-mobile ul{
     padding-left: 15px;
     text-align: left;
     padding-right: 5px;
+    margin-top: 6px;
+  }
+
+  .projects-content-mobile li{
+    margin-bottom: 5px;
   }
 
   .projects-content-text-container{
@@ -1453,6 +1963,17 @@
     height:100%;
     left:0;
     top:0;  }
+
+    .projects-slide-back {
+      height: 57%;
+      
+    }
+    
+    
+    .projects-slide-forward {
+      height: 57%;
+      
+      }
 
   .pythonImgContainer{
     width: 100%;
@@ -1534,6 +2055,15 @@
 
   .projects-content-text-tools li{
     margin-bottom: 5px;
+  }
+
+  .projects-content-text-first{
+    font-size: 98%;
+  }
+
+  .pythonImgContainer{
+    height: 98%;
+    width: 99%;
   }
 
   .connect-title {
