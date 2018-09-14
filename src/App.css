@@ -1180,10 +1180,333 @@
 
 }
 
-@media (max-width: 414px){ /*iphone 6/7/8 */
+@media (max-width: 1024px){ /*ipad pro*/
   .fixed-background-base {
-    height: 406px;
-    width: 749px;
+    height: 520px;
+    width: 960px;
+  }
+  .bio-title {
+    font-size: 200%;
+  }
+
+  .bio-name {
+    font-size: 250%;
+  }
+
+  .bio-content {
+    font-size: 130%;
+  }
+
+  .skills-title {
+    font-size: 200%;
+  }
+
+  .skills-image {
+    font-size: 260%;
+  }
+
+  .skills-content {
+    font-size: 130%;
+  }
+
+  .projects-title {
+    font-size: 160%;
+  }
+
+  .projects-box {
+    font-size: 260%;
+  }
+
+  .connect-title {
+    font-size: 150%;
+  }
+
+  .connect-box-image {
+    font-size: 260%;
+  }
+
+  .connect-content {
+    font-size: 120%;
+  }
+
+  .connect-content img{
+    width: 40px;
+  }
+
+  .first-background-bottom{
+    bottom: -45%;
+    height: 71.16%;
+  }
+
+  .projects-content-text ul{
+    padding-left: 25px;
+  }
+  
+  .projects-content-text h2{
+    margin-top: 5px;
+    font-size: 120%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-first h2{
+    margin-top: 5px;
+    font-size: 100%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-first li{
+    font-size: 80%;
+    margin-bottom: 6px;
+  }
+  
+  .projects-content-text-future h2{
+    margin-top: 5px;
+    font-size: 120%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-future li{
+    font-size: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .projects-content-text-api h2{
+    margin-top: 5px;
+    font-size: 130%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-api li{
+    font-size: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .projects-content-text-tools h2{
+    margin-top: 5px;
+    font-size: 120%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-tools li{
+    font-size: 80%;
+    margin-bottom: 15px;
+  }
+  
+  .projects-content-text-last h2{
+    margin-top: 5px;
+    font-size: 180%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-last li{
+    font-size: 120%;
+    margin-bottom: 15px;
+  }
+  
+  .projects-content-text-last li a{
+   color: inherit;
+
+  }
+
+  .pythonText{
+    position: absolute;
+    left: 16.5%;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.7;
+  }
+  
+  .pythonText h2{
+    font-size: 120%;
+    padding-left: 16px;
+  }
+  
+  .pythonText ul{
+    padding-left: 22px;
+  }
+  
+  .pythonText li{
+    margin-bottom: 30px;
+    font-size: 100%;
+  }
+  
+  .pythonText li a{
+    color: inherit;
+  }
+}
+
+@media (max-width: 768px){ /*ipad*/
+  .fixed-background-base {
+    height: 432px;
+    width: 797px;
+    left: 5px;
+  }
+
+  .bio-title {
+    font-size: 160%;
+  }
+
+  .bio-name {
+    font-size: 200%;
+  }
+
+  .bio-content {
+    font-size: 105%;
+  }
+
+  .skills-title {
+    font-size: 160%;
+  }
+
+  .skills-image {
+    font-size: 200%;
+  }
+
+  .skills-content {
+    font-size: 105%;
+  }
+
+  .projects-title {
+    font-size: 130%;
+  }
+
+  .projects-box {
+    font-size: 210%;
+  }
+
+  .connect-title {
+    font-size: 130%;
+  }
+
+  .connect-box-image {
+    font-size: 220%;
+  }
+
+  .connect-content {
+    font-size: 105%;
+  }
+
+  .connect-content img{
+    width: 30px;
+  }
+
+  .first-background-bottom{
+    bottom: -45%;
+    height: 71.16%;
+  }
+
+  .projects-content-text ul{
+    padding-left: 25px;
+  }
+  
+  .projects-content-text h2{
+    margin-top: 5px;
+    font-size: 120%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-first h2{
+    margin-top: 3px;
+    font-size: 80%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-first li{
+    font-size: 60%;
+    margin-bottom: 4px;
+  }
+  
+  .projects-content-text-future h2{
+    margin-top: 5px;
+    font-size: 90%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-future li{
+    font-size: 70%;
+    margin-bottom: 10px;
+  }
+  
+  .projects-content-text-api h2{
+    margin-top: 5px;
+    font-size: 120%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-api li{
+    font-size: 70%;
+    margin-bottom: 10px;
+  }
+  
+  .projects-content-text-tools h2{
+    margin-top: 5px;
+    font-size: 110%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-tools li{
+    font-size: 70%;
+    margin-bottom: 15px;
+  }
+  
+  .projects-content-text-last h2{
+    margin-top: 5px;
+    font-size: 150%;
+    padding-left:5px;
+  }
+  
+  .projects-content-text-last li{
+    font-size: 110%;
+    margin-bottom: 15px;
+  }
+  
+  .projects-content-text-last li a{
+   color: inherit;
+
+  }
+
+  .pythonText{
+    position: absolute;
+    left: 16.5%;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.7;
+  }
+  
+  .pythonText h2{
+    font-size: 110%;
+    padding-left: 16px;
+  }
+  
+  .pythonText ul{
+    padding-left: 22px;
+  }
+  
+  .pythonText li{
+    margin-bottom: 20px;
+    font-size: 80%;
+  }
+  
+  .pythonText li a{
+    color: inherit;
+  }
+
+  .bottom-moving-square-left{
+    height: 19%;
+  }
+}
+
+
+
+@media (max-width: 414px){ /****************iphone 6/7/8 plus *********************************************************/
+  .fixed-background-base {
+    height: 449px;
+    width: 828px;
+    left: 0;
   }
 
   .content-box{
@@ -1211,8 +1534,8 @@
     position: absolute;
     left: 0;
     top: 92%;
-    width: 375px;
-    height: 220px;
+    width: 414px;
+    height: 240px;
     background-color: gray;
     z-index: 10;
   }
@@ -1221,9 +1544,9 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 146.2%;
-    width: 375px;
-    height: 220px;
+    top: 145.5%;
+    width: 414px;
+    height: 240px;
     background-color: gray;
     z-index: 13; 
   }
@@ -1233,13 +1556,13 @@
     position: absolute;
     left: 0;
     top: 92%;
-    width: 375px;
-    height: 220px;
+    width: 414px;
+    height: 240px;
     padding-top: 8px;
     /* background-color: gray; */
     color: white;
     z-index: 11;
-    font-size: 120%;
+    font-size: 130%;
   }
 
   .skills-content-mobile{
@@ -1247,10 +1570,10 @@
     position: absolute;
     left: 0;
     top: 92%;
-    width: 375px;
-    height: 220px;
+    width: 414px;
+    height: 240px;
     padding-top: 20px;
-    font-size: 120%;
+    font-size: 133%;
     /* background-color: gray; */
     color: white;
     z-index: 11;
@@ -1261,8 +1584,8 @@
     position: absolute;
     left: 0.5%;
     top: 92.5%;
-    width: 375px;
-    height: 220px;
+    width: 414px;
+    height: 239px;
     /* padding-top: 20px; */
     /* background-color: gray; */
     color: black;
@@ -1356,14 +1679,15 @@
     position: absolute;
     left: 0;
     top: 92%;
-    width: 375px;
-    height: 220px;
+    width: 414px;
+    height: 240px;
     padding-left: 20px;
     padding-top: 10px;
     /* background-color: gray; */
     text-align: left;
     color: white;
     z-index: 11;
+    font-size: 130%;
   }
 
   .content-box-mobile-border{
@@ -1372,19 +1696,19 @@
     box-sizing: border-box;
     left: 0;
     top: 92%;
-    width: 375px;
-    height: 220px;
+    width: 414px;
+    height: 240px;
     background: transparent;
     border: white solid 2px;
     z-index: 11;
   }
 
   .bio-title {
-    font-size: 130%;
+    font-size: 140%;
   }
 
   .bio-name {
-    font-size: 170%;
+    font-size: 190%;
   }
 
   .bio-content {
@@ -1396,19 +1720,19 @@
   }
 
   .skills-image {
-    font-size: 170%;
+    font-size: 190%;
   }
 
   .skills-content {
-    font-size: 160%;
+    font-size: 170%;
   }
 
   .projects-title {
-    font-size: 120%;
+    font-size: 130%;
   }
 
   .projects-box {
-    font-size: 190%;
+    font-size: 210%;
     left:31%;
     top:39%;
   }
@@ -1466,6 +1790,46 @@
     top: 7.6%;
   }
 
+}
+
+@media (max-width: 411px){ /*Pixel 2 and Pixel 2 XL*/
+  .fixed-background-base {
+    height: 446px;
+    width: 823px;
+  }
+
+  .content-box-mobile{
+    width: 411px;
+  }
+
+  .mobile-bottom-column{
+    width: 411px;
+    top: 145.8%;
+  }
+
+  .bio-content-mobile{
+    width: 411px;
+  }
+
+  .skills-content-mobile{
+    width: 411px;
+  }
+
+  .projects-content-mobile{
+    width: 411px;
+  }
+
+  .connect-content-mobile{
+    width: 411px;
+  }
+
+  .content-box-mobile-border{
+    width: 411px;
+  }
+
+  .bottom-moving-square-left{
+    height:19%;
+  }
 }
 
 @media (max-width: 375px){ /*iphone 6/7/8 */
