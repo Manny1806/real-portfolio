@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { render } from "react-dom";
 import Plx from "react-plx";
+import animateScrollTo from 'animated-scroll-to';
 
 
 const projectArray = [
@@ -12,6 +13,38 @@ const projectArray = [
   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"]
 ]
 
+const options = {
+  // duration of the scroll per 1000px, default 500
+  speed: 900,
+
+  // minimum duration of the scroll
+  minDuration: 250,
+
+  // maximum duration of the scroll
+  maxDuration: 4000,
+
+  // DOM element to scroll, default window
+  // Pass a reference to a DOM object
+  // Example: document.querySelector('#element-to-scroll'),
+  element: window,
+
+  // Additional offset value that gets added to the desiredOffset.  This is
+  // useful when passing a DOM object as the desiredOffset and wanting to adjust
+  // for an fixed nav or to add some padding.
+  offset: 0,
+
+  // should animated scroll be canceled on user scroll/keypress
+  // if set to "false" user input will be disabled until animated scroll is complete
+  // (when set to false, "passive" will be also set to "false" to prevent Chrome errors)
+  cancelOnUserAction: true,
+
+  // Set passive event Listeners to be true by default. Stops Chrome from complaining.
+  passive: true,
+
+  // Scroll horizontally rather than vertically (which is the default)
+  horizontal: false,
+
+};
 
 
 const leftSqrTopData = [
@@ -2494,12 +2527,55 @@ class App extends Component {
     super()
     this.state = {
       currentProject: 0,
-      currentProjectSlide:0 
+      currentProjectSlide:0,
+      desiredOffset: 3100,
+      projectClickTrigger: false,
+      projectClickClass: "click-projects",
+      projectClickSpanClass: "click-projects-span"
     }
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, { passive: true })
+  }
+
+  handleScroll(e){
+   
+    if (document.body.scrollTop > 12700 || document.documentElement.scrollTop > 12700) {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0;
+    }
+
+    if (!this.state.projectClickTrigger && (document.body.scrollTop > 6000 || document.documentElement.scrollTop > 6000)) {
+      this.setState({
+        projectClickTrigger: true,
+        projectClickClass: "click-projects-triggered",
+        projectClickSpanClass: "click-projects-span-triggered"
+      })
+    }
+
+    if ((document.body.scrollTop >= 0 && document.body.scrollTop < 3100) || (document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop < 3100)) {
+      this.setState({
+        desiredOffset: 3100
+      })
+    }
+    
+    if ((document.body.scrollTop >= 3100 && document.body.scrollTop < 6300) || (document.documentElement.scrollTop >= 3100 && document.documentElement.scrollTop < 6300)) {
+      this.setState({
+        desiredOffset: 6300
+      })
+    } else if ((document.body.scrollTop >= 6300 && document.body.scrollTop < 9480) || (document.documentElement.scrollTop >= 6300 && document.documentElement.scrollTop < 9480)) {
+      this.setState({
+        desiredOffset: 9480
+      })
+    } else if ((document.body.scrollTop >= 9480 && document.body.scrollTop < 12700) || (document.documentElement.scrollTop >= 9480 && document.documentElement.scrollTop < 12700)) {
+      this.setState({
+        desiredOffset: 12701
+      })
+    }
+      
+    
   }
 
   incPojectSlide() {
@@ -2770,15 +2846,7 @@ class App extends Component {
     }
   }
 
-  handleScroll(e){
-   
-    if (document.body.scrollTop > 12700 || document.documentElement.scrollTop > 12700) {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0;
-    }
-
-
-  }
+  
   
   render() {
     return (
@@ -2795,7 +2863,9 @@ class App extends Component {
             <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
 
             <Plx className="left-column" parallaxData={colorChangeOnlyData}/>
-            <Plx className="moving-square" parallaxData={movingSqrData}/>
+            <Plx className="moving-square" parallaxData={movingSqrData} onClick={()=>animateScrollTo(this.state.desiredOffset, options)}>
+              <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section>
+            </Plx>
             <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
             <Plx className="left-moving-square-bottom" parallaxData={leftSqrBottomData} />
             <Plx className="bottom-moving-square-left" parallaxData={bottomSqrLeftData} />
@@ -2844,6 +2914,11 @@ class App extends Component {
             
 
             <Plx className="projects-box" parallaxData={projectsBoxData}>
+              <div className={this.state.projectClickClass}>
+                <span className={this.state.projectClickSpanClass}>&#8678;</span>
+                <span className={this.state.projectClickSpanClass}>click</span>
+                <span className={this.state.projectClickSpanClass}>&#8678;</span>
+              </div>
               <div><div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>1.</div>
               <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
               <div><div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>3.</div>
