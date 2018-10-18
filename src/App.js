@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './bio.css';
+import './skills.css';
+import './projects.css';
+import './connect.css';
 import { render } from "react-dom";
 import Plx from "react-plx";
 import animateScrollTo from 'animated-scroll-to';
@@ -15,7 +19,7 @@ const projectArray = [
 
 const options = {
   // duration of the scroll per 1000px, default 500
-  speed: 900,
+  speed: 1200,
 
   // minimum duration of the scroll
   minDuration: 250,
@@ -47,491 +51,494 @@ const options = {
 };
 
 
-// const leftSqrTopData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: 0,
-//         endValue: 66.35,
-//         property: "translateY",
-//         unit: '%'
-//       },
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+{/*
+const leftSqrTopData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 66.35,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
       
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '70%',
-//     end: '75%',
-//     properties: [
-//       {
-//         startValue: 66.35,
-//         endValue: 0,
-//         property: "translateY",
-//         unit: '%'
-//       }
-//     ]
-//   }
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '70%',
+    end: '75%',
+    properties: [
+      {
+        startValue: 66.35,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  }
   
-// ];
+];
 
-// const leftSqrBottomData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
+const leftSqrBottomData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
       
-//       {
-//         startValue: 0,
-//         endValue: 66.35,
-//         property: "translateY",
-//         unit: '%'
-//       },
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+      {
+        startValue: 0,
+        endValue: 66.35,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
       
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '65%',
-//     end: '70%',
-//     properties: [
-//       {
-//         startValue: 66.35,
-//         endValue: 0,
-//         property: "translateY",
-//         unit: '%'
-//       }
-//     ]
-//   }
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '65%',
+    end: '70%',
+    properties: [
+      {
+        startValue: 66.35,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  }
   
-// ];
+];
 
-// const bottomSqrLeftData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+const bottomSqrLeftData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       },
-//       {
-//         startValue: 0,
-//         endValue: 80,
-//         property: "translateX",
-//         unit: '%'
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      },
+      {
+        startValue: 0,
+        endValue: 80,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
       
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  },
   
   
   
-// ];
+];
 
-// const bottomSqrRightData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+const bottomSqrRightData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       },
-//       {
-//         startValue: 0,
-//         endValue: 80,
-//         property: "translateX",
-//         unit: '%'
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      },
+      {
+        startValue: 0,
+        endValue: 80,
+        property: "translateX",
+        unit: '%'
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
       
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   }
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  }
   
-// ];
+];
 
-// const rightSqrTopData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+const rightSqrTopData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
-//       {
-//         startValue: 0,
-//         endValue: -66.35,
-//         property: "translateY",
-//         unit: '%'
-//       },
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -66.35,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   }
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  }
   
-// ];
+];
 
-// const rightSqrBottomData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+const rightSqrBottomData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
       
-//       {
-//         startValue: 0,
-//         endValue: -66.35,
-//         property: "translateY",
-//         unit: '%'
-//       },
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: 0,
+        endValue: -66.35,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   }
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  }
   
-// ];
+];
 
-// const topSqrLeftData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+const topSqrLeftData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#191970",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
+      {
+        startValue: "#191970",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
       
-//       {
-//         startValue: 0,
-//         endValue: -133.3,
-//         property: "translateX",
-//         unit: '%'
-//       },
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
+      {
+        startValue: 0,
+        endValue: -133.3,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  },
   
-// ];
+];
 
-// const topSqrRightData = [
-//   {
-//     start: 0,
-//     end: '20%',
-//     properties: [
-//       {
-//         startValue: "#000000",
-//         endValue: "#191970",
-//         property: "backgroundColor",
+const topSqrRightData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      {
+        startValue: "#000000",
+        endValue: "#191970",
+        property: "backgroundColor",
         
-//       }
-//     ]
-//   },
-//   {
-//     start: '21%',
-//     end: '41%',
-//     properties: [
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
       
-//       {
-//         startValue: "#228b22",
-//         endValue: "#87cefa",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '42%',
-//     end: '62%',
-//     properties: [
-//       {
-//         startValue: "#87cefa",
-//         endValue: "#fd5e53",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
-//   {
-//     start: '63%',
-//     end: '83%',
-//     properties: [
-//       {
-//         startValue: 0,
-//         endValue: -80,
-//         property: "translateX",
-//         unit: '%'
-//       },
-//       {
-//         startValue: "#fd5e53",
-//         endValue: "#000000",
-//         property: "backgroundColor",
-//       }
-//     ]
-//   },
+      {
+        startValue: "#228b22",
+        endValue: "#87cefa",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      {
+        startValue: "#87cefa",
+        endValue: "#fd5e53",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: -80,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: "#fd5e53",
+        endValue: "#000000",
+        property: "backgroundColor",
+      }
+    ]
+  },
   
-// ];
+];
+
+*/}
 
 const firstBackgroundTopData = [
   {
@@ -1257,7 +1264,7 @@ const bioTitleData = [
     properties: [
       {
         startValue: 0,
-        endValue: -500,
+        endValue: -350,
         property: "translateY",
         unit: '%'
       },
@@ -1273,7 +1280,7 @@ const bioTitleData = [
     end: '83%',
     properties: [
       {
-        startValue: -500,
+        startValue: -100,
         endValue: 0,
         property: "translateX",
         unit: '%'
@@ -1295,12 +1302,29 @@ const bioTitleData = [
 
 const skillsTitleData = [
   {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: 550,
+        endValue: 550,
+        property: "translateY",
+        unit: '%'
+      },
+      // {
+      //   startValue: '#000000',
+      //   endValue: '#ffffff',
+      //   property: "color",
+      // }
+    ]
+  },
+  {
     start: '17%',
     end: '20%',
     properties: [
       {
-        startValue: 0,
-        endValue: -550,
+        startValue: 550,
+        endValue: 0,
         property: "translateY",
         unit: '%'
       },
@@ -1317,7 +1341,7 @@ const skillsTitleData = [
     properties: [
       {
         startValue: 0,
-        endValue: -500,
+        endValue: -400,
         property: "translateX",
         unit: '%'
       },
@@ -1466,46 +1490,23 @@ const connectImgData = [
 ]
 
 const coffee1Data = [
+  
   {
-    start: '0%',
-    end: '7.5%',
+    start: '7.5%',
+    end: '20.5%',
     properties: [
       {
         startValue: 0,
-        endValue: 0,
-        property: "opacity",
-      },
-      
-    ]
-  },
-  {
-    start: '7.5%',
-    end: '12.5%',
-    properties: [
-      {
-        startValue: 200,
-        endValue: -100,
+        endValue: 400,
         property: "translateX",
         unit: '%'
       },
       {
-        startValue: 1,
-        endValue: 1,
-        property: "opacity",
-      },
-      
-    ]
-  },
-  {
-    start: '12.5%',
-    end: '100%',
-    properties: [
-      {
         startValue: 0,
-        endValue: 0,
-        property: "opacity",
-      },
-      
+        endValue: -20,
+        property: "translateY",
+        unit: '%'
+      },      
     ]
   },
 ]
@@ -1513,13 +1514,19 @@ const coffee1Data = [
 const coffee2Data = [
   
   {
-    start: '9%',
+    start: '11%',
     end: '17%',
     properties: [
       {
-        startValue: 400,
-        endValue: 0,
+        startValue: 0,
+        endValue: 500,
         property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: -30,
+        property: "translateY",
         unit: '%'
       },
       
@@ -1558,7 +1565,7 @@ const coffee4Data = [
     properties: [
       {
         startValue: 0,
-        endValue: -290,
+        endValue: 240,
         property: "translateX",
         unit: '%'
       },
@@ -1592,8 +1599,8 @@ const bioNameData = [
     end: '22%',
     properties: [
       {
-        startValue: -90,
-        endValue: -90,
+        startValue: -92,
+        endValue: -92,
         property: "translateX",
         unit: '%'
       },
@@ -1784,14 +1791,25 @@ const skillsBoxData = [
 ];
 
 const projectsTitleData = [
-  
+  {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: 540,
+        endValue: 540,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  },
   {
     start: '38%',
     end: '41%',
     properties: [
       {
-        startValue: 0,
-        endValue: -540,
+        startValue: 300,
+        endValue: 0,
         property: "translateX",
         unit: '%'
       },
@@ -1876,13 +1894,34 @@ const projectsBoxData = [
 
 const bioBoxNameData = [
   {
-    start: '21%',
-    end: '41%',
+    start: '0%',
+    end: '20%',
     properties: [
       {
         startValue: "#ffffff",
         endValue: "#000000",
         property: "borderColor",
+      },
+      {
+        startValue: "#000000",
+        endValue: "#7c7c7c",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      // {
+      //   startValue: "#ffffff",
+      //   endValue: "#000000",
+      //   property: "borderColor",
+      // },
+      {
+        startValue: "#7c7c7c",
+        endValue: "#ffffff",
+        property: "backgroundColor",
       }
     ]
   },
@@ -1894,6 +1933,27 @@ const bioBoxNameData = [
         startValue: "#000000",
         endValue: "#ffffff",
         property: "borderColor",
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#7c7c7c",
+        property: "backgroundColor",
+      }
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      // {
+      //   startValue: "#000000",
+      //   endValue: "#ffffff",
+      //   property: "borderColor",
+      // },
+      {
+        startValue: "#7c7c7c",
+        endValue: "#000000",
+        property: "backgroundColor",
       }
     ]
   },
@@ -2524,7 +2584,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, { passive: true })
+    // window.addEventListener('scroll', this.handleScroll, { passive: true })
   }
 
   handleScroll(e){
@@ -2839,23 +2899,26 @@ class App extends Component {
     return (
       <div className="App"  id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
-        <Plx className="fixed-background-base" >
+        <div className="fixed-background-base" >
           {/* <Plx className='fixed-back-base-halfway-line'></Plx> */}
           {/* <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx> */}
-          <Plx className="fixed-background-second" >
+          <div className="fixed-background-second" >
 
             {/* <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
 
             <Plx className="left-column" parallaxData={colorChangeOnlyData}/> */}
-            <Plx className="moving-square" parallaxData={movingSqrData} onClick={()=>animateScrollTo(this.state.desiredOffset, options)}>
+            <Plx className="moving-square" parallaxData={movingSqrData} >
               <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section>
-              <Plx className="bio-title" parallaxData={bioTitleData}>bio</ Plx>
-              <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
-              <Plx className="projects-title" parallaxData={projectsTitleData}>projects</ Plx>
-              <Plx className="connect-title"parallaxData={connectTitleData}>connect</ Plx>
+              <Plx className="bio-title" parallaxData={bioTitleData} onClick={()=>{
+                  document.documentElement.scrollTop = 0;
+                  animateScrollTo((document.documentElement.scrollHeight*0.2), options)
+                }}>bio</ Plx>
+              <Plx className="skills-title" parallaxData={skillsTitleData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.4), options)}>skills</ Plx>
+              <Plx className="projects-title" parallaxData={projectsTitleData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.6), options)}>projects</ Plx>
+              <Plx className="connect-title"parallaxData={connectTitleData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.8), options)}>connect</ Plx>
 
               <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
               <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx>
@@ -2885,8 +2948,22 @@ class App extends Component {
             
             
 
-            <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
-            <Plx className="bio-box" parallaxData={bioBoxNameData}></Plx>
+            
+            <Plx className="bio-box" parallaxData={bioBoxNameData}>
+              <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
+              <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
+              <Plx className="projects-box" parallaxData={projectsBoxData}>
+              <div className={this.state.projectClickClass}>
+                <span className={this.state.projectClickSpanClass}>&#8678;</span>
+                <span className={this.state.projectClickSpanClass}>click</span>
+                <span className={this.state.projectClickSpanClass}>&#8678;</span>
+              </div>
+              <div><div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>1.</div>
+              <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
+              <div><div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>3.</div>
+              <div className={this.getCurrentProjectClass(3)} onClick={()=>{this.setState({currentProject: 3, currentProjectSlide: 0})}}>4.</div></div>
+            </Plx>
+            </Plx>
             {/* <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
             More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
             I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
@@ -2895,8 +2972,8 @@ class App extends Component {
             More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
             I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx> */}
 
-            {/* <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
-            <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+            
+            {/* <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
             <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
             <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx> */}
 
@@ -2909,17 +2986,7 @@ class App extends Component {
             <Plx className="content-box-mobile"  parallaxData={backgroundData}></Plx> */}
             
 
-            {/* <Plx className="projects-box" parallaxData={projectsBoxData}>
-              <div className={this.state.projectClickClass}>
-                <span className={this.state.projectClickSpanClass}>&#8678;</span>
-                <span className={this.state.projectClickSpanClass}>click</span>
-                <span className={this.state.projectClickSpanClass}>&#8678;</span>
-              </div>
-              <div><div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>1.</div>
-              <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
-              <div><div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>3.</div>
-              <div className={this.getCurrentProjectClass(3)} onClick={()=>{this.setState({currentProject: 3, currentProjectSlide: 0})}}>4.</div></div>
-            </Plx> */}
+            
             {/* <Plx className="projects-content" parallaxData={projectsBoxData}>
               <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
               <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
@@ -2971,8 +3038,8 @@ class App extends Component {
             <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx> */}
 
 
-          </Plx>
-        </Plx>
+          </div>
+        </div>
       </div>
     );
   }
