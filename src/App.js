@@ -19,7 +19,7 @@ const projectArray = [
 
 const options = {
   // duration of the scroll per 1000px, default 500
-  speed: 1200,
+  speed: 1400,
 
   // minimum duration of the scroll
   minDuration: 250,
@@ -890,8 +890,6 @@ const colorChangeOnlyData = [
   
 ];
 
-
-
 const movingSqrData = [
   {
     start: 0,
@@ -1002,6 +1000,105 @@ const movingSqrData = [
     },
   
 ];
+
+const movingSqrShadowData = [
+  {
+    start: 0,
+    end: '20%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 400,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 20,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0.8,
+        endValue: 0.8,
+        property: "opacity",
+        
+      },
+    ]
+  },
+  {
+    start: '21%',
+    end: '41%',
+    properties: [
+      
+      {
+        startValue: 0,
+        endValue: 378,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '42%',
+    end: '62%',
+    properties: [
+      
+      {
+        startValue: 400,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 0.8,
+        endValue: 0.4,
+        property: "opacity",
+        
+      },
+    ]
+  },
+  {
+    start: '63%',
+    end: '83%',
+    properties: [
+      
+      {
+        startValue: 350,
+        endValue: 0,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  }, ]
+
+  // const backgroundData = [
+  //   {
+  //     start: 0,
+  //     end: '41%',
+  //     properties: [
+  //       {
+  //         startValue: "#000000",
+  //         endValue: "#ffffff",
+  //         property: "backgroundColor",
+  //       }
+  //     ]
+  //   },
+    
+  //   {
+  //     start: '42%',
+  //     end: '83%',
+  //     properties: [
+  //       {
+  //         startValue: "#ffffff",
+  //         endValue: "#000000",
+  //         property: "backgroundColor",
+  //       }
+  //     ]
+  //   },
+  
+// ];
 
 const bulbData = [
   {
@@ -1264,15 +1361,10 @@ const bioTitleData = [
     properties: [
       {
         startValue: 0,
-        endValue: -350,
+        endValue: -300,
         property: "translateY",
         unit: '%'
       },
-      // {
-      //   startValue: "#ffffff",
-      //   endValue: "#000000",
-      //   property: "color",
-      // }
     ]
   },
   {
@@ -1280,7 +1372,7 @@ const bioTitleData = [
     end: '83%',
     properties: [
       {
-        startValue: -100,
+        startValue: -300,
         endValue: 0,
         property: "translateX",
         unit: '%'
@@ -1291,11 +1383,6 @@ const bioTitleData = [
         property: "translateY",
         unit: '%'
       },
-      // {
-      //   startValue: "#000000",
-      //   endValue: "#ffffff",
-      //   property: "color",
-      // }
     ]
   },
 ];
@@ -1311,11 +1398,6 @@ const skillsTitleData = [
         property: "translateY",
         unit: '%'
       },
-      // {
-      //   startValue: '#000000',
-      //   endValue: '#ffffff',
-      //   property: "color",
-      // }
     ]
   },
   {
@@ -1323,16 +1405,11 @@ const skillsTitleData = [
     end: '20%',
     properties: [
       {
-        startValue: 550,
+        startValue: 300,
         endValue: 0,
         property: "translateY",
         unit: '%'
       },
-      // {
-      //   startValue: '#000000',
-      //   endValue: '#ffffff',
-      //   property: "color",
-      // }
     ]
   },
   {
@@ -1341,27 +1418,34 @@ const skillsTitleData = [
     properties: [
       {
         startValue: 0,
-        endValue: -400,
+        endValue: -200,
         property: "translateX",
         unit: '%'
       },
-      // {
-      //   startValue: '#ffffff',
-      //   endValue: '#000000',
-      //   property: "color",
-      // }
     ]
   },
 ];
 
 const connectTitleData = [
   {
+    start: '0%',
+    end: '1%',
+    properties: [
+      {
+        startValue: -470,
+        endValue: -470,
+        property: "translateY",
+        unit: '%'
+      }
+    ]
+  },
+  {
     start: '59%',
     end: '62%',
     properties: [
       {
-        startValue: 0,
-        endValue: 470,
+        startValue: -300,
+        endValue: 0,
         property: "translateY",
         unit: '%'
       }
@@ -1373,7 +1457,7 @@ const connectTitleData = [
     properties: [
       {
         startValue: 0,
-        endValue: 550,
+        endValue: 200,
         property: "translateX",
         unit: '%'
       }
@@ -1633,6 +1717,170 @@ const bioNameData = [
   
 ]
 
+const bioButtonData = [
+  
+  {
+    start: '0%',
+    end: '20%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '20%',
+    end: '83%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+]
+
+const bioButtonEndData = [
+  
+  {
+    start: '0%',
+    end: '82%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '82%',
+    end: '83%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+]
+
+const skillsButtonData = [
+  
+  {
+    start: '0%',
+    end: '20%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '20%',
+    end: '41%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '41%',
+    end: '83%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+]
+
+const projectsButtonData = [
+  
+  {
+    start: '0%',
+    end: '41%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '41%',
+    end: '62%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '62%',
+    end: '83%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+]
+
+const connectButtonData = [
+  
+  {
+    start: '0%',
+    end: '62%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '62%',
+    end: '82%',
+    properties: [
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "scaleX",
+        unit: '%'
+      },
+    ]
+  },
+]
+
 const skillsNameData = [
   
   {
@@ -1808,7 +2056,7 @@ const projectsTitleData = [
     end: '41%',
     properties: [
       {
-        startValue: 300,
+        startValue: 200,
         endValue: 0,
         property: "translateX",
         unit: '%'
@@ -1827,7 +2075,7 @@ const projectsTitleData = [
     properties: [
       {
         startValue: 0,
-        endValue: 450,
+        endValue: 300,
         property: "translateY",
         unit: '%'
       },
@@ -1958,6 +2206,100 @@ const bioBoxNameData = [
     ]
   },
 ]
+
+const bioBoxShadowData = [
+  {
+    start: '0%',
+    end: '40%',
+    easing: 'easeInCubic',
+    properties: [
+      
+      {
+        startValue: 10,
+        endValue: -20,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '0%',
+    end: '10%',
+    // easing: 'easeInOutSine',
+    properties: [
+      
+      {
+        startValue: 20,
+        endValue: 30,
+        property: "translateY",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '10%',
+    end: '41%',
+    easing: 'easeOutQuad',
+    properties: [
+      
+      {
+        startValue: 30,
+        endValue: 60,
+        property: "translateY",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '40%',
+    end: '83%',
+    easing: 'easeOutCubic',
+    properties: [
+      
+      {
+        startValue: -20,
+        endValue: -60,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  },
+  
+  {
+    start: '42%',
+    end: '73%',
+    easing: 'easeInQuad',
+    properties: [
+      
+      {
+        startValue: 60,
+        endValue: 30,
+        property: "translateY",
+        unit: '%'
+      },
+      {
+        startValue: 0.8,
+        endValue: 0.4,
+        property: "opacity",
+        
+      },
+    ]
+  },
+  {
+    start: '73%',
+    end: '83%',
+    // easing: 'easeOutQuint',
+    properties: [
+      
+      {
+        startValue: 30,
+        endValue: 10,
+        property: "translateY",
+        unit: '%'
+      },
+    ]
+  },
+   ]
 
 const bioBoxContentData = [
   {
@@ -2910,15 +3252,26 @@ class App extends Component {
             {/* <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
 
             <Plx className="left-column" parallaxData={colorChangeOnlyData}/> */}
+            <Plx className="moving-square-shadow" parallaxData={movingSqrShadowData} />
             <Plx className="moving-square" parallaxData={movingSqrData} >
               <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section>
-              <Plx className="bio-title" parallaxData={bioTitleData} onClick={()=>{
+              <Plx className="bio-title" parallaxData={bioTitleData} >bio</ Plx>
+              <Plx className="skills-title" parallaxData={skillsTitleData} >skills</ Plx>
+              <Plx className="projects-title" parallaxData={projectsTitleData} >projects</ Plx>
+              <Plx className="connect-title"parallaxData={connectTitleData} >connect</ Plx>
+              
+              <Plx className="bio-button" parallaxData={bioButtonData} onClick={()=>{
+                  // document.documentElement.scrollTop = 0;
+                  animateScrollTo((document.documentElement.scrollHeight*0.2), options)
+                }}></ Plx>
+              
+              <Plx className="skills-button" parallaxData={skillsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.4), options)}></ Plx>
+              <Plx className="projects-button" parallaxData={projectsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.6), options)}></ Plx>
+              <Plx className="connect-button" parallaxData={connectButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.8), options)}></ Plx>
+              <Plx className="bio-button" parallaxData={bioButtonEndData} onClick={()=>{
                   document.documentElement.scrollTop = 0;
                   animateScrollTo((document.documentElement.scrollHeight*0.2), options)
-                }}>bio</ Plx>
-              <Plx className="skills-title" parallaxData={skillsTitleData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.4), options)}>skills</ Plx>
-              <Plx className="projects-title" parallaxData={projectsTitleData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.6), options)}>projects</ Plx>
-              <Plx className="connect-title"parallaxData={connectTitleData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.8), options)}>connect</ Plx>
+                }}></ Plx>
 
               <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
               <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx>
@@ -2948,7 +3301,7 @@ class App extends Component {
             
             
 
-            
+            <Plx className="bio-box-shadow" parallaxData={bioBoxShadowData}/>
             <Plx className="bio-box" parallaxData={bioBoxNameData}>
               <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
               <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>

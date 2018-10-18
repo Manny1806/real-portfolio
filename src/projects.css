@@ -216,4 +216,10 @@
     padding-top: 27%;
     cursor: pointer;
   }
+
+  .projects-button{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
   

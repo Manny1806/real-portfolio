@@ -298,11 +298,37 @@
   width: 20%;
   height: 18.46%;
   top: 7.7%;
+  left: 0;
   z-index: 1;
   background: transparent;
   border: solid 2px white;
   box-sizing: border-box;
   overflow: hidden;
+  transition: top 0.3s, left 0.3s, box-shadow 0.3s;
+  /* box-shadow: 20px 20px 20px; */
+}
+
+.moving-square-shadow {
+  display: none;
+  position: absolute;
+  width: 20%;
+  height: 18.46%;
+  top: 4%;
+  left: 4.5%;
+  z-index: 1;
+  background: black;
+  opacity: 0.8;
+  /* border: solid 2px white; */
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: height 0.3s, width 03.s;
+  filter: blur(12px)
+  /* box-shadow: -20px -20px 20px; */
+}
+
+.moving-square:hover{
+  top: 7%;
+  /* box-shadow: 30px 30px 20px; */
 }
 
 .second-background-inner-box-top {
