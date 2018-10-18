@@ -47,491 +47,491 @@ const options = {
 };
 
 
-const leftSqrTopData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: 0,
-        endValue: 66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const leftSqrTopData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: 0,
+//         endValue: 66.35,
+//         property: "translateY",
+//         unit: '%'
+//       },
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
       
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '70%',
-    end: '75%',
-    properties: [
-      {
-        startValue: 66.35,
-        endValue: 0,
-        property: "translateY",
-        unit: '%'
-      }
-    ]
-  }
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '70%',
+//     end: '75%',
+//     properties: [
+//       {
+//         startValue: 66.35,
+//         endValue: 0,
+//         property: "translateY",
+//         unit: '%'
+//       }
+//     ]
+//   }
   
-];
+// ];
 
-const leftSqrBottomData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
+// const leftSqrBottomData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
       
-      {
-        startValue: 0,
-        endValue: 66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+//       {
+//         startValue: 0,
+//         endValue: 66.35,
+//         property: "translateY",
+//         unit: '%'
+//       },
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
       
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '65%',
-    end: '70%',
-    properties: [
-      {
-        startValue: 66.35,
-        endValue: 0,
-        property: "translateY",
-        unit: '%'
-      }
-    ]
-  }
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '65%',
+//     end: '70%',
+//     properties: [
+//       {
+//         startValue: 66.35,
+//         endValue: 0,
+//         property: "translateY",
+//         unit: '%'
+//       }
+//     ]
+//   }
   
-];
+// ];
 
-const bottomSqrLeftData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const bottomSqrLeftData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      },
-      {
-        startValue: 0,
-        endValue: 80,
-        property: "translateX",
-        unit: '%'
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       },
+//       {
+//         startValue: 0,
+//         endValue: 80,
+//         property: "translateX",
+//         unit: '%'
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
       
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
   
   
   
-];
+// ];
 
-const bottomSqrRightData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const bottomSqrRightData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      },
-      {
-        startValue: 0,
-        endValue: 80,
-        property: "translateX",
-        unit: '%'
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       },
+//       {
+//         startValue: 0,
+//         endValue: 80,
+//         property: "translateX",
+//         unit: '%'
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
       
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  }
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   }
   
-];
+// ];
 
-const rightSqrTopData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const rightSqrTopData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: 0,
-        endValue: -66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
+//       {
+//         startValue: 0,
+//         endValue: -66.35,
+//         property: "translateY",
+//         unit: '%'
+//       },
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  }
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   }
   
-];
+// ];
 
-const rightSqrBottomData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const rightSqrBottomData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
       
-      {
-        startValue: 0,
-        endValue: -66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: 0,
+//         endValue: -66.35,
+//         property: "translateY",
+//         unit: '%'
+//       },
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  }
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   }
   
-];
+// ];
 
-const topSqrLeftData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const topSqrLeftData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
+//       {
+//         startValue: "#191970",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
       
-      {
-        startValue: 0,
-        endValue: -133.3,
-        property: "translateX",
-        unit: '%'
-      },
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
+//       {
+//         startValue: 0,
+//         endValue: -133.3,
+//         property: "translateX",
+//         unit: '%'
+//       },
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
   
-];
+// ];
 
-const topSqrRightData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
+// const topSqrRightData = [
+//   {
+//     start: 0,
+//     end: '20%',
+//     properties: [
+//       {
+//         startValue: "#000000",
+//         endValue: "#191970",
+//         property: "backgroundColor",
         
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
+//       }
+//     ]
+//   },
+//   {
+//     start: '21%',
+//     end: '41%',
+//     properties: [
       
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: 0,
-        endValue: -80,
-        property: "translateX",
-        unit: '%'
-      },
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
+//       {
+//         startValue: "#228b22",
+//         endValue: "#87cefa",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '42%',
+//     end: '62%',
+//     properties: [
+//       {
+//         startValue: "#87cefa",
+//         endValue: "#fd5e53",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
+//   {
+//     start: '63%',
+//     end: '83%',
+//     properties: [
+//       {
+//         startValue: 0,
+//         endValue: -80,
+//         property: "translateX",
+//         unit: '%'
+//       },
+//       {
+//         startValue: "#fd5e53",
+//         endValue: "#000000",
+//         property: "backgroundColor",
+//       }
+//     ]
+//   },
   
-];
+// ];
 
 const firstBackgroundTopData = [
   {
@@ -896,6 +896,11 @@ const movingSqrData = [
         endValue: 358.5,
         property: "translateY",
         unit: '%'
+      },
+      {
+        startValue: "#000000",
+        endValue: "#7c7c7c",
+        property: "backgroundColor",
       }
     ]
   },
@@ -914,6 +919,11 @@ const movingSqrData = [
         startValue: "#ffffff",
         endValue: "#000000",
         property: "borderColor",
+      },
+      {
+        startValue: "#7c7c7c",
+        endValue: "#ffffff",
+        property: "backgroundColor",
       }
     ]
   },
@@ -932,6 +942,11 @@ const movingSqrData = [
         startValue: "#000000",
         endValue: "#ffffff",
         property: "borderColor",
+      },
+      {
+        startValue: "#ffffff",
+        endValue: "#7c7c7c",
+        property: "backgroundColor",
       }
     ]
   },
@@ -945,6 +960,11 @@ const movingSqrData = [
         endValue: 0,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: "#7c7c7c",
+        endValue: "#000000",
+        property: "backgroundColor",
       }
     ]
   }, ]
@@ -977,7 +997,18 @@ const movingSqrData = [
 ];
 
 const bulbData = [
-  
+  {
+    start: '0%',
+    end: '2%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
+      },
+      
+    ]
+  },
   {
     start: '2%',
     end: '6.5%',
@@ -987,6 +1018,11 @@ const bulbData = [
         endValue: 0,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacity",
       },
       
     ]
@@ -1000,6 +1036,18 @@ const bulbData = [
         endValue: 0,
         property: "opacityFilter",
         unit: '%'
+      },
+      
+    ]
+  },
+  {
+    start: '8%',
+    end: '74%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
       },
       
     ]
@@ -1025,7 +1073,12 @@ const bulbData = [
         endValue: 1,
         property: "opacityFilter",
         unit: '%'
-      }
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacity",
+      },
     ]
   },
   
@@ -1064,9 +1117,26 @@ const bulbOnData = [
     ]
   },
   {
+    start: '12%',
+    end: '74%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
+      },
+      
+    ]
+  },
+  {
     start: '74%',
     end: '78%',
     properties: [
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacity",
+      },
       {
         startValue: 60,
         endValue: 105,
@@ -1091,7 +1161,11 @@ const bulbOnData = [
     start: '78%',
     end: '82%',
     properties: [
-      
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacity",
+      },
       {
         startValue: 0,
         endValue: 0,
@@ -1179,27 +1253,27 @@ const bulbOnLightData = [
 const bioTitleData = [
   {
     start: '0',
-    end: '12%',
+    end: '3%',
     properties: [
       {
         startValue: 0,
-        endValue: -80,
+        endValue: -500,
         property: "translateY",
         unit: '%'
       },
-      {
-        startValue: "#ffffff",
-        endValue: "#000000",
-        property: "color",
-      }
+      // {
+      //   startValue: "#ffffff",
+      //   endValue: "#000000",
+      //   property: "color",
+      // }
     ]
   },
   {
-    start: '71%',
+    start: '80%',
     end: '83%',
     properties: [
       {
-        startValue: -80,
+        startValue: -500,
         endValue: 0,
         property: "translateX",
         unit: '%'
@@ -1210,60 +1284,60 @@ const bioTitleData = [
         property: "translateY",
         unit: '%'
       },
-      {
-        startValue: "#000000",
-        endValue: "#ffffff",
-        property: "color",
-      }
+      // {
+      //   startValue: "#000000",
+      //   endValue: "#ffffff",
+      //   property: "color",
+      // }
     ]
   },
 ];
 
 const skillsTitleData = [
   {
-    start: '8%',
+    start: '17%',
     end: '20%',
     properties: [
       {
-        startValue: 80,
-        endValue: 0,
+        startValue: 0,
+        endValue: -550,
         property: "translateY",
         unit: '%'
       },
-      {
-        startValue: '#000000',
-        endValue: '#ffffff',
-        property: "color",
-      }
+      // {
+      //   startValue: '#000000',
+      //   endValue: '#ffffff',
+      //   property: "color",
+      // }
     ]
   },
   {
     start: '21%',
-    end: '33%',
+    end: '24%',
     properties: [
       {
         startValue: 0,
-        endValue: -80,
+        endValue: -500,
         property: "translateX",
         unit: '%'
       },
-      {
-        startValue: '#ffffff',
-        endValue: '#000000',
-        property: "color",
-      }
+      // {
+      //   startValue: '#ffffff',
+      //   endValue: '#000000',
+      //   property: "color",
+      // }
     ]
   },
 ];
 
 const connectTitleData = [
   {
-    start: '50%',
+    start: '59%',
     end: '62%',
     properties: [
       {
-        startValue: -80,
-        endValue: 0,
+        startValue: 0,
+        endValue: 470,
         property: "translateY",
         unit: '%'
       }
@@ -1271,11 +1345,11 @@ const connectTitleData = [
   },
   {
     start: '63%',
-    end: '75%',
+    end: '66%',
     properties: [
       {
         startValue: 0,
-        endValue: 80,
+        endValue: 550,
         property: "translateX",
         unit: '%'
       }
@@ -1392,7 +1466,18 @@ const connectImgData = [
 ]
 
 const coffee1Data = [
-  
+  {
+    start: '0%',
+    end: '7.5%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
+      },
+      
+    ]
+  },
   {
     start: '7.5%',
     end: '12.5%',
@@ -1402,6 +1487,23 @@ const coffee1Data = [
         endValue: -100,
         property: "translateX",
         unit: '%'
+      },
+      {
+        startValue: 1,
+        endValue: 1,
+        property: "opacity",
+      },
+      
+    ]
+  },
+  {
+    start: '12.5%',
+    end: '100%',
+    properties: [
+      {
+        startValue: 0,
+        endValue: 0,
+        property: "opacity",
       },
       
     ]
@@ -1428,13 +1530,19 @@ const coffee2Data = [
 const coffee3Data = [
   
   {
-    start: '8%',
-    end: '25%',
+    start: '5%',
+    end: '18%',
     properties: [
       {
-        startValue: 55,
-        endValue: -100,
+        startValue: 0,
+        endValue: -205,
         property: "translateX",
+        unit: '%'
+      },
+      {
+        startValue: 0,
+        endValue: -50,
+        property: "translateY",
         unit: '%'
       },
       
@@ -1678,38 +1786,38 @@ const skillsBoxData = [
 const projectsTitleData = [
   
   {
-    start: '34%',
+    start: '38%',
     end: '41%',
     properties: [
       {
-        startValue: 84,
-        endValue: 0,
+        startValue: 0,
+        endValue: -540,
         property: "translateX",
         unit: '%'
       },
-      {
-        startValue: '#ffffff',
-        endValue: '#000000',
-        property: "color",
-      }
+      // {
+      //   startValue: '#ffffff',
+      //   endValue: '#000000',
+      //   property: "color",
+      // }
       
     ]
   },
   {
     start: '42%',
-    end: '57%',
+    end: '45%',
     properties: [
       {
         startValue: 0,
-        endValue: 85,
+        endValue: 450,
         property: "translateY",
         unit: '%'
       },
-      {
-        startValue: '#000000',
-        endValue: '#ffffff',
-        property: "color",
-      }
+      // {
+      //   startValue: '#000000',
+      //   endValue: '#ffffff',
+      //   property: "color",
+      // }
     ]
   },
 ]
@@ -1897,161 +2005,28 @@ const connectBoxContentMobileData = [
   },
 ]
 
-// const moonData = [
-//   {
-//     start: '0%',
-//     end: '42%',
-//     properties: [
-//       {
-//         startValue: 900,
-//         endValue: 0,
-//         property: "translateX",
-//         unit: '%'
-//       },
-
-//       {
-//         startValue: 60,
-//         endValue: 0,
-//         property: "translateY",
-//         unit: '%'
-//       },
-
-//       {
-//         startValue: 1,
-//         endValue: 0,
-//         property: "opacity"
-//       }
-      
-//     ]
-//   },
-
-//   {
-//     start: '42%',
-//     end: '83%',
-//     properties: [
-//       {
-//         startValue: 0,
-//         endValue: -800,
-//         property: "translateX",
-//         unit: '%'
-//       },
-
-//       {
-//         startValue: 0,
-//         endValue: 50,
-//         property: "translateY",
-//         unit: '%'
-//       },
-
-//       {
-//         startValue: 0,
-//         endValue: 1,
-//         property: "opacity"
-//       }
-      
-//     ]
-//   },
-  
-// ]
-
-// const sunData = [
-//   {
-//     start: '0%',
-//     end: '42%',
-//     properties: [
-//       {
-//         startValue: 500,
-//         endValue: 0,
-//         property: "translateX",
-//         unit: '%'
-//       },
-
-//       {
-//         startValue: 33,
-//         endValue: 0,
-//         property: "translateY",
-//         unit: '%'
-//       },
-
-      
-//     ]
-//   },
-
-//   {
-//     start: '42%',
-//     end: '83%',
-//     properties: [
-//       {
-//         startValue: 0,
-//         endValue: -445,
-//         property: "translateX",
-//         unit: '%'
-//       },
-
-//       {
-//         startValue: 0,
-//         endValue: 27,
-//         property: "translateY",
-//         unit: '%'
-//       },
-      
-//     ]
-//   },
-  
-// ]
-
-// const sunOpData = [
-//   {
-//     start: '0%',
-//     end: '12%',
-//     properties: [
-      
-//       {
-//         startValue: 0,
-//         endValue: 0,
-//         property: "opacity",
-//       },
-      
-//     ]
-//   },
-
-//   {
-//     start: '12%',
-//     end: '38%',
-//     properties: [
-      
-//       {
-//         startValue: 0,
-//         endValue: 1,
-//         property: "opacity",
-//       },
-      
-//     ]
-//   },
-
-//   {
-//     start: '48%',
-//     end: '75%',
-//     properties: [
-      
-
-//       {
-//         startValue: 1,
-//         endValue: 0,
-//         property: "opacity",
-//       },
-      
-//     ]
-//   },
-  
-// ]
-
 const cloudOneData = [
+    {
+      start: '0%',
+      end: '21%',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
+        
+      ]
+    },
     {
       start: '21%',
       end: '33%',
       properties: [
-        
+        {
+          startValue: 1,
+          endValue: 1,
+          property: "opacity",
+        },
         {
           startValue: 0,
           endValue: -120,
@@ -2069,6 +2044,18 @@ const cloudOneData = [
           property: "scale",
           unit: '%'
         }
+        
+      ]
+    },
+    {
+      start: '33%',
+      end: '100%',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 0,
+          property: "opacity",
+        },
         
       ]
     },
@@ -2852,21 +2839,31 @@ class App extends Component {
     return (
       <div className="App"  id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
-        <Plx className="fixed-background-base" parallaxData={backgroundData}>
-          <Plx className='fixed-back-base-halfway-line'></Plx>
-          <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
+        <Plx className="fixed-background-base" >
+          {/* <Plx className='fixed-back-base-halfway-line'></Plx> */}
+          {/* <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
           <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="fixed-background-second"  parallaxData={backgroundData}>
+          <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx> */}
+          <Plx className="fixed-background-second" >
 
-            <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
+            {/* <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
 
-            <Plx className="left-column" parallaxData={colorChangeOnlyData}/>
+            <Plx className="left-column" parallaxData={colorChangeOnlyData}/> */}
             <Plx className="moving-square" parallaxData={movingSqrData} onClick={()=>animateScrollTo(this.state.desiredOffset, options)}>
               <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section>
+              <Plx className="bio-title" parallaxData={bioTitleData}>bio</ Plx>
+              <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
+              <Plx className="projects-title" parallaxData={projectsTitleData}>projects</ Plx>
+              <Plx className="connect-title"parallaxData={connectTitleData}>connect</ Plx>
+
+              <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
+              <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx>
+              <Plx className="coffee-4" parallaxData={coffee4Data}><img src="img/Coffee.gif"/></ Plx>
+              <Plx className="coffee-3" parallaxData={coffee3Data}><img src="img/Coffee.gif"/></ Plx>
+
             </Plx>
-            <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
+            {/* <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
             <Plx className="left-moving-square-bottom" parallaxData={leftSqrBottomData} />
             <Plx className="bottom-moving-square-left" parallaxData={bottomSqrLeftData} />
             <Plx className="bottom-moving-square-right" parallaxData={bottomSqrRightData} />
@@ -2880,40 +2877,39 @@ class App extends Component {
             <Plx className="second-background-inner-box-top" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-bottom" parallaxData={colorChangeOnlyData}></Plx>
             <Plx className="second-background-inner-box-left" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="second-background-inner-box-right" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="bio-title" parallaxData={bioTitleData}>bio</ Plx>
-            <Plx className="light-bulb" parallaxData={bulbData}><img src="idea.png"/></ Plx>
+            <Plx className="second-background-inner-box-right" parallaxData={colorChangeOnlyData}></Plx> */}
+            
+            {/* <Plx className="light-bulb" parallaxData={bulbData}><img src="idea.png"/></ Plx>
             <Plx className="light-bulb-on" parallaxData={bulbOnData}><img src="ideaOn.png"/></ Plx>
-            <Plx className="light-bulb-on-light" parallaxData={bulbOnLightData}><img src="ideaOnLight.png"/></ Plx>
-            <Plx className="skills-title" parallaxData={skillsTitleData}>skills</ Plx>
-            <Plx className="projects-title" parallaxData={projectsTitleData}>projects</ Plx>
-            <Plx className="connect-title"parallaxData={connectTitleData}>connect</ Plx>
+            <Plx className="light-bulb-on-light" parallaxData={bulbOnLightData}><img src="ideaOnLight.png"/></ Plx> */}
+            
+            
 
             <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
             <Plx className="bio-box" parallaxData={bioBoxNameData}></Plx>
-            <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
+            {/* <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
             More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
             I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
 
             <Plx className="bio-content-mobile" parallaxData={bioBoxContentMobileData} >I am a full stack developer.<br/><br/>
             More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
-            I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
+            I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx> */}
 
-            <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
+            {/* <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
             <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
             <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
-            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx>
+            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx> */}
 
-            <Plx className="skills-content-mobile" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+            {/* <Plx className="skills-content-mobile" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
             <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
-            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx>
+            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx> */}
 
             <Plx className="content-box"  parallaxData={bioBoxNameData}></Plx>
-            <Plx className="content-box-mobile-border"  parallaxData={bioBoxNameData}></Plx>
-            <Plx className="content-box-mobile"  parallaxData={backgroundData}></Plx>
+            {/* <Plx className="content-box-mobile-border"  parallaxData={bioBoxNameData}></Plx>
+            <Plx className="content-box-mobile"  parallaxData={backgroundData}></Plx> */}
             
 
-            <Plx className="projects-box" parallaxData={projectsBoxData}>
+            {/* <Plx className="projects-box" parallaxData={projectsBoxData}>
               <div className={this.state.projectClickClass}>
                 <span className={this.state.projectClickSpanClass}>&#8678;</span>
                 <span className={this.state.projectClickSpanClass}>click</span>
@@ -2923,22 +2919,22 @@ class App extends Component {
               <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
               <div><div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>3.</div>
               <div className={this.getCurrentProjectClass(3)} onClick={()=>{this.setState({currentProject: 3, currentProjectSlide: 0})}}>4.</div></div>
-            </Plx>
-            <Plx className="projects-content" parallaxData={projectsBoxData}>
+            </Plx> */}
+            {/* <Plx className="projects-content" parallaxData={projectsBoxData}>
               <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
               <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
               <img src={this.getCurrentProjectUrl()}/>
               <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
-            </ Plx>
+            </ Plx> */}
 
-            <Plx className="projects-content-mobile" parallaxData={projectsBoxData}>
+            {/* <Plx className="projects-content-mobile" parallaxData={projectsBoxData}>
               <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
               <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
               <img src={this.getCurrentProjectUrl()}/>
               <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
-            </ Plx>
+            </ Plx> */}
 
-            <Plx className="connect-content" parallaxData={connectBoxData}>
+            {/* <Plx className="connect-content" parallaxData={connectBoxData}>
               <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a><br/><br/>
@@ -2950,16 +2946,12 @@ class App extends Component {
               <a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/Manny1806"><img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806</a><br/><br/>
-            </Plx>
+            </Plx> */}
 
-            <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="ME.jpg"/></Plx>
+            {/* <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="ME.jpg"/></Plx> */}
 
-            <Plx className="coffee-2" parallaxData={coffee2Data}><img src="coffee.png"/></ Plx>
-            <Plx className="coffee-1" parallaxData={coffee1Data}><img src="coffee.png"/></ Plx>
-            <Plx className="coffee-4" parallaxData={coffee4Data}><img src="coffee.png"/></ Plx>
-            <Plx className="coffee-3" parallaxData={coffee3Data}><img src="coffee.png"/></ Plx>
-
-            <Plx className="code-line-1" parallaxData={code1Data}>var x = false;</ Plx>
+            
+            {/* <Plx className="code-line-1" parallaxData={code1Data}>var x = false;</ Plx>
             <Plx className="code-line-2" parallaxData={code2Data}>{code2}</ Plx>
             <Plx className="code-line-3" parallaxData={code3Data}>{code3}</ Plx>
 
@@ -2976,7 +2968,7 @@ class App extends Component {
             <Plx className="cheers" parallaxData={cheersData}><img src="Cheers.gif"/></ Plx>
 
             <Plx className="sleep-1" parallaxData={sleepOneData}><img src="sleep.png"/></ Plx>
-            <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx>
+            <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx> */}
 
 
           </Plx>
