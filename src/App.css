@@ -304,15 +304,32 @@
   border: solid 2px white;
   box-sizing: border-box;
   overflow: hidden;
-  transition: top 0.3s, left 0.3s, box-shadow 0.3s;
+  transition: outline-style 0.3s;
   /* box-shadow: 20px 20px 20px; */
 }
 
-.moving-square-shadow {
-  display: none;
+.moving-square-shadow-container{
+  /* display: none; */
   position: absolute;
   width: 20%;
   height: 18.46%;
+  top: 7.7%;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  /* opacity: 0; */
+  /* border: solid 2px white; */
+  box-sizing: border-box;
+  overflow: visible;
+  transition: height 0.3s, width 03.s;
+  /* filter: blur(12px) */
+  /* box-shadow: -20px -20px 20px; */
+}
+.moving-square-shadow {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 4%;
   left: 4.5%;
   z-index: 1;
@@ -327,9 +344,13 @@
 }
 
 .moving-square:hover{
-  top: 7%;
+  cursor: pointer;
+  /* border-bottom-width: 10px;
+  border-top-width: 10px;  */
   /* box-shadow: 30px 30px 20px; */
+  /* filter: blur(1px); */
 }
+
 
 .second-background-inner-box-top {
   position: absolute;
@@ -522,14 +543,32 @@
 
 .content-box {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: -90%;
   top: 26.2%;
   width: 79.4%;
   height: 47%;
   z-index: 1;
   border: solid white 2px;
-  pointer-events: none;
+  /* pointer-events: none; */
   background: transparent;
+  overflow: hidden;
+}
+
+.content-box-shadow {
+  position: absolute;
+  right: -90%;
+  top: 26.2%;
+  width: 79.4%;
+  height: 47%;
+  opacity: 0.8;
+  /* z-index: 1;
+  border: solid white 2px; */
+  /* pointer-events: none; */
+  background: black;
+  filter: blur(12px);
 }
 
 .pythonImgContainer{

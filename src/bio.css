@@ -30,14 +30,14 @@
   .bio-content {
     position: absolute;
     /* border: solid white 2px; */
-    left: 110.5%;
+    /* left: 110.5%;
     top: 25%;
     width: 79.4%;
     height: 47%;
     box-sizing: border-box;
     z-index: -3;
-    padding: 4% 2%;
-    font-size: 200%;
+    padding: 4% 2%; */
+    font-size: 150%;
     color: white;
   }
   

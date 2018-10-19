@@ -51,694 +51,6 @@ const options = {
 };
 
 
-{/*
-const leftSqrTopData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: 0,
-        endValue: 66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '70%',
-    end: '75%',
-    properties: [
-      {
-        startValue: 66.35,
-        endValue: 0,
-        property: "translateY",
-        unit: '%'
-      }
-    ]
-  }
-  
-];
-
-const leftSqrBottomData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      
-      {
-        startValue: 0,
-        endValue: 66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '65%',
-    end: '70%',
-    properties: [
-      {
-        startValue: 66.35,
-        endValue: 0,
-        property: "translateY",
-        unit: '%'
-      }
-    ]
-  }
-  
-];
-
-const bottomSqrLeftData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      },
-      {
-        startValue: 0,
-        endValue: 80,
-        property: "translateX",
-        unit: '%'
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-  
-  
-];
-
-const bottomSqrRightData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      },
-      {
-        startValue: 0,
-        endValue: 80,
-        property: "translateX",
-        unit: '%'
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  }
-  
-];
-
-const rightSqrTopData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: 0,
-        endValue: -66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  }
-  
-];
-
-const rightSqrBottomData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      
-      {
-        startValue: 0,
-        endValue: -66.35,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  }
-  
-];
-
-const topSqrLeftData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#191970",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      
-      {
-        startValue: 0,
-        endValue: -133.3,
-        property: "translateX",
-        unit: '%'
-      },
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
-
-const topSqrRightData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#000000",
-        endValue: "#191970",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: 0,
-        endValue: -80,
-        property: "translateX",
-        unit: '%'
-      },
-      {
-        startValue: "#fd5e53",
-        endValue: "#000000",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
-
-*/}
-
-const firstBackgroundTopData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#228b22",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: "#fd5e53",
-        endValue: "#191970",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
-
-const firstBackgroundBottomData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#228b22",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: "#fd5e53",
-        endValue: "#191970",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
-
-const firstBackgroundLeftData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#228b22",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: "#fd5e53",
-        endValue: "#191970",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
-
-const firstBackgroundRightData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#228b22",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: "#fd5e53",
-        endValue: "#191970",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
 
 const realBackgroundData = [
   {
@@ -1003,50 +315,70 @@ const movingSqrData = [
 
 const movingSqrShadowData = [
   {
-    start: 0,
-    end: '20%',
+    start: '0%',
+    end: '42%',
+    easing: 'easeInCubic',
     properties: [
       
       {
-        startValue: 0,
-        endValue: 400,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: 20,
-        endValue: 0,
+        startValue: 40,
+        endValue: -8,
         property: "translateX",
         unit: '%'
-      },
-      {
-        startValue: 0.8,
-        endValue: 0.8,
-        property: "opacity",
-        
       },
     ]
   },
   {
-    start: '21%',
+    start: '0%',
+    end: '10%',
+    // easing: 'easeInOutSine',
+    properties: [
+      
+      {
+        startValue: -20,
+        endValue: 0,
+        property: "translateY",
+        unit: '%'
+      },
+    ]
+  },
+  {
+    start: '10%',
     end: '41%',
+    easing: 'easeOutQuad',
     properties: [
       
       {
         startValue: 0,
-        endValue: 378,
-        property: "translateX",
+        endValue: 30,
+        property: "translateY",
         unit: '%'
       },
     ]
   },
   {
     start: '42%',
-    end: '62%',
+    end: '83%',
+    easing: 'easeOutCubic',
     properties: [
       
       {
-        startValue: 400,
+        startValue: -8,
+        endValue: -50,
+        property: "translateX",
+        unit: '%'
+      },
+    ]
+  },
+  
+  {
+    start: '42%',
+    end: '73%',
+    easing: 'easeInQuad',
+    properties: [
+      
+      {
+        startValue: 30,
         endValue: 0,
         property: "translateY",
         unit: '%'
@@ -1060,45 +392,21 @@ const movingSqrShadowData = [
     ]
   },
   {
-    start: '63%',
+    start: '73%',
     end: '83%',
+    // easing: 'easeOutQuint',
     properties: [
       
       {
-        startValue: 350,
-        endValue: 0,
-        property: "translateX",
+        startValue: 0,
+        endValue: -30,
+        property: "translateY",
         unit: '%'
       },
     ]
-  }, ]
+  },
+   ]
 
-  // const backgroundData = [
-  //   {
-  //     start: 0,
-  //     end: '41%',
-  //     properties: [
-  //       {
-  //         startValue: "#000000",
-  //         endValue: "#ffffff",
-  //         property: "backgroundColor",
-  //       }
-  //     ]
-  //   },
-    
-  //   {
-  //     start: '42%',
-  //     end: '83%',
-  //     properties: [
-  //       {
-  //         startValue: "#ffffff",
-  //         endValue: "#000000",
-  //         property: "backgroundColor",
-  //       }
-  //     ]
-  //   },
-  
-// ];
 
 const bulbData = [
   {
@@ -1524,8 +832,8 @@ const connectImgData = [
     end: '1%',
     properties: [
       {
-        startValue: -100,
-        endValue: -100,
+        startValue: -150,
+        endValue: -150,
         property: "translateY",
         unit: '%'
       },
@@ -1542,7 +850,7 @@ const connectImgData = [
     end: '62%',
     properties: [
       {
-        startValue: -70,
+        startValue: -150,
         endValue: 0,
         property: "translateY",
         unit: '%'
@@ -1666,7 +974,7 @@ const bioNameData = [
     properties: [
       {
         startValue: 0,
-        endValue: -84,
+        endValue: -134,
         property: "translateY",
         unit: '%'
       },
@@ -1888,8 +1196,8 @@ const skillsNameData = [
     end: '20%',
     properties: [
       {
-        startValue: 0,
-        endValue: -84,
+        startValue: 155,
+        endValue: 0,
         property: "translateY",
         unit: '%'
       },
@@ -1907,7 +1215,7 @@ const skillsNameData = [
     properties: [
       {
         startValue: 0,
-        endValue: -85,
+        endValue: -90,
         property: "translateX",
         unit: '%'
       },
@@ -1927,8 +1235,8 @@ const skillsBoxContentData = [
     end: '1%',
     properties: [
       {
-        startValue: 100,
-        endValue: 100,
+        startValue: 120,
+        endValue: 120,
         property: "translateY",
         unit: '%'
       }
@@ -1939,7 +1247,7 @@ const skillsBoxContentData = [
     end: '20%',
     properties: [
       {
-        startValue: 100,
+        startValue: 120,
         endValue: 0,
         property: "translateY",
         unit: '%'
@@ -1968,24 +1276,7 @@ const skillsBoxContentData = [
       }
     ]
   },
-  {
-    start: '35%',
-    end: '36%',
-    properties: [
-      {
-        startValue: 100,
-        endValue: 100,
-        property: "translateY",
-        unit: '%'
-      },
-      {
-        startValue: 0,
-        endValue: 0,
-        property: "translateX",
-        unit: '%'
-      }
-    ]
-  },
+  
 ]
 
 const skillsBoxData = [
@@ -2056,16 +1347,12 @@ const projectsTitleData = [
     end: '41%',
     properties: [
       {
-        startValue: 200,
+        startValue: 100,
         endValue: 0,
         property: "translateX",
         unit: '%'
       },
-      // {
-      //   startValue: '#ffffff',
-      //   endValue: '#000000',
-      //   property: "color",
-      // }
+      
       
     ]
   },
@@ -2301,6 +1588,100 @@ const bioBoxShadowData = [
   },
    ]
 
+   const contentBoxShadowData = [
+    {
+      start: '0%',
+      end: '45%',
+      easing: 'easeInCubic',
+      properties: [
+        
+        {
+          startValue: 30,
+          endValue: -4,
+          property: "translateX",
+          unit: '%'
+        },
+      ]
+    },
+    {
+      start: '0%',
+      end: '10%',
+      // easing: 'easeInOutSine',
+      properties: [
+        
+        {
+          startValue: -20,
+          endValue: 4,
+          property: "translateY",
+          unit: '%'
+        },
+      ]
+    },
+    {
+      start: '10%',
+      end: '41%',
+      easing: 'easeOutQuad',
+      properties: [
+        
+        {
+          startValue: 4,
+          endValue: 28,
+          property: "translateY",
+          unit: '%'
+        },
+      ]
+    },
+    {
+      start: '45%',
+      end: '83%',
+      easing: 'easeOutCubic',
+      properties: [
+        
+        {
+          startValue: -4,
+          endValue: -25,
+          property: "translateX",
+          unit: '%'
+        },
+      ]
+    },
+    
+    {
+      start: '42%',
+      end: '73%',
+      easing: 'easeInQuad',
+      properties: [
+        
+        {
+          startValue: 28,
+          endValue: 4,
+          property: "translateY",
+          unit: '%'
+        },
+        {
+          startValue: 0.8,
+          endValue: 0.4,
+          property: "opacity",
+          
+        },
+      ]
+    },
+    {
+      start: '73%',
+      end: '83%',
+      // easing: 'easeOutQuint',
+      properties: [
+        
+        {
+          startValue: 4,
+          endValue: -20,
+          property: "translateY",
+          unit: '%'
+        },
+      ]
+    },
+     ]
+
 const bioBoxContentData = [
   {
     start: '0%',
@@ -2308,7 +1689,7 @@ const bioBoxContentData = [
     properties: [
       {
         startValue: 0,
-        endValue: -100,
+        endValue: -120,
         property: "translateY",
         unit: '%'
       },
@@ -2925,10 +2306,6 @@ class App extends Component {
     this.handleScroll = this.handleScroll.bind(this)
   }
 
-  componentDidMount() {
-    // window.addEventListener('scroll', this.handleScroll, { passive: true })
-  }
-
   handleScroll(e){
    
     if (document.body.scrollTop > 12700 || document.documentElement.scrollTop > 12700) {
@@ -3242,17 +2619,10 @@ class App extends Component {
       <div className="App"  id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
         <div className="fixed-background-base" >
-          {/* <Plx className='fixed-back-base-halfway-line'></Plx> */}
-          {/* <Plx className="first-background-top" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="first-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="first-background-left" parallaxData={colorChangeOnlyData}></Plx>
-          <Plx className="first-background-right" parallaxData={colorChangeOnlyData}></Plx> */}
           <div className="fixed-background-second" >
-
-            {/* <Plx className="mobile-bottom-column"parallaxData={colorChangeOnlyData}/>
-
-            <Plx className="left-column" parallaxData={colorChangeOnlyData}/> */}
-            <Plx className="moving-square-shadow" parallaxData={movingSqrShadowData} />
+            <Plx className="moving-square-shadow-container" parallaxData={movingSqrData} >
+              <Plx className="moving-square-shadow" parallaxData={movingSqrShadowData} />
+            </Plx>
             <Plx className="moving-square" parallaxData={movingSqrData} >
               <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section>
               <Plx className="bio-title" parallaxData={bioTitleData} >bio</ Plx>
@@ -3261,7 +2631,6 @@ class App extends Component {
               <Plx className="connect-title"parallaxData={connectTitleData} >connect</ Plx>
               
               <Plx className="bio-button" parallaxData={bioButtonData} onClick={()=>{
-                  // document.documentElement.scrollTop = 0;
                   animateScrollTo((document.documentElement.scrollHeight*0.2), options)
                 }}></ Plx>
               
@@ -3279,21 +2648,6 @@ class App extends Component {
               <Plx className="coffee-3" parallaxData={coffee3Data}><img src="img/Coffee.gif"/></ Plx>
 
             </Plx>
-            {/* <Plx className="left-moving-square-top" parallaxData={leftSqrTopData} />
-            <Plx className="left-moving-square-bottom" parallaxData={leftSqrBottomData} />
-            <Plx className="bottom-moving-square-left" parallaxData={bottomSqrLeftData} />
-            <Plx className="bottom-moving-square-right" parallaxData={bottomSqrRightData} />
-            <Plx className="right-moving-square-top" parallaxData={rightSqrTopData} />
-            <Plx className="right-moving-square-bottom" parallaxData={rightSqrBottomData} />
-            <Plx className="top-moving-square-left" parallaxData={topSqrLeftData} />
-            <Plx className="top-moving-square-right" parallaxData={topSqrRightData} />
-            <Plx className="second-background-box" parallaxData={backgroundData}></Plx>
-            <Plx className="second-background-top" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="second-background-bottom" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="second-background-inner-box-top" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="second-background-inner-box-bottom" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="second-background-inner-box-left" parallaxData={colorChangeOnlyData}></Plx>
-            <Plx className="second-background-inner-box-right" parallaxData={colorChangeOnlyData}></Plx> */}
             
             {/* <Plx className="light-bulb" parallaxData={bulbData}><img src="idea.png"/></ Plx>
             <Plx className="light-bulb-on" parallaxData={bulbOnData}><img src="ideaOn.png"/></ Plx>
@@ -3306,47 +2660,49 @@ class App extends Component {
               <Plx className="bio-name" parallaxData={bioNameData}>ALEX WIDNER</Plx>
               <Plx className="skills-image" parallaxData={skillsNameData}>FULL STACK</Plx>
               <Plx className="projects-box" parallaxData={projectsBoxData}>
-              <div className={this.state.projectClickClass}>
-                <span className={this.state.projectClickSpanClass}>&#8678;</span>
-                <span className={this.state.projectClickSpanClass}>click</span>
-                <span className={this.state.projectClickSpanClass}>&#8678;</span>
-              </div>
-              <div><div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>1.</div>
-              <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>2.</div></div>
-              <div><div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>3.</div>
-              <div className={this.getCurrentProjectClass(3)} onClick={()=>{this.setState({currentProject: 3, currentProjectSlide: 0})}}>4.</div></div>
+              <div className={this.getCurrentProjectClass(0)} onClick={()=>{this.setState({currentProject: 0, currentProjectSlide: 0})}}>Karpul</div>
+              <div className={this.getCurrentProjectClass(1)} onClick={()=>{this.setState({currentProject: 1, currentProjectSlide: 0})}}>Sioux City Music</div>
+              <div className={this.getCurrentProjectClass(2)} onClick={()=>{this.setState({currentProject: 2, currentProjectSlide: 0})}}>Pokemon Quiz</div>
+              <div className={this.getCurrentProjectClass(3)} onClick={()=>{this.setState({currentProject: 3, currentProjectSlide: 0})}}>Desktop Invasion</div>
+              </Plx>
+              <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="img/ME.jpg"/></Plx>
             </Plx>
-            </Plx>
-            {/* <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
-            More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
-            I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
-
-            <Plx className="bio-content-mobile" parallaxData={bioBoxContentMobileData} >I am a full stack developer.<br/><br/>
-            More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
-            I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx> */}
-
             
-            {/* <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
-            <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
-            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx> */}
-
             {/* <Plx className="skills-content-mobile" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
             <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
             <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx> */}
+            <Plx className="content-box-shadow"  parallaxData={contentBoxShadowData}></Plx>
+            <Plx className="content-box"  parallaxData={bioBoxNameData}>
+              <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
+              More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
+              I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
 
-            <Plx className="content-box"  parallaxData={bioBoxNameData}></Plx>
+              {/* <Plx className="bio-content-mobile" parallaxData={bioBoxContentMobileData} >I am a full stack developer.<br/><br/>
+              More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
+              I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx> */}
+              
+              <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+              <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
+              <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx>
+
+              <Plx className="projects-content" parallaxData={projectsBoxData}>
+                <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+                <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
+                <img src={this.getCurrentProjectUrl()}/>
+                <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
+              </ Plx>
+
+              <Plx className="connect-content" parallaxData={connectBoxData}>
+                <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a></div>
+                <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a></div>
+                <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a></div>
+                <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://github.com/Manny1806"><img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806</a></div>
+              </Plx>
+              
+            </Plx>
             {/* <Plx className="content-box-mobile-border"  parallaxData={bioBoxNameData}></Plx>
             <Plx className="content-box-mobile"  parallaxData={backgroundData}></Plx> */}
-            
-
-            
-            {/* <Plx className="projects-content" parallaxData={projectsBoxData}>
-              <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
-              <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
-              <img src={this.getCurrentProjectUrl()}/>
-              <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
-            </ Plx> */}
-
+  
             {/* <Plx className="projects-content-mobile" parallaxData={projectsBoxData}>
               <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
               <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
@@ -3354,23 +2710,13 @@ class App extends Component {
               <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
             </ Plx> */}
 
-            {/* <Plx className="connect-content" parallaxData={connectBoxData}>
-              <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a><br/><br/>
-              <a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a><br/><br/>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a><br/><br/>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Manny1806"><img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806</a><br/><br/>
-            </Plx>
-
-            <Plx className="connect-content-mobile" parallaxData={connectBoxContentMobileData}>
+            {/* <Plx className="connect-content-mobile" parallaxData={connectBoxContentMobileData}>
               <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a><br/><br/>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/Manny1806"><img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806</a><br/><br/>
             </Plx> */}
-
-            {/* <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="ME.jpg"/></Plx> */}
-
-            
+   
             {/* <Plx className="code-line-1" parallaxData={code1Data}>var x = false;</ Plx>
             <Plx className="code-line-2" parallaxData={code2Data}>{code2}</ Plx>
             <Plx className="code-line-3" parallaxData={code3Data}>{code3}</ Plx>
@@ -3389,7 +2735,6 @@ class App extends Component {
 
             <Plx className="sleep-1" parallaxData={sleepOneData}><img src="sleep.png"/></ Plx>
             <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx> */}
-
 
           </div>
         </div>
