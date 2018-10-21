@@ -8,14 +8,33 @@ import './connect.css';
 import { render } from "react-dom";
 import Plx from "react-plx";
 import animateScrollTo from 'animated-scroll-to';
+import { Fade } from 'react-slideshow-image';
 
+// var slideIndex = 0;
+// showSlides();
 
-const projectArray = [
-  ["karpul1.jpg","karpul2.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
-  ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
-  ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
-  ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"]
-]
+// showSlides() {
+//     var i;
+//     var slides = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < slides.length; i++) {
+//        slides[i].style.display = "none";  
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {slideIndex = 1}    
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     slides[slideIndex-1].style.display = "block";  
+//     dots[slideIndex-1].className += " active";
+//     setTimeout(showSlides, 2000); // Change image every 2 seconds
+// }
+
+// const projectArray = [
+//   ["karpul1.jpg","karpul2.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
+//   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
+//   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
+//   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"]
+// ]
 
 const options = {
   // duration of the scroll per 1000px, default 500
@@ -50,7 +69,37 @@ const options = {
 
 };
 
-
+const slideImages = [
+  'img/karpul6.png',
+  'img/karpul4.png',
+  'img/karpul5.png'
+];
+ 
+const properties = {
+  duration: 4000,
+  transitionDuration: 700,
+  infinite: true,
+  indicators: false,
+  arrows: false
+}
+ 
+const Slideshow = () => {
+  return (
+    
+    <Fade {...properties}>
+      <div >
+        <img src={slideImages[0]}/>
+      </div>
+      <div >
+        <img src={slideImages[1]}/>
+      </div>
+      <div >
+        <img src={slideImages[2]}/>
+      </div>
+    </Fade>
+    
+  )
+}
 
 const realBackgroundData = [
   {
@@ -2301,7 +2350,9 @@ class App extends Component {
       desiredOffset: 3100,
       projectClickTrigger: false,
       projectClickClass: "click-projects",
-      projectClickSpanClass: "click-projects-span"
+      projectClickSpanClass: "click-projects-span",
+      contentBoxClass: "closed",
+      expandSign: '\u002B'
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -2379,18 +2430,39 @@ class App extends Component {
 
   getCurrentProjectUrl() {
     if (this.state.currentProject === 0){
-      if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
-      }
-      else if(this.state.currentProjectSlide === 1){
-        return "karpul2.jpg"
-      }
-      else if (this.state.currentProjectSlide === 2){
-        return "karpul3.jpg"
-      }
-      else if (this.state.currentProjectSlide === 3){
-        return "karpul4.jpg"
-      }
+     return ( <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        
+        <img src="img_nature_wide.jpg"/>
+        
+      </div>
+
+      <div class="mySlides fade">
+        
+        <img src="img_snow_wide.jpg"/>
+        
+      </div>
+
+      <div class="mySlides fade">
+        
+        <img src="img_mountains_wide.jpg"/>
+        
+      </div>
+
+      </div>)
+      // if(this.state.currentProjectSlide === 0){
+      //   return "karpul1.jpg"
+      // }
+      // else if(this.state.currentProjectSlide === 1){
+      //   return "karpul2.jpg"
+      // }
+      // else if (this.state.currentProjectSlide === 2){
+      //   return "karpul3.jpg"
+      // }
+      // else if (this.state.currentProjectSlide === 3){
+      //   return "karpul4.jpg"
+      // }
     }
     else if(this.state.currentProject === 1){
       if(this.state.currentProjectSlide === 0){
@@ -2436,10 +2508,26 @@ class App extends Component {
     }
   }
 
+  setContentBoxClass() {
+    if(this.state.contentBoxClass === "closed"){
+      this.setState({contentBoxClass: "expanded", expandSign: '\u2212'})
+    }
+    else if (this.state.contentBoxClass === "expanded"){
+      this.setState({contentBoxClass: "closed", expandSign: '\u002B'})
+    }
+  }
+
   getCurrentProjectText(){
     if (this.state.currentProject === 0){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="projects-content-text projects-content-text-first"><h2>Karpul is an app that allows users to find and create carpools.</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Karpul allows users to find and create carpools.</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
           <li>Customize carpools by time and days of the week</li>
           <li>Search for nearby carpools by destination address</li>
@@ -2447,167 +2535,276 @@ class App extends Component {
           <li>Customize carpools by time and days of the week</li>
           <li>Request to join carpools or accept new members to your own.</li>
         </ul>
+        </div>
         </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return (<div className="projects-content-text projects-content-text-tools"><h2>Libraries and Tools:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Libraries and Tools</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Node.js, Express.js</li>
+        <li>Node.js, Express.js</li>
           <li>React.js, Redux.js</li>
           <li>bcrypt.js, passport.js, JWT Auth</li>
           <li>mongoose, MongoDB</li>
           <li>Heroku for server</li>
           <li>Surge for client</li>
         </ul>
+        </div>
         </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return (<div className="projects-content-text projects-content-text-api"><h2>APIs:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>APIs</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Mapbox - mapping coordinates and location pin rendering</li>
+        <li>Mapbox - mapping coordinates and location pin rendering</li>
           <li>Here - takes location address and converts to latitude and longitude</li>
           <li>Algolia  - implements auto complete for address input</li>
           <li>Cloudinary - image uploading and hosting</li>
         </ul>
+        </div>
         </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return (<div className="projects-content-text projects-content-text-last"><h2>Try it out!</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Try it out!</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li><a target="_blank" rel="noopener noreferrer" href="http://karpul-client.surge.sh/">Karpul Live App</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="http://karpul-client.surge.sh/">Karpul Live App</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/client-karpul">Client GitHub Repo</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Karpul_server">Server GitHub Repo</a></li>
         </ul>
+        </div>
         </div>)
       }
     }
     else if(this.state.currentProject === 1){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="projects-content-text projects-content-text-first"><h2>Sioux City Music allows local bands to create posts and events that are easily accessible to fans.</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Sioux City Music allows local bands to create posts and events for fans.</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Create posts and events with linkable media</li>
+        <li>Create posts and events with linkable media</li>
           <li>Delete and edit existing posts and events</li>
           <li>Register new bands and new band members</li>
           <li>Intuitive and responsive mobile design</li>
         </ul>
+        </div>
         </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return (<div className="projects-content-text projects-content-text-tools"><h2>Libraries and Tools:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Libraries and Tools</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Node.js, Express.js</li>
+        <li>Node.js, Express.js</li>
           <li>React.js, Redux.js</li>
           <li>bcrypt.js, passport.js, JWT Auth</li>
           <li>mongoose, MongoDB</li>
           <li>Heroku for client and server</li>
         </ul>
+        </div>
         </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return (<div className="projects-content-text projects-content-text-future"><h2>Future development plans:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Future development plans</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Allow users to create locations with individual web pages</li>
+        <li>Allow users to create locations with individual web pages</li>
           <li>Show and filter all bands posts and events on home page</li>
           <li>Connect page to band Facebook and Google Image accounts</li>
           <li>Top nav bar functionality on band pages</li>
           <li>Multiple Cities!!</li>
         </ul>
+        </div>
         </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return (<div className="projects-content-text projects-content-text-last"><h2>Try it out!</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Try it out!</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://sioux-city-music.herokuapp.com/">Sioux City Music Live App</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://sioux-city-music.herokuapp.com/">Sioux City Music Live App</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Alex-BandApp-Client">Client GitHub Repo</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Alex-BandApp-Server">Server GitHub Repo</a></li>
         </ul>
+        </div>
         </div>)
       }
     }
     else if (this.state.currentProject === 2){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="projects-content-text projects-content-text-first"><h2> Pokémon Quiz is designed for users to learn the names of a few creatures from the popular video game series Pokémon.</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Pokémon Quiz tests a user's knowledge of popular Pokémon.</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Test the user's knowledge of gen 1 Pokemon</li>
+        <li>Test the user's knowledge of gen 1 Pokemon</li>
           <li>Keeps track of user's performace</li>
           <li>Questions determined using spaced repetition algorithm</li>
           <li>Intuitive and responsive mobile design</li>
         </ul>
+        </div>
         </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return (<div className="projects-content-text projects-content-text-tools"><h2>Libraries and Tools:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Libraries and Tools</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Node.js, Express.js</li>
+        <li>Node.js, Express.js</li>
           <li>React.js, Redux.js</li>
           <li>bcrypt.js, passport.js, JWT Auth</li>
           <li>mongoose, MongoDB</li>
           <li>Heroku for client and server</li>
         </ul>
+        </div>
         </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return (<div className="projects-content-text projects-content-text-future"><h2>Future development plans:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Future development plans</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>Add an additional page to review select Pokémons</li>
+        <li>Add an additional page to review select Pokémons</li>
           <li>Add a Hint system to jog user's memory</li>
           <li>Add a Skip button to let user further shuffle the list</li>
           <li>Add an easter egg character to the end of the array for a surprise</li>
         </ul>
+        </div>
         </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return (<div className="projects-content-text projects-content-text-last"><h2>Try it out!</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Try it out!</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://pokemon-learning-center-client.herokuapp.com/">Pokemon Quiz Live App</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://pokemon-learning-center-client.herokuapp.com/">Pokemon Quiz Live App</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/alex-albert-spaced-repitition-client">Client GitHub Repo</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/alex-albert-spaced-repitition-server">Server GitHub Repo</a></li>
         </ul>
+        </div>
         </div>)
       }
     }
     else if (this.state.currentProject === 3){
       if(this.state.currentProjectSlide === 0){
-        return (<div className="pythonImgContainer"><img className="pythonImg" src="python1.png"/>
-          <section className="pythonText">
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
           <h2>Desktop Invasion!</h2>
-          <ul>
-            <li>Space Invaders type game written in python</li>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
+        <ul>
+        <li>Space Invaders type game written in python</li>
             <li>Protect your Windows 95 taskbar from old desktop shortcuts!</li>
-          </ul>
-          </section>
+        </ul>
+        </div>
         </div>)
       }
       else if(this.state.currentProjectSlide === 1){
-        return <div className="pythonImgContainer"><img className="pythonImg" src="python2.png"/>
-        <section className="pythonText">
-        <h2>Tools and Libraries:</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Libraries and Tools</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
-          <li>python3</li>
+        <li>python3</li>
           <li>pygame</li>
         </ul>
-        </section>
-      </div>
+        </div>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 2){
-        return <div className="pythonImgContainer"><img className="pythonImg" src="python3.png"/>
-        <section className="pythonText">
-        <h2>Try it out!</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>Try it out!</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/thinkful-ei21/Desktop-Invasion-Alex">GitHub Repo</a></li>
         </ul>
-        </section>
-      </div>
+        </div>
+        </div>)
       }
       else if (this.state.currentProjectSlide === 3){
-        return <div className="pythonImgContainer"><img className="pythonImg" src="python4.png"/>
-        <section className="pythonText">
-        <h2>One last thing...</h2>
+        return (<div className="expand-container ">
+        <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
+          <h2>One last thing...</h2>
+          <div className="expand-plus">{this.state.expandSign}</div>
+        </div>
+        <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
+        <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+        <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
         <ul>
           <li>Watch out for Clippy!!</li>
         </ul>
-        </section>
-      </div>
+        </div>
+        </div>)
       }
     }
   }
@@ -2686,10 +2883,13 @@ class App extends Component {
               <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx>
 
               <Plx className="projects-content" parallaxData={projectsBoxData}>
-                <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
+                {this.getCurrentProjectText()}
+                {/* <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
                 <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
-                <img src={this.getCurrentProjectUrl()}/>
-                <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
+                {this.getCurrentProjectUrl()}
+                <div className="projects-content-text-container">{this.getCurrentProjectText()}</div> */}
+                {Slideshow()}
+                
               </ Plx>
 
               <Plx className="connect-content" parallaxData={connectBoxData}>

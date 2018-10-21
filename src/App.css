@@ -541,7 +541,7 @@
   z-index: 1;
 }
 
-.content-box {
+.content-box{
   position: absolute;
   display: flex;
   align-items: center;
@@ -555,6 +555,16 @@
   /* pointer-events: none; */
   background: transparent;
   overflow: hidden;
+  transition: height 1s, top 1s;
+}
+
+.content-box-closed {
+  height: 47%
+}
+
+.content-box-open {
+  height: 87%;
+  top: 6.2%;
 }
 
 .content-box-shadow {
