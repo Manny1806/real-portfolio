@@ -904,53 +904,6 @@
     height: 520px;
     width: 960px;
   }
-  .bio-title {
-    font-size: 200%;
-  }
-
-  .bio-name {
-    font-size: 250%;
-  }
-
-  .bio-content {
-    font-size: 130%;
-  }
-
-  .skills-title {
-    font-size: 200%;
-  }
-
-  .skills-image {
-    font-size: 260%;
-  }
-
-  .skills-content {
-    font-size: 130%;
-  }
-
-  .projects-title {
-    font-size: 160%;
-  }
-
-  .projects-box {
-    font-size: 260%;
-  }
-
-  .connect-title {
-    font-size: 150%;
-  }
-
-  .connect-box-image {
-    font-size: 260%;
-  }
-
-  .connect-content {
-    font-size: 120%;
-  }
-
-  .connect-content img{
-    width: 40px;
-  }
 
   .first-background-bottom{
     bottom: -45%;
@@ -1061,54 +1014,6 @@
     height: 432px;
     width: 797px;
     left: 5px;
-  }
-
-  .bio-title {
-    font-size: 160%;
-  }
-
-  .bio-name {
-    font-size: 200%;
-  }
-
-  .bio-content {
-    font-size: 105%;
-  }
-
-  .skills-title {
-    font-size: 160%;
-  }
-
-  .skills-image {
-    font-size: 200%;
-  }
-
-  .skills-content {
-    font-size: 105%;
-  }
-
-  .projects-title {
-    font-size: 130%;
-  }
-
-  .projects-box {
-    font-size: 210%;
-  }
-
-  .connect-title {
-    font-size: 130%;
-  }
-
-  .connect-box-image {
-    font-size: 220%;
-  }
-
-  .connect-content {
-    font-size: 105%;
-  }
-
-  .connect-content img{
-    width: 30px;
   }
 
   .first-background-bottom{
@@ -1226,18 +1131,6 @@
     height: 449px;
     width: 828px;
     left: 0;
-  }
-
-  .content-box{
-    display: none;
-  }
-
-  .bio-content{
-    display: none;
-  }
-
-  .skills-content{
-    display: none;
   }
 
   .projects-content{
@@ -1430,18 +1323,6 @@
     background: transparent;
     border: white solid 2px;
     z-index: 11;
-  }
-
-  .bio-title {
-    font-size: 140%;
-  }
-
-  .bio-name {
-    font-size: 190%;
-  }
-
-  .bio-content {
-    font-size: 160%;
   }
 
   .skills-title {

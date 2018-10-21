@@ -93,3 +93,40 @@
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 1024px){ /*ipad pro*/
+
+  .connect-title {
+    font-size: 150%;
+  }
+
+  .connect-box-image {
+    font-size: 260%;
+  }
+
+  .connect-content {
+    font-size: 120%;
+  }
+
+  .connect-content img{
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px){ /*ipad*/
+  .connect-title {
+    font-size: 130%;
+  }
+
+  .connect-box-image {
+    font-size: 220%;
+  }
+
+  .connect-content {
+    font-size: 105%;
+  }
+
+  .connect-content img{
+    width: 30px;
+  }
+}

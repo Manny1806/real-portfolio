@@ -81,3 +81,61 @@
     height: 100%;
     width: 100%;
   }
+
+@media (max-width: 1024px){ /*ipad pro*/
+  .bio-title {
+    font-size: 180%;
+  }
+
+  .bio-name {
+    font-size: 250%;
+  }
+
+  .bio-content {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 768px){ /*ipad*/
+  
+  .bio-title {
+    font-size: 160%;
+  }
+
+  .bio-name {
+    font-size: 200%;
+  }
+
+  .bio-content {
+    font-size: 105%;
+  }
+}
+
+@media (max-width: 414px){ /****************iphone 6/7/8 plus *********************************************************/
+ 
+  .content-box{
+    left: 0;
+    top: 95%;
+    width: 99%;
+    height: 55%;
+  }
+
+  .content-box-shadow {
+    left: 0;
+    top: 95%;
+    width: 99%;
+    height: 55%;
+  }
+  
+  .bio-title {
+    font-size: 140%;
+  }
+
+  .bio-name {
+    font-size: 190%;
+  }
+
+  .bio-content {
+    font-size: 130%;
+  }
+}

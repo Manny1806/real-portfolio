@@ -53,3 +53,37 @@
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 1024px){ /*ipad pro*/
+  
+  .skills-title {
+    font-size: 200%;
+  }
+
+  .skills-image {
+    font-size: 260%;
+  }
+
+  .skills-content {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 768px){ /*ipad*/
+  .skills-title {
+    font-size: 160%;
+  }
+
+  .skills-image {
+    font-size: 200%;
+  }
+
+  .skills-content {
+    font-size: 105%;
+  }
+}
+
+@media (max-width: 414px){ /****************iphone 6/7/8 plus *********************************************************/
+ 
+  
+}

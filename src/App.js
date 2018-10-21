@@ -70,9 +70,23 @@ const options = {
 };
 
 const slideImages = [
-  'img/karpul6.png',
+  ['img/karpul6.png',
   'img/karpul4.png',
-  'img/karpul5.png'
+  'img/karpul5.png',
+  'img/karpul7.png'],
+  ['img/siouxCityMusic1.png',
+  'img/siouxCityMusic2.png',
+  'img/siouxCityMusic3.png',
+  'img/siouxCityMusic4.png'],
+  ['img/pokemon1.png',
+  'img/pokemon2.png',
+  'img/pokemon3.png',
+  'img/pokemon4.png'],
+  ['img/python1.png',
+  'img/python2.png',
+  'img/python3.png',
+  'img/python4.png']
+
 ];
  
 const properties = {
@@ -81,24 +95,6 @@ const properties = {
   infinite: true,
   indicators: false,
   arrows: false
-}
- 
-const Slideshow = () => {
-  return (
-    
-    <Fade {...properties}>
-      <div >
-        <img src={slideImages[0]}/>
-      </div>
-      <div >
-        <img src={slideImages[1]}/>
-      </div>
-      <div >
-        <img src={slideImages[2]}/>
-      </div>
-    </Fade>
-    
-  )
 }
 
 const realBackgroundData = [
@@ -2428,6 +2424,15 @@ class App extends Component {
     }
   }
 
+  getCurrentProjectSlideClass(x){
+    if (this.state.currentProject === x){
+      return "slides-show"
+    } 
+    else {
+      return "slides-hidden"
+    }
+  }
+
   getCurrentProjectUrl() {
     if (this.state.currentProject === 0){
      return ( <div class="slideshow-container">
@@ -2522,7 +2527,7 @@ class App extends Component {
       if(this.state.currentProjectSlide === 0){
         return (<div className="expand-container ">
         <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
-          <h2>Karpul allows users to find and create carpools.</h2>
+          <h2>Find or create carpools in your area!</h2>
           <div className="expand-plus">{this.state.expandSign}</div>
         </div>
         <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
@@ -2598,7 +2603,7 @@ class App extends Component {
       if(this.state.currentProjectSlide === 0){
         return (<div className="expand-container ">
         <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
-          <h2>Sioux City Music allows local bands to create posts and events for fans.</h2>
+          <h2>Allow local bands to connect with fans!</h2>
           <div className="expand-plus">{this.state.expandSign}</div>
         </div>
         <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
@@ -2673,7 +2678,7 @@ class App extends Component {
       if(this.state.currentProjectSlide === 0){
         return (<div className="expand-container ">
         <div className="expand-content-button" onClick={()=>this.setContentBoxClass()}>
-          <h2>Pokémon Quiz tests a user's knowledge of popular Pokémon.</h2>
+          <h2>Test your knowledge of Pokémon!</h2>
           <div className="expand-plus">{this.state.expandSign}</div>
         </div>
         <div className={`expanded-content-text ${this.state.contentBoxClass}`}>
@@ -2809,8 +2814,6 @@ class App extends Component {
     }
   }
 
-  
-  
   render() {
     return (
       <div className="App"  id='app'>
@@ -2839,10 +2842,10 @@ class App extends Component {
                   animateScrollTo((document.documentElement.scrollHeight*0.2), options)
                 }}></ Plx>
 
-              <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
+              {/* <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
               <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx>
               <Plx className="coffee-4" parallaxData={coffee4Data}><img src="img/Coffee.gif"/></ Plx>
-              <Plx className="coffee-3" parallaxData={coffee3Data}><img src="img/Coffee.gif"/></ Plx>
+              <Plx className="coffee-3" parallaxData={coffee3Data}><img src="img/Coffee.gif"/></ Plx> */}
 
             </Plx>
             
@@ -2888,8 +2891,70 @@ class App extends Component {
                 <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
                 {this.getCurrentProjectUrl()}
                 <div className="projects-content-text-container">{this.getCurrentProjectText()}</div> */}
-                {Slideshow()}
-                
+                <div className={this.getCurrentProjectSlideClass(0)}>
+                <Fade {...properties}>
+                  <div >
+                    <img src={slideImages[0][0]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[0][1]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[0][2]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[0][3]}/>
+                  </div>
+                </Fade>
+                </div>
+                <div className={this.getCurrentProjectSlideClass(1)}>
+                <Fade {...properties}>
+                  <div >
+                    <img src={slideImages[1][0]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[1][1]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[1][2]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[1][3]}/>
+                  </div>
+                </Fade>
+                </div>
+                <div className={this.getCurrentProjectSlideClass(2)}>
+                <Fade {...properties}>
+                  <div >
+                    <img src={slideImages[2][0]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[2][1]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[2][2]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[2][3]}/>
+                  </div>
+                </Fade>
+                </div>
+                <div className={this.getCurrentProjectSlideClass(3)}>
+                <Fade {...properties}>
+                  <div >
+                    <img src={slideImages[3][0]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[3][1]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[3][2]}/>
+                  </div>
+                  <div >
+                    <img src={slideImages[3][3]}/>
+                  </div>
+                </Fade>
+                </div>
               </ Plx>
 
               <Plx className="connect-content" parallaxData={connectBoxData}>
