@@ -130,3 +130,86 @@
     width: 30px;
   }
 }
+
+@media (max-width: 414px){ /****************iphone 6/7/8 plus *********************************************************/
+  .connect-title {
+    font-size: 130%;
+  }
+
+  .connect-box-image {
+    font-size: 230%;
+  }
+
+  .connect-content {
+    font-size: 150%;
+  }
+
+  .connect-content  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .connect-content img{
+    width: 30px;
+  }
+}
+
+@media (max-width: 375px){ /****************iphone 6/7/8 *********************************************************/
+ 
+  .connect-title {
+    font-size: 125%;
+  }
+
+  .connect-box-image {
+    font-size: 200%;
+  }
+
+  .connect-content {
+    font-size: 140%;
+  }
+
+  .connect-content  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+}
+
+@media (max-width: 360px){ /*Galaxy S5 */
+  .connect-title {
+    font-size: 120%;
+  }
+
+  .connect-box-image {
+    font-size: 210%;
+  }
+
+  .connect-content {
+    font-size: 130%;
+  }
+
+  .connect-content  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+}
+
+@media (max-width: 320px){/*iphone 5*/
+  .connect-title {
+    font-size: 105%;
+  }
+
+  .connect-box-image {
+    font-size: 180%;
+  }
+
+  .connect-content {
+    font-size: 110%;
+  }
+
+  .connect-content  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+}

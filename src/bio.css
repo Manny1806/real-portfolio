@@ -73,6 +73,7 @@
     box-sizing: border-box;
     background: black;
     filter: blur(12px);
+    -webkit-filter: blur(12px);
     overflow: hidden;
   }
 
@@ -112,10 +113,12 @@
 }
 
 @media (max-width: 414px){ /****************iphone 6/7/8 plus *********************************************************/
- 
+  .bio-box{
+    top: 33%;
+  }
   .content-box{
     left: 0;
-    top: 95%;
+    top: 90.5%;
     width: 99%;
     height: 55%;
   }
@@ -137,5 +140,43 @@
 
   .bio-content {
     font-size: 130%;
+  }
+}
+
+@media (max-width: 375px){ /****************iphone 6/7/8 *********************************************************/
+ 
+  
+  .bio-title {
+    font-size: 140%;
+  }
+
+  .bio-name {
+    font-size: 190%;
+  }
+
+  .bio-content {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 320px){/*iphone 5*/
+  .content-box{
+    width: 98.5%;
+  }
+
+  .bio-title {
+    font-size: 130%;
+  }
+
+  .bio-name {
+    font-size: 180%;
+  }
+
+  .bio-content {
+    font-size: 100%;
+  }
+  
+  .bio-box {
+    width: 43%;
   }
 }

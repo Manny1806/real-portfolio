@@ -9,36 +9,13 @@ import { render } from "react-dom";
 import Plx from "react-plx";
 import animateScrollTo from 'animated-scroll-to';
 import { Fade } from 'react-slideshow-image';
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
 
-// var slideIndex = 0;
-// showSlides();
-
-// showSlides() {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < slides.length; i++) {
-//        slides[i].style.display = "none";  
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}    
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].style.display = "block";  
-//     dots[slideIndex-1].className += " active";
-//     setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
-
-// const projectArray = [
-//   ["karpul1.jpg","karpul2.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
-//   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
-//   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"],
-//   ["siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg","siouxCityMusic.jpg"]
-// ]
 
 const options = {
   // duration of the scroll per 1000px, default 500
-  speed: 1400,
+  speed: 1000,
 
   // minimum duration of the scroll
   minDuration: 250,
@@ -59,7 +36,7 @@ const options = {
   // should animated scroll be canceled on user scroll/keypress
   // if set to "false" user input will be disabled until animated scroll is complete
   // (when set to false, "passive" will be also set to "false" to prevent Chrome errors)
-  cancelOnUserAction: true,
+  cancelOnUserAction: false,
 
   // Set passive event Listeners to be true by default. Stops Chrome from complaining.
   passive: true,
@@ -98,56 +75,6 @@ const properties = {
 }
 
 const realBackgroundData = [
-  {
-    start: 0,
-    end: '20%',
-    properties: [
-      {
-        startValue: "#191970",
-        endValue: "#228b22",
-        property: "backgroundColor",
-        
-      }
-    ]
-  },
-  {
-    start: '21%',
-    end: '41%',
-    properties: [
-      
-      {
-        startValue: "#228b22",
-        endValue: "#87cefa",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '42%',
-    end: '62%',
-    properties: [
-      {
-        startValue: "#87cefa",
-        endValue: "#fd5e53",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  {
-    start: '63%',
-    end: '83%',
-    properties: [
-      {
-        startValue: "#fd5e53",
-        endValue: "#191970",
-        property: "backgroundColor",
-      }
-    ]
-  },
-  
-];
-
-const secondBackgroundTop = [
   {
     start: 0,
     end: '20%',
@@ -974,8 +901,8 @@ const coffee2Data = [
 const coffee3Data = [
   
   {
-    start: '5%',
-    end: '18%',
+    start: '1%',
+    end: '20%',
     properties: [
       {
         startValue: 0,
@@ -983,12 +910,7 @@ const coffee3Data = [
         property: "translateX",
         unit: '%'
       },
-      {
-        startValue: 0,
-        endValue: -50,
-        property: "translateY",
-        unit: '%'
-      },
+      
       
     ]
   },
@@ -997,13 +919,13 @@ const coffee3Data = [
 const coffee4Data = [
   
   {
-    start: '13%',
-    end: '18%',
+    start: '22%',
+    end: '40%',
     properties: [
       {
-        startValue: 0,
-        endValue: 240,
-        property: "translateX",
+        startValue: -200,
+        endValue: 0,
+        property: "translateY",
         unit: '%'
       },
       
@@ -2348,47 +2270,14 @@ class App extends Component {
       projectClickClass: "click-projects",
       projectClickSpanClass: "click-projects-span",
       contentBoxClass: "closed",
-      expandSign: '\u002B'
+      expandSign: '\u002B',
+      clickClass: 'click'
     }
-    this.handleScroll = this.handleScroll.bind(this)
+    
   }
 
-  handleScroll(e){
-   
-    if (document.body.scrollTop > 12700 || document.documentElement.scrollTop > 12700) {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0;
-    }
-
-    if (!this.state.projectClickTrigger && (document.body.scrollTop > 6000 || document.documentElement.scrollTop > 6000)) {
-      this.setState({
-        projectClickTrigger: true,
-        projectClickClass: "click-projects-triggered",
-        projectClickSpanClass: "click-projects-span-triggered"
-      })
-    }
-
-    if ((document.body.scrollTop >= 0 && document.body.scrollTop < 3100) || (document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop < 3100)) {
-      this.setState({
-        desiredOffset: 3100
-      })
-    }
-    
-    if ((document.body.scrollTop >= 3100 && document.body.scrollTop < 6300) || (document.documentElement.scrollTop >= 3100 && document.documentElement.scrollTop < 6300)) {
-      this.setState({
-        desiredOffset: 6300
-      })
-    } else if ((document.body.scrollTop >= 6300 && document.body.scrollTop < 9480) || (document.documentElement.scrollTop >= 6300 && document.documentElement.scrollTop < 9480)) {
-      this.setState({
-        desiredOffset: 9480
-      })
-    } else if ((document.body.scrollTop >= 9480 && document.body.scrollTop < 12700) || (document.documentElement.scrollTop >= 9480 && document.documentElement.scrollTop < 12700)) {
-      this.setState({
-        desiredOffset: 12701
-      })
-    }
-      
-    
+  componentDidMount() {
+    window.addEventListener('touchmove', (e)=>e.preventDefault())
   }
 
   incPojectSlide() {
@@ -2430,86 +2319,6 @@ class App extends Component {
     } 
     else {
       return "slides-hidden"
-    }
-  }
-
-  getCurrentProjectUrl() {
-    if (this.state.currentProject === 0){
-     return ( <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        
-        <img src="img_nature_wide.jpg"/>
-        
-      </div>
-
-      <div class="mySlides fade">
-        
-        <img src="img_snow_wide.jpg"/>
-        
-      </div>
-
-      <div class="mySlides fade">
-        
-        <img src="img_mountains_wide.jpg"/>
-        
-      </div>
-
-      </div>)
-      // if(this.state.currentProjectSlide === 0){
-      //   return "karpul1.jpg"
-      // }
-      // else if(this.state.currentProjectSlide === 1){
-      //   return "karpul2.jpg"
-      // }
-      // else if (this.state.currentProjectSlide === 2){
-      //   return "karpul3.jpg"
-      // }
-      // else if (this.state.currentProjectSlide === 3){
-      //   return "karpul4.jpg"
-      // }
-    }
-    else if(this.state.currentProject === 1){
-      if(this.state.currentProjectSlide === 0){
-        return "siouxCityMusic1.png"
-      }
-      else if(this.state.currentProjectSlide === 1){
-        return "siouxCityMusic2.png"
-      }
-      else if (this.state.currentProjectSlide === 2){
-        return "siouxCityMusic3.png"
-      }
-      else if (this.state.currentProjectSlide === 3){
-        return "siouxCityMusic4.png"
-      }
-    }
-    else if (this.state.currentProject === 2){
-      if(this.state.currentProjectSlide === 0){
-        return "pokemon1.png"
-      }
-      else if(this.state.currentProjectSlide === 1){
-        return "pokemon2.png"
-      }
-      else if (this.state.currentProjectSlide === 2){
-        return "pokemon3.png"
-      }
-      else if (this.state.currentProjectSlide === 3){
-        return "pokemon4.png"
-      }
-    }
-    else if (this.state.currentProject === 3){
-      if(this.state.currentProjectSlide === 0){
-        return "karpul1.jpg"
-      }
-      else if(this.state.currentProjectSlide === 1){
-        return "karpul1.jpg"
-      }
-      else if (this.state.currentProjectSlide === 2){
-        return "karpul1.jpg"
-      }
-      else if (this.state.currentProjectSlide === 3){
-        return "karpul1.jpg"
-      }
     }
   }
 
@@ -2818,33 +2627,36 @@ class App extends Component {
     return (
       <div className="App"  id='app'>
         <Plx className="real-background" parallaxData={colorChangeOnlyData}/>
+        
         <div className="fixed-background-base" >
           <div className="fixed-background-second" >
+            
             <Plx className="moving-square-shadow-container" parallaxData={movingSqrData} >
               <Plx className="moving-square-shadow" parallaxData={movingSqrShadowData} />
             </Plx>
+            
             <Plx className="moving-square" parallaxData={movingSqrData} >
-              <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section>
-              <Plx className="bio-title" parallaxData={bioTitleData} >bio</ Plx>
-              <Plx className="skills-title" parallaxData={skillsTitleData} >skills</ Plx>
-              <Plx className="projects-title" parallaxData={projectsTitleData} >projects</ Plx>
-              <Plx className="connect-title"parallaxData={connectTitleData} >connect</ Plx>
+              {/* <section className="scroll-or-click"><span className="scroll-or-click-first">SCROLL</span><span className="scroll-or-click-second">or</span><span className="scroll-or-click-third">&#8592;CLICK</span></section> */}
+              <Plx animateWhenNotInViewport={true} className="bio-title" parallaxData={bioTitleData} >bio</ Plx>
+              <Plx animateWhenNotInViewport={true} className="skills-title" parallaxData={skillsTitleData} >skills</ Plx>
+              <Plx animateWhenNotInViewport={true} className="projects-title" parallaxData={projectsTitleData} >projects</ Plx>
+              <Plx animateWhenNotInViewport={true} className="connect-title"parallaxData={connectTitleData} >connect</ Plx>
               
-              <Plx className="bio-button" parallaxData={bioButtonData} onClick={()=>{
+              {/* <Plx className="bio-button" parallaxData={bioButtonData} onClick={()=>{
                   animateScrollTo((document.documentElement.scrollHeight*0.2), options)
-                }}></ Plx>
+                }}></ Plx> */}
               
-              <Plx className="skills-button" parallaxData={skillsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.4), options)}></ Plx>
+              {/* <Plx className="skills-button" parallaxData={skillsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.4), options)}></ Plx>
               <Plx className="projects-button" parallaxData={projectsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.6), options)}></ Plx>
               <Plx className="connect-button" parallaxData={connectButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.8), options)}></ Plx>
               <Plx className="bio-button" parallaxData={bioButtonEndData} onClick={()=>{
                   document.documentElement.scrollTop = 0;
                   animateScrollTo((document.documentElement.scrollHeight*0.2), options)
-                }}></ Plx>
+                }}></ Plx> */}
 
               {/* <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
-              <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx>
-              <Plx className="coffee-4" parallaxData={coffee4Data}><img src="img/Coffee.gif"/></ Plx>
+              <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx> */}
+              {/* <Plx className="coffee-4" parallaxData={coffee4Data}><img src="img/tenor.gif"/></ Plx>
               <Plx className="coffee-3" parallaxData={coffee3Data}><img src="img/Coffee.gif"/></ Plx> */}
 
             </Plx>
@@ -2868,29 +2680,18 @@ class App extends Component {
               <Plx className="connect-box-image" parallaxData={connectImgData}><span className="connect-box-image-span">-young me waiting for your email</span><img src="img/ME.jpg"/></Plx>
             </Plx>
             
-            {/* <Plx className="skills-content-mobile" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
-            <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
-            <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx> */}
             <Plx className="content-box-shadow"  parallaxData={contentBoxShadowData}></Plx>
             <Plx className="content-box"  parallaxData={bioBoxNameData}>
-              <Plx className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
+              <Plx animateWhenNotInViewport={true} className="bio-content" parallaxData={bioBoxContentData}>I am a full stack developer.<br/><br/>
               More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
               I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx>
-
-              {/* <Plx className="bio-content-mobile" parallaxData={bioBoxContentMobileData} >I am a full stack developer.<br/><br/>
-              More importantly though I am a problem solving fanatic with a relentless devotion to efficiency.<br/><br/>
-              I bring an 'above and beyond' approach to my work because I believe my goals should not be limited by familiarity or job descriptions.</Plx> */}
               
-              <Plx className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
+              <Plx animateWhenNotInViewport={true} className="skills-content" parallaxData={skillsBoxContentData}><span style={{fontWeight: "bold"}}>Front End Skills:</span> HTML, CSS, JavaScript, React, React-plx, Redux, JQuery<br/><br/>
               <span style={{fontWeight: "bold"}}>Back End Skills:</span> Node.js, Express, MongoDB, Mocha, Chai, SQL<br/><br/>
               <span style={{fontWeight: "bold"}}>Soft Skills:</span> Quick Learner, Adaptive, Strong communication, Organized, Dependable, Team Oriented</Plx>
 
-              <Plx className="projects-content" parallaxData={projectsBoxData}>
+              <Plx animateWhenNotInViewport={true} className="projects-content" parallaxData={projectsBoxData}>
                 {this.getCurrentProjectText()}
-                {/* <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
-                <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
-                {this.getCurrentProjectUrl()}
-                <div className="projects-content-text-container">{this.getCurrentProjectText()}</div> */}
                 <div className={this.getCurrentProjectSlideClass(0)}>
                 <Fade {...properties}>
                   <div >
@@ -2957,7 +2758,7 @@ class App extends Component {
                 </div>
               </ Plx>
 
-              <Plx className="connect-content" parallaxData={connectBoxData}>
+              <Plx animateWhenNotInViewport={true} className="connect-content" parallaxData={connectBoxData}>
                 <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a></div>
                 <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a></div>
                 <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a></div>
@@ -2965,23 +2766,7 @@ class App extends Component {
               </Plx>
               
             </Plx>
-            {/* <Plx className="content-box-mobile-border"  parallaxData={bioBoxNameData}></Plx>
-            <Plx className="content-box-mobile"  parallaxData={backgroundData}></Plx> */}
-  
-            {/* <Plx className="projects-content-mobile" parallaxData={projectsBoxData}>
-              <section className="projects-slide-forward" onClick={()=>{this.incPojectSlide()}} >{'>'}</section>
-              <section className="projects-slide-back" onClick={()=>{this.decPojectSlide()} } >{'<'}</section>
-              <img src={this.getCurrentProjectUrl()}/>
-              <div className="projects-content-text-container">{this.getCurrentProjectText()}</div>
-            </ Plx> */}
 
-            {/* <Plx className="connect-content-mobile" parallaxData={connectBoxContentMobileData}>
-              <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a><br/><br/>
-              <a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a><br/><br/>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a><br/><br/>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Manny1806"><img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806</a><br/><br/>
-            </Plx> */}
-   
             {/* <Plx className="code-line-1" parallaxData={code1Data}>var x = false;</ Plx>
             <Plx className="code-line-2" parallaxData={code2Data}>{code2}</ Plx>
             <Plx className="code-line-3" parallaxData={code3Data}>{code3}</ Plx>
@@ -3000,7 +2785,22 @@ class App extends Component {
 
             <Plx className="sleep-1" parallaxData={sleepOneData}><img src="sleep.png"/></ Plx>
             <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx> */}
-
+            <div className="slider">
+            <Slider min={0} max={1000} step={null} marks={{0:"",250: "", 500: "", 750: "", 1000: ""}}
+            // onBeforeChange={(value)=> {
+            //   animateScrollTo(((value*0.001)*(document.documentElement.scrollHeight*0.8)), options)
+             
+            // }} 
+            onChange={(value)=> {
+              animateScrollTo(((value*0.001)*(document.documentElement.scrollHeight*0.8)), options)
+              // document.body.scrollTop =((value*0.001)*(document.documentElement.scrollHeight*0.8))
+              // document.documentElement.scrollTop =(value*0.001)*(document.documentElement.scrollHeight*0.8)
+              this.setState({
+                clickClass: "click-done"
+              })
+            }}
+            ><div className={this.state.clickClass}>&uArr;click</div></Slider>
+            </div>
           </div>
         </div>
       </div>

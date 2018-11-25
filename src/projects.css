@@ -381,4 +381,66 @@
     .projects-box {
       font-size: 120%;
     }
+
+    .expanded-content-text ul{
+      font-size: 100%;
+      padding-left: 20px;
+    }
+
+    .expand-content-button {
+      font-size: 70%;
+    }
+  }
+
+  @media (max-width: 414px){ /*iphone something*/
+    .projects-title {
+      font-size: 130%;
+    }
+  
+    .projects-box {
+      font-size: 120%;
+    }
+  }
+
+  @media (max-width: 375px){ /****************iphone 6/7/8 *********************************************************/
+ 
+    .projects-title {
+      font-size: 125%;
+    }
+  
+    .projects-box {
+      font-size: 110%;
+    }
+    
+  }
+
+  @media (max-width: 360px){ /*Galaxy S5 */
+    .projects-title {
+      font-size: 120%;
+    }
+  
+    .projects-box {
+      font-size: 110%;
+    }
+  
+  }
+
+  @media (max-width: 320px){/*iphone 5*/
+    .projects-title {
+      font-size: 105%;
+    }
+  
+    .projects-box {
+      font-size: 100%;
+    }
+
+    .expanded-content-text ul{
+      font-size: 90%;
+      padding-left: 20px;
+    }
+
+    .expand-content-button {
+      font-size: 60%;
+    }
+    
   }

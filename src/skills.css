@@ -85,5 +85,46 @@
 
 @media (max-width: 414px){ /****************iphone 6/7/8 plus *********************************************************/
  
+  .skills-title {
+    font-size: 140%;
+  }
+
+  .skills-image {
+    font-size: 190%;
+  }
+
+  .skills-content {
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 375px){ /****************iphone 6/7/8 *********************************************************/
+ 
+  
+  .skills-title {
+    font-size: 140%;
+  }
+
+  .skills-image {
+    font-size: 190%;
+  }
+
+  .skills-content {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 320px){/*iphone 5*/
+  .skills-title {
+    font-size: 130%;
+  }
+
+  .skills-image {
+    font-size: 180%;
+  }
+
+  .skills-content {
+    font-size: 100%;
+  }
   
 }
