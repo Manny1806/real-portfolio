@@ -4,6 +4,7 @@
 
 body{
   overflow: hidden;
+  
   /* -webkit-touch-callout: none; */
 }
 html {
@@ -12,9 +13,15 @@ html {
 .App {
   text-align: center;
   height: 16000px;
+  /* max-height: 650px; */
   /* background-color: lightgray; */
   /* z-index: 1; */
   /* overflow: hidden; */
+}
+
+#root {
+  /* max-height: 650px; */
+  /* position: relative; */
 }
 
 .click {
@@ -143,8 +150,8 @@ html {
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  height: 845px;
-  width: 1560px;
+  height: 650px;
+  width: 1200px;
   top: 10px;
   border: none;
   background-color: transparent;

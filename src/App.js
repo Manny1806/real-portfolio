@@ -2256,8 +2256,8 @@ const cloudOneData = [
 let triggered = true;
 let lastScrollTop = 0;
 
-const code2 = 'var y = {start:"0%", end:"21%", translateY:"40%"};'
-const code3 = 'onClick={() => this.handleClick(i)}'
+// const code2 = 'var y = {start:"0%", end:"21%", translateY:"40%"};'
+// const code3 = 'onClick={() => this.handleClick(i)}'
 
 class App extends Component {
   constructor() {
@@ -2642,29 +2642,7 @@ class App extends Component {
               <Plx animateWhenNotInViewport={true} className="projects-title" parallaxData={projectsTitleData} >projects</ Plx>
               <Plx animateWhenNotInViewport={true} className="connect-title"parallaxData={connectTitleData} >connect</ Plx>
               
-              {/* <Plx className="bio-button" parallaxData={bioButtonData} onClick={()=>{
-                  animateScrollTo((document.documentElement.scrollHeight*0.2), options)
-                }}></ Plx> */}
-              
-              {/* <Plx className="skills-button" parallaxData={skillsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.4), options)}></ Plx>
-              <Plx className="projects-button" parallaxData={projectsButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.6), options)}></ Plx>
-              <Plx className="connect-button" parallaxData={connectButtonData} onClick={()=>animateScrollTo((document.documentElement.scrollHeight*0.8), options)}></ Plx>
-              <Plx className="bio-button" parallaxData={bioButtonEndData} onClick={()=>{
-                  document.documentElement.scrollTop = 0;
-                  animateScrollTo((document.documentElement.scrollHeight*0.2), options)
-                }}></ Plx> */}
-
-              {/* <Plx className="coffee-2" parallaxData={coffee2Data}><img src="img/Coffee.gif"/></ Plx>
-              <Plx className="coffee-1" parallaxData={coffee1Data}><img src="img/Coffee.gif"/></ Plx> */}
-              {/* <Plx className="coffee-4" parallaxData={coffee4Data}><img src="img/tenor.gif"/></ Plx>
-              <Plx className="coffee-3" parallaxData={coffee3Data}><img src="img/Coffee.gif"/></ Plx> */}
-
             </Plx>
-            
-            {/* <Plx className="light-bulb" parallaxData={bulbData}><img src="idea.png"/></ Plx>
-            <Plx className="light-bulb-on" parallaxData={bulbOnData}><img src="ideaOn.png"/></ Plx>
-            <Plx className="light-bulb-on-light" parallaxData={bulbOnLightData}><img src="ideaOnLight.png"/></ Plx> */}
-            
             
 
             <Plx className="bio-box-shadow" parallaxData={bioBoxShadowData}/>
@@ -2759,7 +2737,7 @@ class App extends Component {
               </ Plx>
 
               <Plx animateWhenNotInViewport={true} className="connect-content" parallaxData={connectBoxData}>
-                <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/10rF3b-d7UjQQLPgVArpBie4XkxBeHwLq/view"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a></div>
+                <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1XMVQKSxjczdqrCzbVgj5Rki5tk_JKiLZQedN8BbZpi4/edit?usp=sharing"><img className="connect-icons" src="http://petrgazarov.com/style/images/resume-icon.png"/> resume</a></div>
                 <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="mailto:alex.dean.widner@gmail.com"><img className="connect-icons" src="https://pinkeyegraphics.co.uk/wp-content/uploads/gmail-icon.ico"/> alex.dean.widner@gmail.com</a></div>
                 <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-widner/"><img className="connect-icons" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"/> www.linkedin.com/in/alex-widner</a></div>
                 <div className='connect-content-selection'><a target="_blank" rel="noopener noreferrer" href="https://github.com/Manny1806"><img className="connect-icons" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/> www.github.com/Manny1806</a></div>
@@ -2767,34 +2745,12 @@ class App extends Component {
               
             </Plx>
 
-            {/* <Plx className="code-line-1" parallaxData={code1Data}>var x = false;</ Plx>
-            <Plx className="code-line-2" parallaxData={code2Data}>{code2}</ Plx>
-            <Plx className="code-line-3" parallaxData={code3Data}>{code3}</ Plx>
-
-            <Plx className="cloud-1" parallaxData={cloudOneData}><img src="cloud-first.png"/></ Plx>
-            <Plx className="cloud-2" parallaxData={cloudTwoData}><img src="cloud_second.png"/></ Plx>
-            <Plx className="cloud-3" parallaxData={cloudThreeData}><img src="cloud_third.png"/></ Plx>
-            <Plx className="cloud-4" parallaxData={cloudFourData}><img src="cloud-first.png"/></ Plx>
-
-            <Plx className="email-1" parallaxData={emailOneData}><img src="email.png"/></ Plx>
-            <Plx className="email-2" parallaxData={emailTwoData}><img src="email.png"/></ Plx>
-            <Plx className="email-3" parallaxData={emailThreeData}><img src="email.png"/></ Plx>
-            <Plx className="email-4" parallaxData={emailFourData}><img src="email.png"/></ Plx>
-
-            <Plx className="cheers" parallaxData={cheersData}><img src="Cheers.gif"/></ Plx>
-
-            <Plx className="sleep-1" parallaxData={sleepOneData}><img src="sleep.png"/></ Plx>
-            <Plx className="sleep-2" parallaxData={sleepTwoData}><img src="sleep.png"/></ Plx> */}
             <div className="slider">
-            <Slider min={0} max={1000} step={null} marks={{0:"",250: "", 500: "", 750: "", 1000: ""}}
-            // onBeforeChange={(value)=> {
-            //   animateScrollTo(((value*0.001)*(document.documentElement.scrollHeight*0.8)), options)
-             
-            // }} 
+            <Slider min={0} max={1000} step={null} marks={{0:"",240: "", 493: "", 
+            [document.documentElement.clientHeight > 860 ? 735 : 744]: "", 1000: ""}}
+            
             onChange={(value)=> {
               animateScrollTo(((value*0.001)*(document.documentElement.scrollHeight*0.8)), options)
-              // document.body.scrollTop =((value*0.001)*(document.documentElement.scrollHeight*0.8))
-              // document.documentElement.scrollTop =(value*0.001)*(document.documentElement.scrollHeight*0.8)
               this.setState({
                 clickClass: "click-done"
               })
