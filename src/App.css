@@ -239,11 +239,11 @@ html {
 
 .slider{
   position: fixed;
-  top: 2%;
+  top: 3%;
   left: 15%;
   width: 70%;
   height: 5%;
-  z-index: 2;
+  z-index: 0;
 }
 
 

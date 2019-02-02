@@ -2746,16 +2746,27 @@ class App extends Component {
             </Plx>
 
             <div className="slider">
-            <Slider min={0} max={1000} step={null} marks={{0:"",240: "", 493: "", 
-            [document.documentElement.clientHeight > 860 ? 735 : 744]: "", 1000: ""}}
-            
+            <Slider min={0} max={1000} step={null} marks={{0:{style: {fontSize: "18px", marginTop: -40},label: "bio"}, 240: {style: {fontSize: "18px"},label: "skills"}, 
+            493: {style: {marginTop: -40, fontSize: "18px"},label: "projects"}, 
+            [document.documentElement.clientHeight > 860 ? 735 : 744]: {style: {fontSize: "18px"},label: "connect"}, 1000: {style: {fontSize: "18px", marginTop: -40},label: "bio"}}}
+            dotStyle={{ borderColor: 'white' }} trackStyle={{ height: 0 }}
+            handleStyle={{
+              borderColor: 'lightgrey',
+              height: 20,
+              width: 20,
+              marginLeft: -10,
+              marginTop: -8,
+              backgroundColor: 'white',
+            }}
             onChange={(value)=> {
               animateScrollTo(((value*0.001)*(document.documentElement.scrollHeight*0.8)), options)
               this.setState({
                 clickClass: "click-done"
               })
             }}
-            ><div className={this.state.clickClass}>&uArr;click</div></Slider>
+            >
+            {/* <div className={this.state.clickClass}>&uArr;click</div> */}
+            </Slider>
             </div>
           </div>
         </div>
