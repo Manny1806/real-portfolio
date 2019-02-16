@@ -1,0 +1,70 @@
+.moving-right-box-container{
+    position: absolute;
+    height: 300%;
+    width: 300%
+}
+
+.right-moving-box-bio{
+    top: 0%;
+    left: 0%;
+    transition: all 1s;
+}
+
+.right-moving-box-skills{
+    top: -200%;
+    left: 0px;
+    transition: all 1s;
+}
+
+.right-moving-box-projects{
+    top: -200%;
+    left: -200%;
+    transition: all 1s;
+}
+
+.right-moving-box-connect{
+    top: 0%;
+    left: -200%;
+    transition: all 1s;
+}
+
+.right-bio-box{
+    position: absolute;
+    height: 33.33%;
+    width: 33.33%;
+    /* background-color: snow; */
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+}
+
+.right-bio-box img {
+    border-radius: 10px;
+    height: 50%;
+}
+
+.right-skills-box{
+    position: absolute;
+    height: 33.33%;
+    width: 33.33%;
+    background-color: snow;
+    top: 66.66%;
+}
+
+.right-projects-box{
+    position: absolute;
+    height: 33.33%;
+    width: 33.33%;
+    background-color: snow;
+    top: 66.66%;
+    left: 66.66%;
+}
+
+.right-connect-box{
+    position: absolute;
+    height: 33.33%;
+    width: 33.33%;
+    background-color: snow;
+    left: 66.66%;
+}

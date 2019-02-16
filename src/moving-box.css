@@ -56,6 +56,68 @@
 
 .moving-box-content-skills-horz{
     top: 0px;
+    left: -700px;
+    transition: all 1s;
+}
+
+.moving-box-content-projects{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.moving-box-content-projects-active{
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-projects-vert{
+    top: 700px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-projects-horz{
+    top: 0px;
+    left: 700px;
+    transition: all 1s;
+}
+
+.moving-box-content-connect{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.moving-box-content-connect-active{
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-connect-vert{
+    top: -700px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-connect-horz{
+    top: 0px;
     left: 700px;
     transition: all 1s;
 }
