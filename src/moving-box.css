@@ -1,0 +1,61 @@
+.moving-box-content-bio{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.moving-box-content-bio-active{
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-bio-vert{
+    top: -600px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-bio-horz{
+    top: 0px;
+    left: -600px;
+    transition: all 1s;
+}
+
+.moving-box-content-skills{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.moving-box-content-skills-active{
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-skills-vert{
+    top: 700px;
+    left: 0px;
+    transition: all 1s;
+}
+
+.moving-box-content-skills-horz{
+    top: 0px;
+    left: 700px;
+    transition: all 1s;
+}
